@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-testdata = ["what is a circle", "what is a square", "what is a rectangle"]
+prompts = ["what is a circle", "what is a square", "what is a rectangle"]
 
 def start_auto_prompter():
     chrome_options = webdriver.ChromeOptions()
@@ -19,7 +19,7 @@ def start_auto_prompter():
     try:
         answerCount = 0;
         answerDivs = []
-        for index, question in enumerate(testdata, start = 1):
+        for index, question in enumerate(prompts, start = 1):
             textarea = driver.find_element(By.TAG_NAME, "textarea")  # Locate input field
             textarea.send_keys(question)
             textarea.send_keys(Keys.RETURN)
@@ -32,7 +32,7 @@ def start_auto_prompter():
                 time.sleep(5)
                 
         for index, answer in enumerate(answerDivs, start = 0):
-            print(f"Question #{index + 1}: {testdata[index]}")
+            print(f"Question #{index + 1}: {prompts[index]}")
             print(f"Answer: {answer.text}")
             print()
 
