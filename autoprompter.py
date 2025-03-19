@@ -14,11 +14,12 @@ def start_auto_prompter():
 
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    time.sleep(10)
+    time.sleep(5)
 
     try:
         answerCount = 0;
         answerDivs = []
+        qna = {}
         for index, question in enumerate(prompts, start = 1):
             textarea = driver.find_element(By.TAG_NAME, "textarea")  # Locate input field
             textarea.send_keys(question)
@@ -32,9 +33,9 @@ def start_auto_prompter():
                 time.sleep(5)
                 
         for index, answer in enumerate(answerDivs, start = 0):
-            print(f"Question #{index + 1}: {prompts[index]}")
-            print(f"Answer: {answer.text}")
-            print()
+            qna[prompts[index]] = answer.text
+
+        return qna
 
 
     except Exception as e:
