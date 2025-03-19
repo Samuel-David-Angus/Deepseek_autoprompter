@@ -10,5 +10,6 @@ if __name__ == "__main__":
         print("Finished with logging in to deepseek and opening a blank new chat? (y/n)")
         response = input().lower()
 
+    print("Starting auto prompting")
     start_auto_prompter()
     print("Finished")
