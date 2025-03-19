@@ -39,6 +39,7 @@ def get_user_data_dir():
 
 def run_chrome():
     """If no chrome path provided then try to find it"""
+    global chrome_path
     if not chrome_path:
         chrome_path = find_chrome()
     if not chrome_path:
@@ -51,5 +52,9 @@ def run_chrome():
         return
 
     command = [chrome_path, "--remote-debugging-port=9222", f"--user-data-dir={user_data_dir}"]
-    subprocess.run(command)
+    if platform.system() == "Windows":
+        subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP)
+    else:
+        subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
+
 
