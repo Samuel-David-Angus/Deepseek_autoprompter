@@ -23,29 +23,59 @@ If you don’t already have ChromeDriver installed, follow these steps:
 
 ---
 
-### 2. Find the Path to the Chrome Executable
-The project requires the path to your Chrome browser executable. The chrome_runner.py script has a variable at the top of the file named chrome_path and automatically tried to find the path but it is still best to try knowing the path yourself in case the script cannot find it. Here’s how to find it:
-- **On macOS**:
-  - The default path is usually:
-    ```
-    /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-    ```
-- **On Windows**:
-  - The default path is usually:
-    ```
-    C:\Program Files\Google\Chrome\Application\chrome.exe
-    ```
-- **On Linux**:
-  - The default path is usually:
-    ```
-    /usr/bin/google-chrome
-    ```
+### (Optional) Create a venv
 
-If Chrome is installed in a custom location, locate the `chrome` or `chrome.exe` file and note its full path.
-If the program fails to run since it cannot find the chrome path then you can input the path manually in chrome_runner.py in the chrome_path at the top of the file.
+Before running the project, create a virtual environment to manage dependencies.
 
-### 3. Install Python Dependencies
+### **Step 1: Navigate to the Project Directory**
+Open a terminal and move into the project folder:
+
+```sh
+cd /path/to/your/project
+```
+
+### **Step 2: Create the Virtual Environment**
+Run the following command based on your OS:
+
+- **Windows (Command Prompt or PowerShell):**
+  ```sh
+  python -m venv venv
+  ```
+- **macOS/Linux:**
+  ```sh
+  python3 -m venv venv
+  ```
+
+This creates a `venv` folder in the project directory.
+
+### **Step 3: Activate the Virtual Environment**
+Activate the virtual environment using the appropriate command:
+
+- **Windows (Command Prompt or PowerShell):**
+  ```sh
+  venv\Scripts\activate
+  ```
+- **macOS/Linux:**
+  ```sh
+  source venv/bin/activate
+  ```
+
+Once activated, you should see `(venv)` in your terminal prompt.
+When you're done, deactivate the virtual environment with:
+
+```sh
+deactivate
+```
+### 2. Install Python Dependencies
 1. Navigate to the project root folder in your terminal.
 2. Install the required Python packages using `pip`:
    ```bash
    pip install -r requirements.txt
+
+### 3. Run the project
+1. Type python main.py in the terminal or python3 main.py in mac and linux. If all goes well this will open a new browser window. DO NOT open your own browser window.
+2. After a new browser window opens, you will see a message to navigate to deepseek and manually log in and start a blank new chat. Do that and type in "y" in the terminal after you have done so to initiate the auto prompting.
+3. Wait for the program to end
+
+### In case the prgram cannot find the browser
+If the program cannot find the path to the browser executable it won't be able to run. If this happens, you can manually add the path into the chrome_path variable in chrome_runner.py
