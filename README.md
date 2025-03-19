@@ -42,3 +42,9 @@ The project requires the path to your Chrome browser executable. Here’s how to
     ```
 
 If Chrome is installed in a custom location, locate the `chrome` or `chrome.exe` file and note its full path.
+
+### 3. Install Python Dependencies
+1. Navigate to the project root folder in your terminal.
+2. Install the required Python packages using `pip`:
+   ```bash
+   pip install -r requirements.txt
