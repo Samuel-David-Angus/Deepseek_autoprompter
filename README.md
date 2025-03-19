@@ -24,7 +24,7 @@ If you don’t already have ChromeDriver installed, follow these steps:
 ---
 
 ### 2. Find the Path to the Chrome Executable
-The project requires the path to your Chrome browser executable. Here’s how to find it:
+The project requires the path to your Chrome browser executable. The chrome_runner.py script has a variable at the top of the file named chrome_path and automatically tried to find the path but it is still best to try knowing the path yourself in case the script cannot find it. Here’s how to find it:
 - **On macOS**:
   - The default path is usually:
     ```
@@ -42,6 +42,7 @@ The project requires the path to your Chrome browser executable. Here’s how to
     ```
 
 If Chrome is installed in a custom location, locate the `chrome` or `chrome.exe` file and note its full path.
+If the program fails to run since it cannot find the chrome path then you can input the path manually in chrome_runner.py in the chrome_path at the top of the file.
 
 ### 3. Install Python Dependencies
 1. Navigate to the project root folder in your terminal.
