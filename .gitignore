@@ -9,3 +9,15 @@
 
 # Ignore the specific folder 'sp'
 chromedriver-mac-x64/
+
+# Ignore __pycache__ folders
+__pycache__/
+
+# Ignore .pyc files
+*.pyc
+
+# Ignore .pyo files (optimized bytecode)
+*.pyo
+
+# Ignore .pyd files (Python compiled modules, typically on Windows)
+*.pyd
