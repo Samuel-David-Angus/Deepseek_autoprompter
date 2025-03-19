@@ -21,3 +21,17 @@ __pycache__/
 
 # Ignore .pyd files (Python compiled modules, typically on Windows)
 *.pyd
+
+# Virtual environment
+venv/
+.env/
+env/
+.venv/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
