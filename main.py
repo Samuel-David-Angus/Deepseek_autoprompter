@@ -14,5 +14,12 @@ if __name__ == "__main__":
         response = input().lower()
 
     print("Starting auto prompting")
-    question_and_answers = start_auto_prompter(prompts=prompts)
+    prompt_and_answers = start_auto_prompter(prompts=prompts)
+
+    for prompt in prompt_and_answers:
+        print(f"Prompt: {prompt}")
+        print(f"Response: {prompt_and_answers[prompt]}")
+        print()
+
+
     print("Finished")
