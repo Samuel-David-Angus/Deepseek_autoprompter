@@ -1,5 +1,5 @@
 from chrome_runner import run_chrome
-from autopromter import start_auto_prompter
+from autoprompter import start_auto_prompter
 
 if __name__ == "__main__":
     run_chrome()
