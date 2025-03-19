@@ -4,9 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-prompts = ["what is a circle", "what is a square", "what is a rectangle"]
-
-def start_auto_prompter():
+def start_auto_prompter(prompts):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.debugger_address = "127.0.0.1:9222"
 
