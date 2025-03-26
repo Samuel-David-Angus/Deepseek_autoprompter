@@ -19,7 +19,7 @@ Here's the question/s:
 
 def extract_processed_text(text):
     match = re.search(r'(?<=PREPROCESSED_TEXT[\n])[\s\S]*|(?<=PREPROCESSED_TEXT:[\n])[\s\S]*', text)
-    result = match.group().split()[0]
+    result = match.group().split("NOTES")[0]
     return result.strip()
 
     
@@ -44,7 +44,8 @@ if __name__ == "__main__":
         category_and_prompts = {}
 
         for category in data.keys():
-            category_and_prompts[category] = [add_question_to_context_prompt(q) for q in list(data[category][:3])]
+            #TODO: change this for the entirety of the list later
+            category_and_prompts[category] = [add_question_to_context_prompt(q) for q in list(data[category][:1])]
 
         category_and_answers = start_auto_prompter(category_and_prompts=category_and_prompts.items())
 
