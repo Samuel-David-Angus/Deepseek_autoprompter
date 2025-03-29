@@ -18,13 +18,14 @@ Put this under the key PREPROCESSED_TEXT as an object in an array with processed
 
 If you have any notes or explanations regarding your steps add it under the key PROCESSING_NOTES as an object in an array with notes as key.
 
-Here's the question/s:
+Here's the question/s (each question is denoted as Question: question number):
 {enumerated_questions}
 """
     return context_prompt
 
 def remove_enumeration(json_response):
-    all_processed = [re.sub(r'^\d+\.\s*', '', item["processed"]) for item in json_response["PREPROCESSED_TEXT"]]
+    pattern = r'^Question\s+\d+:\s*'
+    all_processed = [re.sub(pattern, '', item["processed"]) for item in json_response["PREPROCESSED_TEXT"]]
     return all_processed
     
 if __name__ == "__main__":
