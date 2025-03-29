@@ -1,0 +1,255 @@
+{
+    "Sets, Proofs, and Induction": [
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Let X be the set of all students at a university. Let A be the set of students who are first-year students, B the set of students who are second-year students, C the set of students who are in a discrete mathematics course, D the set of students who are international relations majors, E the set of students who went to a concert on Monday night, and F the set of students who studied until 2 AM on Tuesday. Express in set theoretic notation the following sets of students:\n(a) All second-year students in the discrete mathematics course.\nSample Solution: {x \u2208 X : x \u2208 B and x \u2208 C}.\n(b) All first-year students who studied until 2 AM on Tuesday.\n(c) All students who are international relations majors and went to the concert on Monday night.\n(d) All students who studied until 2 AM on Tuesday, are second-year students, and are not international relations majors.\n(e) All first- and second-year students who did not go to the concert on Monday night but are international relations majors.\n(f) All students who are first-year international relations majors or who studied until 2 AM on Tuesday.\n(g) All students who are first- or second-year students who went to a concert on Monday night.\n(h) All first-year students who are international relations majors or went to a concert on Monday night.",
+                    "wrapped_question": "Question 1: Let [X] be the [set] of all students at a university. Let [A] be the [set] of students who are first-year students, [B] the [set] of students who are second-year students, [C] the [set] of students who are in a discrete mathematics course, [D] the [set] of students who are international relations majors, [E] the [set] of students who went to a concert on Monday night, and [F] the [set] of students who studied until 2 AM on Tuesday. Express in [set theoretic notation] the following sets of students:\n(a) All second-year students in the discrete mathematics course.\nSample Solution: [{x \u2208 X : x \u2208 B and x \u2208 C}].\n(b) All first-year students who studied until 2 AM on Tuesday.\n(c) All students who are international relations majors and went to the concert on Monday night.\n(d) All students who studied until 2 AM on Tuesday, are second-year students, and are not international relations majors.\n(e) All first- and second-year students who did not go to the concert on Monday night but are international relations majors.\n(f) All students who are first-year international relations majors or who studied until 2 AM on Tuesday.\n(g) All students who are first- or second-year students who went to a concert on Monday night.\n(h) All first-year students who are international relations majors or went to a concert on Monday night."
+                },
+                {
+                    "original_question": "Question 2: Write three descriptions of the elements of the set {2, 5, 8, 11, 14}.",
+                    "wrapped_question": "Question 2: Write three descriptions of the elements of the [set {2, 5, 8, 11, 14}]."
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all set definitions and set theoretic notations in square brackets. Also wrapped the sample solution which is a set builder notation."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Let [set] be the [set] of all students at a university. Let [set] be the [set] of students who are first-year students, [set] the [set] of students who are second-year students, [set] the [set] of students who are in a discrete mathematics course, [set] the [set] of students who are international relations majors, [set] the [set] of students who went to a concert on Monday night, and [set] the [set] of students who studied until 2 AM on Tuesday. Express in [set theoretic notation] the following sets of students:\n(enumeration) All second-year students in the discrete mathematics course.\nSample Solution: [set builder notation].\n(enumeration) All first-year students who studied until 2 AM on Tuesday.\n(enumeration) All students who are international relations majors and went to the concert on Monday night.\n(enumeration) All students who studied until 2 AM on Tuesday, are second-year students, and are not international relations majors.\n(enumeration) All first- and second-year students who did not go to the concert on Monday night but are international relations majors.\n(enumeration) All students who are first-year international relations majors or who studied until 2 AM on Tuesday.\n(enumeration) All students who are first- or second-year students who went to a concert on Monday night.\n(enumeration) All first-year students who are international relations majors or went to a concert on Monday night."
+                },
+                {
+                    "processed": "Question 2: Write three descriptions of the elements of the [set of numbers]."
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all set variables with [set]. Replaced the sample solution with [set builder notation]. Replaced the enumeration indicators with (enumeration). Replaced the set {2, 5, 8, 11, 14} with [set of numbers]."
+                }
+            ]
+        },
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: How many elements does each of the following sets have?\n(a) A= 0\n(b) B = {0}\n(c) C = {(0, 1}, {1, 2}}\n(d) D - {0, 1, 2, {0, 1}, (1,2}, {0, 1, 2}, A}\n(e) E = {0, {{1, {3, 5}, {4, 5,7}, 8}}}",
+                    "wrapped_question": "Question 1: How many elements does each of the following sets have?\n(a) [A= 0]\n(b) [B = {0}]\n(c) [C = {(0, 1}, {1, 2}}]\n(d) [D - {0, 1, 2, {0, 1}, (1,2}, {0, 1, 2}, A}]\n(e) [E = {0, {{1, {3, 5}, {4, 5,7}, 8}}}]"
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all set definitions and assignments in square brackets. This includes both simple assignments like A=0 and complex set definitions like E = {0, {{1, {3, 5}, {4, 5,7}, 8}}}."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: How many elements does each of the following sets have?\n(enumeration) [assignment of a number to a set]\n(enumeration) [set containing a single element]\n(enumeration) [set containing ordered pairs]\n(enumeration) [complex set with nested elements]\n(enumeration) [deeply nested set structure]"
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all set assignments and definitions with natural language descriptions inside square brackets. Descriptions were chosen based on the structure and complexity of the set (e.g., 'assignment of a number to a set' for A=0, 'deeply nested set structure' for the most complex case). Replaced enumeration indicators with (enumeration)."
+                },
+                {
+                    "notes": "The description for (d) was particularly challenging due to the mixed structure containing both simple elements and nested sets. Chose 'complex set with nested elements' to cover this case."
+                }
+            ]
+        }
+    ],
+    "Formal Logic": [
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Translate the following expressions into propositional logic. Use the following proposition letters:\n p = 'Jones told the truth.'\n q = 'The butler did it.'\n r = 'I'll eat my hat.'\n s = 'The moon is made of green cheese.'\n t = 'If water is heated to 100 \u00b0C, it turns to vapor.'\n(a) 'If Jones told the truth, then if the butler did it, I'll eat my hat.'\n(b) 'If the butler did it, then either Jones told the truth or the moon is made of green cheese, but not both.'\n(c) 'It is not the case that both Jones told the truth and the moon is made of green cheese.'\n(d) 'Jones did not tell the truth, and the moon is not made of green cheese, and I'll not eat my hat.'\n(e) 'If Jones told the truth implies I'll eat my hat, then if the butler did it, the moon is made of green cheese.'\n(f) 'Jones told the truth, and if water is heated to 100 \u00b0C, it turns to vapor.'",
+                    "wrapped_question": "Question 1: Translate the following expressions into propositional logic. Use the following proposition letters:\n [p = 'Jones told the truth.']\n [q = 'The butler did it.']\n [r = 'I'll eat my hat.']\n [s = 'The moon is made of green cheese.']\n [t = 'If water is heated to 100 \u00b0C, it turns to vapor.']\n(a) '[If Jones told the truth, then if the butler did it, I'll eat my hat.]'\n(b) '[If the butler did it, then either Jones told the truth or the moon is made of green cheese, but not both.]'\n(c) '[It is not the case that both Jones told the truth and the moon is made of green cheese.]'\n(d) '[Jones did not tell the truth, and the moon is not made of green cheese, and I'll not eat my hat.]'\n(e) '[If Jones told the truth implies I'll eat my hat, then if the butler did it, the moon is made of green cheese.]'\n(f) '[Jones told the truth, and if water is heated to 100 \u00b0C, it turns to vapor.]'"
+                },
+                {
+                    "original_question": "Question 2: Translate the following expressions of propositional logic into words using the following translation of the proposition letters:\n p = 'All the world is apple pie.'\n q = 'All the seas are ink.'\n r = 'All the trees are bread and cheese.'\n s = 'There is nothing to drink.'\n t = 'Socrates was a man.'\n u = 'All men are mortal.'\n v = 'Socrates was mortal.'\n(a) '(p\u2227q\u2227r)\u2192s'\n(b) '(t\u2227u)\u2192v'\n(c) '\u00acs\u2192\u00acv'\n(d) 'p\u2227(q\u2227r)\u2228(t\u2227u)\u2228(\u00acs\u2228\u00acv)'\n(e) '((p\u2228t)\u2227(q\u2228u))\u21d4(s\u2227v)'",
+                    "wrapped_question": "Question 2: Translate the following expressions of propositional logic into words using the following translation of the proposition letters:\n [p = 'All the world is apple pie.']\n [q = 'All the seas are ink.']\n [r = 'All the trees are bread and cheese.']\n [s = 'There is nothing to drink.']\n [t = 'Socrates was a man.']\n [u = 'All men are mortal.']\n [v = 'Socrates was mortal.']\n(a) '[(p\u2227q\u2227r)\u2192s]'\n(b) '[(t\u2227u)\u2192v]'\n(c) '[\u00acs\u2192\u00acv]'\n(d) '[p\u2227(q\u2227r)\u2228(t\u2227u)\u2228(\u00acs\u2228\u00acv)]'\n(e) '[((p\u2228t)\u2227(q\u2228u))\u21d4(s\u2227v)]'"
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all proposition letter assignments in square brackets. Also wrapped all logical expressions and natural language statements to be translated in square brackets."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Translate the following expressions into [propositional logic]. Use the following [proposition assignments]:\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n(enumeration) [conditional statement]\n(enumeration) [exclusive or statement]\n(enumeration) [negated conjunction]\n(enumeration) [conjunction of negations]\n(enumeration) [nested conditional statement]\n(enumeration) [conjunction with conditional]"
+                },
+                {
+                    "processed": "Question 2: Translate the following expressions of [propositional logic] into words using the following [proposition assignments]:\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n [proposition assignment]\n(enumeration) [conditional with conjunction]\n(enumeration) [simple conditional]\n(enumeration) [negated conditional]\n(enumeration) [complex disjunctive expression]\n(enumeration) [biconditional with disjunctions]"
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all proposition assignments with [proposition assignment]. Replaced all logical expressions with descriptive labels based on their structure (e.g., 'conditional statement', 'negated conjunction'). Replaced enumeration indicators with (enumeration)."
+                },
+                {
+                    "notes": "For Question 2, used more specific descriptions for the logical expressions based on their structure (e.g., 'conditional with conjunction' for (p\u2227q\u2227r)\u2192s)."
+                }
+            ]
+        },
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Let p denote the proposition 'Jill plays basketball' and q denote the proposition 'Jim plays soccer.' Write out-in the clearest way you can-what the following propositions mean:\n(a) '\u00acp' means 'Jill does not play basketball.'\n(b) 'p\u2227q' means 'Jill plays basketball and Jim plays soccer.'\n(c) 'p\u2228q' means 'Jill plays basketball or Jim plays soccer (or both).' \n(d) '\u00acp\u2227q' means 'Jill does not play basketball and Jim plays soccer.'\n(e) 'p\u2192q' means 'If Jill plays basketball, then Jim plays soccer.'\n(f) 'p\u21d4q' means 'Jill plays basketball if and only if Jim plays soccer.'\n(g) '\u00acq\u2192p' means 'If Jim does not play soccer, then Jill plays basketball.'",
+                    "wrapped_question": "Question 1: Let [p denote the proposition 'Jill plays basketball'] and [q denote the proposition 'Jim plays soccer.'] Write out-in the clearest way you can-what the following propositions mean:\n(a) '[\u00acp]' means '[Jill does not play basketball.]'\n(b) '[p\u2227q]' means '[Jill plays basketball and Jim plays soccer.]'\n(c) '[p\u2228q]' means '[Jill plays basketball or Jim plays soccer (or both).]' \n(d) '[\u00acp\u2227q]' means '[Jill does not play basketball and Jim plays soccer.]'\n(e) '[p\u2192q]' means '[If Jill plays basketball, then Jim plays soccer.]'\n(f) '[p\u21d4q]' means '[Jill plays basketball if and only if Jim plays soccer.]'\n(g) '[\u00acq\u2192p]' means '[If Jim does not play soccer, then Jill plays basketball.]'"
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all proposition definitions and logical expressions in square brackets. This includes both the formal logical expressions (like \u00acp) and their natural language translations."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Let [proposition definition] and [proposition definition]. Write out-in the clearest way you can-what the following propositions mean:\n(enumeration) '[negation]' means '[negation meaning]'\n(enumeration) '[conjunction]' means '[conjunction meaning]'\n(enumeration) '[disjunction]' means '[disjunction meaning]'\n(enumeration) '[negated conjunction]' means '[negated conjunction meaning]'\n(enumeration) '[conditional]' means '[conditional meaning]'\n(enumeration) '[biconditional]' means '[biconditional meaning]'\n(enumeration) '[negated conditional]' means '[negated conditional meaning]'"
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all proposition definitions with [proposition definition]. Replaced all logical expressions with their operation types in brackets (e.g., [negation], [conjunction]). Replaced all natural language translations with [operation meaning] patterns. Replaced enumeration indicators with (enumeration)."
+                },
+                {
+                    "notes": "Maintained the structure of the question while abstracting away the specific content to focus on the logical patterns."
+                }
+            ]
+        }
+    ],
+    "Relations": [
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Let M = {1, 2, ..., 10}. Define a relation R on elements x, y \u2208 M such that (x, y) \u2208 R if and only if there is a positive integer k such that x = ky. Find the elements of R.",
+                    "wrapped_question": "Question 1: Let [M = {1, 2, ..., 10}]. Define a relation [R] on elements [x, y \u2208 M] such that [(x, y) \u2208 R] if and only if there is a positive integer [k] such that [x = ky]. Find the elements of [R]."
+                },
+                {
+                    "original_question": "Question 2: Find the elements in each of the following relations defined on R:\n(a) (x, y) \u2208 R if and only if x + 1 < y\n(b) (x, y) \u2208 R if and only if y < 0 or 2x < 3\n(c) (x, y, z) \u2208 R if and only if x^2 + y = z",
+                    "wrapped_question": "Question 2: Find the elements in each of the following relations defined on [R]:\n(a) [(x, y) \u2208 R] if and only if [x + 1 < y]\n(b) [(x, y) \u2208 R] if and only if [y < 0 or 2x < 3]\n(c) [(x, y, z) \u2208 R] if and only if [x^2 + y = z]"
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all mathematical expressions, set definitions, relations, and conditions in square brackets. This includes set definitions (M = {1, 2, ..., 10}), relation definitions (R), variable declarations (x, y \u2208 M), and logical conditions (x = ky, x + 1 < y, etc.)."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Let [set definition]. Define a [relation] on elements [variables in set] such that [relation membership condition] if and only if there is a [positive integer] such that [divisibility condition]. Find the elements of [relation]."
+                },
+                {
+                    "processed": "Question 2: Find the elements in each of the following relations defined on [real numbers]:\n(enumeration) [relation membership condition] if and only if [inequality condition]\n(enumeration) [relation membership condition] if and only if [disjunctive condition]\n(enumeration) [relation membership condition] if and only if [polynomial equation]"
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all mathematical expressions with descriptive labels based on their context. For Question 1, used terms like 'set definition', 'relation', 'divisibility condition'. For Question 2, described conditions as 'inequality condition', 'disjunctive condition', 'polynomial equation'."
+                },
+                {
+                    "notes": "Replaced enumeration indicators with (enumeration) in Question 2. Maintained the structure of both questions while abstracting the specific mathematical content."
+                },
+                {
+                    "notes": "In Question 2, interpreted R as 'real numbers' based on context (standard mathematical notation where R often represents real numbers)."
+                }
+            ]
+        },
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Let U = (0, 1).\n(a) Let SubsetOf = {(X, Y) : X, Y \u2286 U and X \u2286 Y}. List all ordered pairs in SubsetOf.\n(b) Let StrictSubsetOf= {(X, Y) : X, Y \u2286 U and X \u2282 Y}. List all its ordered pairs in StrictSubsetOf.\n(c) {(X, Y, Z) : X, Y, Z \u2286 U and X \u2229 Y = Z} is a ternary relation. List all ordered triples in this relation.",
+                    "wrapped_question": "Question 1: Let [U = (0, 1)].\n(a) Let [SubsetOf = {(X, Y) : X, Y \u2286 U and X \u2286 Y}]. List all ordered pairs in [SubsetOf].\n(b) Let [StrictSubsetOf= {(X, Y) : X, Y \u2286 U and X \u2282 Y}]. List all its ordered pairs in [StrictSubsetOf].\n(c) [{(X, Y, Z) : X, Y, Z \u2286 U and X \u2229 Y = Z}] is a ternary relation. List all ordered triples in this relation."
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all set definitions, relation definitions, and mathematical expressions in square brackets. This includes the universal set definition, subset relations, and the ternary relation definition."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Let [universal set definition].\n(enumeration) Let [subset relation definition]. List all ordered pairs in [relation].\n(enumeration) Let [strict subset relation definition]. List all its ordered pairs in [relation].\n(enumeration) [ternary relation definition] is a ternary relation. List all ordered triples in this relation."
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all mathematical expressions with descriptive labels. The universal set U became [universal set definition], subset relations became [subset relation definition] and [strict subset relation definition], and the ternary relation became [ternary relation definition]."
+                },
+                {
+                    "notes": "Maintained the structure of the question while abstracting the specific mathematical content. Replaced enumeration indicators with (enumeration)."
+                },
+                {
+                    "notes": "For part (c), kept 'ternary relation' in the description as it's a key characteristic of that relation."
+                }
+            ]
+        }
+    ],
+    "Functions": [
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: Which of the following are functions? If not, why not?\n(a) X is the set of students in the discrete mathematics class. For x \u2208 X, define g(x) to be the youngest cousin of x.\n(b) X is the set of senators serving in 1998. For x \u2208 X, define g(x) to be the number of terms a senator has held.\n(c) For x \u2208 R, define g(x) = |x|/|x|^1.",
+                    "wrapped_question": "Question 1: Which of the following are functions? If not, why not?\n(a) [X] is the [set] of students in the discrete mathematics class. For [x \u2208 X], define [g(x)] to be the youngest cousin of [x].\n(b) [X] is the [set] of senators serving in 1998. For [x \u2208 X], define [g(x)] to be the number of terms a senator has held.\n(c) For [x \u2208 R], define [g(x) = |x|/|x|^1]."
+                },
+                {
+                    "original_question": "Question 2: Let X = {0, 1, 2, 3, 4, 5, 6, 7} and Y = {8, 10, 12, ..., 20, 22}. Define F: X \u2192 Y as F(x) = 2x + 8. List the ordered pairs of the relation that define this function.",
+                    "wrapped_question": "Question 2: Let [X = {0, 1, 2, 3, 4, 5, 6, 7}] and [Y = {8, 10, 12, ..., 20, 22}]. Define [F: X \u2192 Y] as [F(x) = 2x + 8]. List the ordered pairs of the relation that define this function."
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all set definitions, function definitions, and mathematical expressions in square brackets. This includes set variables (X, Y), function definitions (g(x), F(x)), and mathematical expressions (|x|/|x|^1, 2x + 8)."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: Which of the following are functions? If not, why not?\n(enumeration) [set] is the [set] of students in the discrete mathematics class. For [element in set], define [function definition] to be the youngest cousin of [element].\n(enumeration) [set] is the [set] of senators serving in year. For [element in set], define [function definition] to be the number of terms a senator has held.\n(enumeration) For [real number], define [absolute value function expression]."
+                },
+                {
+                    "processed": "Question 2: Let [finite set definition] and [arithmetic sequence set definition]. Define [function mapping definition] as [linear function expression]. List the ordered pairs of the relation that define this function."
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all mathematical expressions with descriptive labels based on their context. For Question 1, used terms like 'set', 'element in set', 'function definition'. For Question 2, described sets as 'finite set definition' and 'arithmetic sequence set definition', and the function as 'linear function expression'."
+                },
+                {
+                    "notes": "Replaced enumeration indicators with (enumeration) in Question 1. Maintained the structure of both questions while abstracting the specific mathematical content."
+                },
+                {
+                    "notes": "In Question 1 part (a), kept the description 'youngest cousin' as it's relevant to determining if it's a function. In part (c), described the expression as 'absolute value function expression' based on its form."
+                }
+            ]
+        },
+        {
+            "WRAPPING_STEP": [
+                {
+                    "original_question": "Question 1: What are the domain and range of the addition function on the real numbers? On multiplication? Subtraction? Division?",
+                    "wrapped_question": "Question 1: What are the domain and range of the [addition function] on the [real numbers]? On [multiplication]? [Subtraction]? [Division]?"
+                }
+            ],
+            "WRAPPING_NOTES": [
+                {
+                    "notes": "Wrapped all mathematical operations and number sets in square brackets. This includes the addition function, real numbers, and the operations of multiplication, subtraction, and division."
+                }
+            ],
+            "PREPROCESSED_TEXT": [
+                {
+                    "processed": "Question 1: What are the domain and range of the [binary operation] on the [number set]? On [binary operation]? [binary operation]? [binary operation]?"
+                }
+            ],
+            "PROCESSING_NOTES": [
+                {
+                    "notes": "Replaced all mathematical operations with the generic term [binary operation] since addition, multiplication, subtraction and division are all binary operations on real numbers. Replaced 'real numbers' with [number set]."
+                },
+                {
+                    "notes": "Maintained the structure of the question while abstracting the specific operations to their general mathematical category."
+                },
+                {
+                    "notes": "All four operations were treated uniformly as binary operations since they share the same fundamental nature in this context (operations on real numbers)."
+                }
+            ]
+        }
+    ]
+}
