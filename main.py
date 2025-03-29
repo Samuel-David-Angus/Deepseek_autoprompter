@@ -3,25 +3,29 @@ from autoprompter import start_auto_prompter
 import json
 import re
 
-def add_question_to_context_prompt(question):
-    context_prompt = f"""You are a text processor for discrete math questions. You are doing preprocessing to homogenize the questions enough so that the mathematical parts of the question don't interfere with clustering, as they can be represented in multiple ways even if they are the same thing.
+def add_questions_to_context_prompt(questions):
+    enumerated_questions = ""
+    for i, question in enumerate(questions, start=1):
+        enumerated_questions += f"Question {i}: {question}\n"
 
-Label this part WRAPPING_STEP. Given a discrete math question, identify all mathematical equations, expressions, operations, assignments, etc., and wrap them around square brackets like [SubsetOf = {{(X, Y) : X, Y ⊆ U and X ⊆ Y}}] or [¬p ∧ (¬q ∨ r)]. Do not modify the question other than the wrapping of square brackets, and do not replace the operation/equation/expression inside. Also, do not replace or modify the variables in the question, as well as the enumerations. Write down the question.
+    context_prompt = f"""You are a text processor for discrete math questions. You are doing preprocessing to homogenize the questions enough so that the mathematical parts of the question don't interfere with clustering, as they can be represented in multiple ways even if they are the same thing. Respond in json
 
-If you have any notes or explanations regarding your steps add it under the label NOTES.
+Use WRAPPING_STEP as a key here and as a value contains an array of objects containing original_question and wrapped_question as keys with their appropriate values. Given a discrete math question, identify all mathematical equations, expressions, operations, assignments, etc., and wrap them around square brackets like [SubsetOf = {{(X, Y) : X, Y ⊆ U and X ⊆ Y}}] or [¬p ∧ (¬q ∨ r)]. Do not modify the question other than the wrapping of square brackets, and do not replace the operation/equation/expression inside. Also, do not replace or modify the variables in the question, as well as the enumerations. Write down the question.
 
-Label this part PREPROCESSED_TEXT. Take all that you have wrapped in square brackets and replace the content inside with a descriptive natural language label that describes the mathematical operation, equation, expression, or assignment inside based on the context of the question. Keep the square brackets. Also, consider variables and labels mentioned in the modified question that are not surrounded with square brackets, for example, things like set A, relation R, proposition p, set 1, etc. You are to remove the letter or number. Also, when the question just mentions the variable without the preceding data type, replace that with just the datatype. Also, you may replace any indication of enumeration of sub-questions with (enumeration).
+If you have any notes or explanations regarding your steps add it under the key WRAPPING_NOTES as an object in an array with notes as key. 
+
+Put this under the key PREPROCESSED_TEXT as an object in an array with processed as key. Take all that you have wrapped in square brackets and replace the content inside with a descriptive natural language label that describes the mathematical operation, equation, expression, or assignment inside based on the context of the question. Keep the square brackets. Also, consider variables and labels mentioned in the modified question that are not surrounded with square brackets, for example, things like set A, relation R, proposition p, set 1, etc. You are to remove the letter or number. Also, when the question just mentions the variable without the preceding data type, replace that with just the datatype. Also, you may replace any indication of enumeration of sub-questions with (enumeration).
+
+If you have any notes or explanations regarding your steps add it under the key PROCESSING_NOTES as an object in an array with notes as key.
 
 Here's the question/s:
-{question}
+{enumerated_questions}
 """
     return context_prompt
 
-def extract_processed_text(text):
-    match = re.search(r'(?<=PREPROCESSED_TEXT[\n])[\s\S]*|(?<=PREPROCESSED_TEXT:[\n])[\s\S]*', text)
-    result = match.group().split("NOTES")[0]
-    return result.strip()
-
+def remove_enumeration(json_response):
+    all_processed = [re.sub(r'^\d+\.\s*', '', item["processed"]) for item in json_response["PREPROCESSED_TEXT"]]
+    return all_processed
     
 if __name__ == "__main__":
     
@@ -45,15 +49,29 @@ if __name__ == "__main__":
 
         for category in data.keys():
             #TODO: change this for the entirety of the list later
-            category_and_prompts[category] = [add_question_to_context_prompt(q) for q in list(data[category][:1])]
+            data_slice = list(data[category][:3])
+            prompts = []
+            for i in range(0, len(data_slice), 2):
+                pair = data_slice[i:i+2]  # Get up to 2 items
+                prompts.append(add_questions_to_context_prompt(pair))
+            category_and_prompts[category] = prompts
+
 
         category_and_answers = start_auto_prompter(category_and_prompts=category_and_prompts.items())
 
         for category, unprocessed in category_and_answers.items():
-            results[category] = [extract_processed_text(u) for u in unprocessed]
+            all_processed = []
+            for raw_json in unprocessed:
+                processed = remove_enumeration(raw_json)
+                for text in processed:
+                    all_processed.append(text)
+            results[category] = all_processed
 
         with open("processed.json", "w") as file:
             json.dump(results, file, indent=4)
+
+        with open("raw.json", "w") as file:
+            json.dump(category_and_answers, file, indent=4)
 
         print("Finished")
         

@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
+import json
 
 def start_auto_prompter(category_and_prompts):
     chrome_options = webdriver.ChromeOptions()
@@ -32,6 +33,8 @@ def start_auto_prompter(category_and_prompts):
             answerCount += 1            
             while (driver.execute_script( "return arguments[0].parentNode.children.length;", answerDivs[-1]) != 3):
                 time.sleep(5)
-            result[category].append(answerDivs[-1].text)
+            json_text = answerDivs[-1].find_element(By.TAG_NAME, "pre").text
+            converted_text = json.loads(json_text)
+            result[category].append(converted_text)
 
     return result
