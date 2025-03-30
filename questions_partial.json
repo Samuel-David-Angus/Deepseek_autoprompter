@@ -1,0 +1,19 @@
+{
+    "Functions": [
+        "There are five suburbs in the city of Melbourn. How many all-stars must be picked from each suburb to guarantee that at least five players come from the same suburb?",
+        "A bowl contains raspberry and orange lollipops, with 15 of each. How many must be drawn one at a time to ensure that you have at least three orange lollipops?",
+        "A man has 10 black socks and 11 blue socks scrambled in a drawer. Still half-asleep, the man reaches in the drawer to get a pair of matching socks. How many socks should he select, one at a time, before he will be sure that he has a matching pair? How many selections are needed to be sure he has a blue pair?",
+        "Construct a sequence of 16 integers that has no increasing or decreasing subsequence of five elements.",
+        "Show that if X ⊆ Y, |X| ≤ |Y|.",
+        "Prove that the sets X = {2n + 1: n ∈ Z} , Y = {10j : j ∈ Z}, and Z = {3n : n ∈ Z} have the same cardinality.",
+        "In the first quadrant of the x-y plane, draw a path that passes exactly once through each point with both coordinates being integers. Each stopping place on the path should only be one unit right, one unit up, one unit left, or one unit down from the previous stopping place. Start the path at (0, 0). Use the path to construct a bijection from N to N × N.",
+        "Show that the following sets are countably infinite:\n(a) {q E Q: q > 10}\n(b) {q E Q : q^2 < q}\n(c) {q E Q : q = i/j where i is odd and j is even}",
+        "(a) Prove that if X and Y are countable sets, so are X U Y, X ∩ Y, X - Y, and X x Y, (Caution: Countable means either finite or countably infinite, so there may be separate cases to consider.)\n(b) If X and Y are countably infinite, which of the following sets must be countably infinite: X U Y, X ∩ Y, X - Y, and X x Y?",
+        "Prove that every subset of N is countable.",
+        "Prove that the function F : (0, 1) -> R defined as F(x) = (1/2 - x)/(x (1 - x)) is a bijection.",
+        "Find 1-1 and onto functions from R to the following sets:\n(a) (0, 1)\n(b) [0, 1]\n(c) (0, 1) - {1/2}\n(d) R - Q, the irrationals",
+        "Show for the natural numbers N that |P(N)I > INI",
+        "(a) Show that the set of all finite sequences of elements of the one-element set {0} is countably infinite.\n(b) Show that the set of all finite sequences of elements of the two-element set {0, 1} is countably infinite.\n(c) Challenge: Show that the set of all finite sequences of natural numbers is countably infinite. (Hint: Use a diagonal argument.)",
+        "(a) Show that the set of all infinite sequences of elements of the one element set {0} is finite.\n(b) Show that the set of all infinite sequences of elements of the two element set {0, 1} has the same cardinality as P(N).\n(c) Challenge: Show that the set of all infinite sequences of elements of N has the same cardinality as P(N)."
+    ]
+}

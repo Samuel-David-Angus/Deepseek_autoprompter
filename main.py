@@ -30,7 +30,7 @@ def remove_enumeration(json_response):
     
 if __name__ == "__main__":
     
-    with open("questions.json", "r") as file:
+    with open("questions_partial.json", "r") as file:
         data = json.load(file)
 
     results = {}
@@ -49,8 +49,7 @@ if __name__ == "__main__":
         category_and_prompts = {}
 
         for category in data.keys():
-            #TODO: change this for the entirety of the list later
-            data_slice = list(data[category][:3])
+            data_slice = data[category]
             prompts = []
             for i in range(0, len(data_slice), 2):
                 pair = data_slice[i:i+2]  # Get up to 2 items
