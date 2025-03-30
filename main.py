@@ -18,7 +18,7 @@ Put this under the key PREPROCESSED_TEXT as an object in an array with processed
 
 If you have any notes or explanations regarding your steps add it under the key PROCESSING_NOTES as an object in an array with notes as key.
 
-Here's the question/s (each question is denoted as Question: question number):
+Here's the question/s (each question is denoted as Question: question number. DO NOT split enumerated subquestions within a question):
 {enumerated_questions}
 """
     return context_prompt

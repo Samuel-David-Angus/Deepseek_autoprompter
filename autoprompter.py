@@ -2,8 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 import time
 import json
+import pyperclip
+import platform
+
 
 def start_auto_prompter(category_and_prompts):
     chrome_options = webdriver.ChromeOptions()
@@ -18,13 +22,16 @@ def start_auto_prompter(category_and_prompts):
     answerCount = 0;
     answerDivs = []
     result = {}
+
+    paste_key = Keys.COMMAND if platform.system() == "Darwin" else Keys.CONTROL
+
     for category, prompts in category_and_prompts:
         result[category] = []
         for question in prompts:
             textarea = driver.find_element(By.TAG_NAME, "textarea")  # Locate input field
-            for line in question.split("\n"):
-                textarea.send_keys(line)
-                textarea.send_keys(Keys.SHIFT + Keys.ENTER)
+            pyperclip.copy(question)
+            textarea.click()
+            ActionChains(driver).key_down(paste_key).send_keys("v").key_up(paste_key).perform()
             textarea.send_keys(Keys.RETURN)
             answerDivs = driver.find_elements("css selector", "div.ds-markdown.ds-markdown--block")
             while (answerCount == len(answerDivs)):
