@@ -1,7 +1,6 @@
 from chrome_runner import run_chrome
 from autoprompter import start_auto_prompter
 import json
-import re
 
 def add_questions_to_context_prompt(questions):
     enumerated_questions = ""
@@ -23,11 +22,6 @@ Here's the question/s (each question is denoted as Question: question number. DO
 """
     return context_prompt
 
-def remove_enumeration(json_response):
-    pattern = r'^Question\s+\d+:\s*'
-    all_processed = [re.sub(pattern, '', item["processed"]) for item in json_response["PREPROCESSED_TEXT"]]
-    return all_processed
-    
 if __name__ == "__main__":
     
     with open("questions_partial.json", "r") as file:
@@ -59,21 +53,13 @@ if __name__ == "__main__":
 
         category_and_answers = start_auto_prompter(category_and_prompts=category_and_prompts.items())
 
-        for category, unprocessed in category_and_answers.items():
-            all_processed = []
-            for raw_json in unprocessed:
-                processed = remove_enumeration(raw_json)
-                for text in processed:
-                    all_processed.append(text)
-            results[category] = all_processed
-
-        with open("processed.json", "w") as file:
-            json.dump(results, file, indent=4)
-
         with open("raw_partial.json", "w") as file:
             json.dump(category_and_answers, file, indent=4)
 
-        print("Finished")
+        print("Finished. pls append the results in raw_partial.json to raw.json then run finalizer.py to see the final output in processed.json")
         
     except Exception as e:
+        with open("raw_partial.json", "w") as file:
+            json.dump(category_and_answers, file, indent=4)
         print(f"Error: {e}")
+        print("dumped incomplete results into raw_partial.json pls transfer these manually into raw.json then remove the questions in questions_partial.json that have already been answered prior to the error interrupt before rerunning the program again.")
