@@ -72,10 +72,17 @@ deactivate
    ```bash
    pip install -r requirements.txt
 
-### 3. Run the project
+### 3. Minor setup
+There is a JSON file called questions_partial.json. Add all the questions there as it will be the one the program reads. You will need to modify this file between stops caused by human intervention or errors by manually removing the questions that have already been answered when continuing the prompting process.
+
+### 4. Run the project
 1. Type python main.py in the terminal or python3 main.py in mac and linux. If all goes well this will open a new browser window. DO NOT open your own browser window.
 2. After a new browser window opens, you will see a message to navigate to deepseek and manually log in and start a blank new chat. Do that and type in "y" in the terminal after you have done so to initiate the auto prompting.
 3. Wait for the program to end
+4. Run finalizer.py to get the final result in processed.json
 
 ### In case the prgram cannot find the browser
 If the program cannot find the path to the browser executable it won't be able to run. If this happens, you can manually add the path into the chrome_path variable in chrome_runner.py
+
+### In case program cannot finish all the prompts in the JSON
+If the program cannot finidh all the questions either due to chat limit exceeded or some error on deepseek's side then run extractor.py on the interrupted chat. This will dump all the answers inside the raw_partial.json file. Copy the values in the raw_partial and append to the raw.json then remove the questions that have already been answered in question_partial.json before restarting main.py

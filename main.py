@@ -70,7 +70,7 @@ if __name__ == "__main__":
         with open("processed.json", "w") as file:
             json.dump(results, file, indent=4)
 
-        with open("raw.json", "w") as file:
+        with open("raw_partial.json", "w") as file:
             json.dump(category_and_answers, file, indent=4)
 
         print("Finished")
