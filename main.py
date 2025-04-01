@@ -7,18 +7,25 @@ def add_questions_to_context_prompt(questions):
     for i, question in enumerate(questions, start=1):
         enumerated_questions += f"Question {i}: {question}\n"
 
-    context_prompt = f"""You are a text processor for discrete math questions. You are doing preprocessing to homogenize the questions enough so that the mathematical parts of the question don't interfere with clustering, as they can be represented in multiple ways even if they are the same thing. Respond in json
+    context_prompt = f"""
+    Your goal is to author the learning outcomes or knowledge components on discrete math questions that is needed to answer them.
+A well-constructed learning objective/outcome contains three parts:
+1. BEHAVIOR
+The behavior is the real work to be accomplished by the student specified by an
+action verb that connotes observable and measurable behaviors.
+2. CONDITIONS
+This is a statement that describes the exact conditions under which the defined
+behavior is to be performed.
+3. DEGREE
+This is a statement that specifies how well the student must perform the behavior.
 
-Use WRAPPING_STEP as a key here and as a value contains an array of objects containing original_question and wrapped_question as keys with their appropriate values. Given a discrete math question, identify all mathematical equations, expressions, operations, assignments, etc., and wrap them around square brackets like [SubsetOf = {{(X, Y) : X, Y ⊆ U and X ⊆ Y}}] or [¬p ∧ (¬q ∨ r)]. Do not modify the question other than the wrapping of square brackets, and do not replace the operation/equation/expression inside. Also, do not replace or modify the variables in the question, as well as the enumerations. Write down the question.
+Here is the discrete math question/s (each question is denoted as Question: question number. DO NOT split enumerated subquestions within a question):
 
-If you have any notes or explanations regarding your steps add it under the key WRAPPING_NOTES as an object in an array with notes as key. 
-
-Put this under the key PREPROCESSED_TEXT as an object in an array with processed as key. Take all that you have wrapped in square brackets and replace the content inside with a descriptive natural language label that describes the mathematical operation, equation, expression, or assignment inside based on the context of the question. Keep the square brackets. Also, consider variables and labels mentioned in the modified question that are not surrounded with square brackets, for example, things like set A, relation R, proposition p, set 1, etc. You are to remove the letter or number. Also, when the question just mentions the variable without the preceding data type, replace that with just the datatype. Also, you may replace any indication of enumeration of sub-questions with (enumeration).
-
-If you have any notes or explanations regarding your steps add it under the key PROCESSING_NOTES as an object in an array with notes as key.
-
-Here's the question/s (each question is denoted as Question: question number. DO NOT split enumerated subquestions within a question):
 {enumerated_questions}
+
+If the question/s was presented in a textbook for a discrete mathematics course, what domain-specific low-level detailed topics would the page cover? Note that the question is for a college audience with existing prior knowledge in discrete mathematics. 
+Based on these topics, reword them to begin with action words from Bloom’s Revised Taxonomy, while keeping them domain-specific, low-level, and detailed as well as containing the 3 parts explained above. If the learning outcome already exists in the list above then take it from there or from another question but if not then generate it. Make sure the learning outcome contains only natural language and no math symbols, expressions, equations etc.
+Answer in json where the question number itself is the key and as a value, an object with the topics as key containing a string array of the textbook topics the question will be associated with and another key called LO for the learning outcomes that is also a string array
 """
     return context_prompt
 

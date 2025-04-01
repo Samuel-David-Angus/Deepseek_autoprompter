@@ -1,9 +1,7 @@
 import json
-import re
 
-def remove_enumeration(json_response):
-    pattern = r'^Question\s+\d+:\s*'
-    all_processed = [re.sub(pattern, '', item["processed"]) for item in json_response["PREPROCESSED_TEXT"]]
+def extract_LOs(json_response):
+    all_processed = [value["LO"] for key, value in json_response.items()]
     return all_processed
 
 
@@ -15,7 +13,7 @@ def process_raw():
     for category, unprocessed in data.items():
         all_processed = []
         for raw_json in unprocessed:
-            processed = remove_enumeration(raw_json)
+            processed = extract_LOs(raw_json)
             for text in processed:
                 all_processed.append(text)
         results[category] = all_processed
