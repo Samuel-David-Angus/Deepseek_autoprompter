@@ -1,1623 +1,337 @@
 {
-    "results": [
+    "Functions": [
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Find the reflexive, symmetric, and transitive closures of the following relations:\n(a) = on N\n(b) < on N\n(c) < on N\n(d) R on N where R(x, y) if and only if y = x + 1\n(e) R on R where R(x, y) if and only if y = x + 1\n(f) R on R where R(x, y) if and only if |x - y| < 0.0005,",
-                    "wrapped_question": "Question 1: Find the reflexive, symmetric, and transitive closures of the following relations:\n(a) [=] on [N]\n(b) [<] on [N]\n(c) [<] on [N]\n(d) [R] on [N] where [R(x, y)] if and only if [y = x + 1]\n(e) [R] on [R] where [R(x, y)] if and only if [y = x + 1]\n(f) [R] on [R] where [R(x, y)] if and only if [|x - y| < 0.0005],"
-                },
-                {
-                    "original_question": "Question 2: Show that the transitive closure of a relation R on a set X is the intersection of all transitive binary relations R on X where R \u2286 R",
-                    "wrapped_question": "Question 2: Show that the transitive closure of a relation [R] on a set [X] is the intersection of all transitive binary relations [R] on [X] where [R \u2286 R]"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical expressions, relations, and operations in square brackets. Variables like N, R, X, etc., are kept as is since they are part of the mathematical context and not standalone variables to be replaced."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Find the reflexive, symmetric, and transitive closures of the following relations:\n(a) [equality relation] on [set of natural numbers]\n(b) [less than relation] on [set of natural numbers]\n(c) [less than relation] on [set of natural numbers]\n(d) [relation] on [set of natural numbers] where [relation between x and y] if and only if [y equals x plus one]\n(e) [relation] on [set of real numbers] where [relation between x and y] if and only if [y equals x plus one]\n(f) [relation] on [set of real numbers] where [relation between x and y] if and only if [absolute difference between x and y is less than 0.0005],"
-                },
-                {
-                    "processed": "Question 2: Show that the transitive closure of a [relation] on a [set] is the intersection of all transitive binary [relations] on [set] where [relation is a subset of relation]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical expressions with descriptive natural language labels. Variables like N, R, X, etc., were replaced with their general data types (e.g., 'set of natural numbers', 'relation', 'set'). Enumerations were kept as is."
-                },
-                {
-                    "notes": "In Question 2, 'R \u2286 R' was interpreted as 'relation is a subset of relation' to maintain the logical meaning while generalizing the variables."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Proof Techniques",
+                    "Counting Principles"
+                ],
+                "initialLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of students sharing the same grade in a class of 35, given a grading scale of A-B-C-D-F."
+                ],
+                "finalLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of items sharing a property in a finite set, given a fixed number of categories."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Counting Principles",
+                    "Applications in Telecommunications"
+                ],
+                "initialLO": [
+                    "Calculate the number of area codes required to distinguish a given number of phone numbers, using the pigeonhole principle and given constraints on area code capacity."
+                ],
+                "finalLO": [
+                    "Calculate the number of containers required to partition a large set of items, given constraints on container capacity, using the pigeonhole principle."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Is there a reasonable notion of antisymmetric closure? Why, or why not?",
-                    "wrapped_question": "Question 1: Is there a reasonable notion of [antisymmetric closure]? Why, or why not?"
-                },
-                {
-                    "original_question": "Question 2: Identify the equivalence classes of M for the following relations:\n(a) (mod 4)\n(b) (mod 6)",
-                    "wrapped_question": "Question 2: Identify the equivalence classes of [M] for the following relations:\n(a) [(mod 4)]\n(b) [(mod 6)]"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical terms and expressions in square brackets. Variables like 'M' are kept as is since they are part of the mathematical context."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Is there a reasonable notion of [antisymmetric closure]? Why, or why not?"
-                },
-                {
-                    "processed": "Question 2: Identify the equivalence classes of [set] for the following relations:\n(enumeration) [congruence modulo four]\n(enumeration) [congruence modulo six]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical terms with descriptive natural language labels. 'M' was replaced with 'set' as a general data type. Enumerations were marked as (enumeration)."
-                },
-                {
-                    "notes": "'(mod 4)' and '(mod 6)' were interpreted as 'congruence modulo four' and 'congruence modulo six' respectively."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Counting Principles",
+                    "Applications in Scheduling"
+                ],
+                "initialLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of students that must share a classroom, given a fixed number of courses and student enrollment constraints."
+                ],
+                "finalLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of items that must share a resource, given constraints on resource availability and item distribution."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Generalized Pigeonhole Principle",
+                    "Resource Allocation",
+                    "Scheduling Problems"
+                ],
+                "initialLO": [
+                    "Use the generalized pigeonhole principle to calculate the minimum number of rooms required to schedule a given number of classes within a fixed number of time periods."
+                ],
+                "finalLO": [
+                    "Use the generalized pigeonhole principle to calculate the minimum number of containers required to distribute a set of items, given constraints on container availability and item allocation."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Determine which of the following five relations defined on Z are equivalence relations:\n(a) {(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}\n(b) {(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}\n(c) {(a,b) \u2208 Z x Z: |a - b| < 10}\n(d) {(a,b) \u2208 Z x Z: (a < 0 and b > 0) or (a < 0 and b < 0)}\n(e) {(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}",
-                    "wrapped_question": "Question 1: Determine which of the following five relations defined on [Z] are equivalence relations:\n(a) [{(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}]\n(b) [{(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}]\n(c) [{(a,b) \u2208 Z x Z: |a - b| < 10}]\n(d) [{(a,b) \u2208 Z x Z: (a < 0 and b > 0) or (a < 0 and b < 0)}]\n(e) [{(a,b) \u2208 Z x Z: (a > 0 and b > 0) or (a < 0 and b < 0)}]"
-                },
-                {
-                    "original_question": "Question 2: Let POPULATION be the set of all people. Let R be the binary relation on POPULATION such that (x, y) \u2208 R if x is an older brother of y or x = y. To determine if R is reflexive, we check if every element x in POPULATION relates to itself. Since for every person x, the condition x = y holds true (i.e., (x, x) \u2208 R), R is reflexive. Therefore, R is reflexive.",
-                    "wrapped_question": "Question 2: Let [POPULATION] be the set of all people. Let [R] be the binary relation on [POPULATION] such that [(x, y) \u2208 R] if [x is an older brother of y] or [x = y]. To determine if [R] is reflexive, we check if every element [x] in [POPULATION] relates to itself. Since for every person [x], the condition [x = y] holds true (i.e., [(x, x) \u2208 R]), [R] is reflexive. Therefore, [R] is reflexive."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical expressions, relations, and operations in square brackets. Variables like Z, POPULATION, R, x, y, etc., are kept as is since they are part of the mathematical context."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Determine which of the following five relations defined on [set of integers] are equivalence relations:\n(enumeration) [relation defined by pairs where both elements are positive or both are negative]\n(enumeration) [relation defined by pairs where both elements are positive or both are negative]\n(enumeration) [relation defined by pairs where the absolute difference is less than ten]\n(enumeration) [relation defined by pairs where first element is negative and second is positive or both are negative]\n(enumeration) [relation defined by pairs where both elements are positive or both are negative]"
-                },
-                {
-                    "processed": "Question 2: Let [set] be the set of all people. Let [relation] be the binary relation on [set] such that [pair belongs to relation] if [first element is an older brother of second element] or [first element equals second element]. To determine if [relation] is reflexive, we check if every element [element] in [set] relates to itself. Since for every person [element], the condition [first element equals second element] holds true (i.e., [pair belongs to relation]), [relation] is reflexive. Therefore, [relation] is reflexive."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical expressions with descriptive natural language labels. Variables like Z, POPULATION, R, x, y, etc., were replaced with their general data types (e.g., 'set of integers', 'set', 'relation', 'element'). Enumerations were marked as (enumeration)."
-                },
-                {
-                    "notes": "In Question 2, 'x = y' was interpreted as 'first element equals second element' to maintain the logical meaning while generalizing the variables."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Counting Principles",
+                    "Calendar-based Problems",
+                    "Leap Year Calculations",
+                    "Consecutive Day Problems"
+                ],
+                "initialLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of marked days required to guarantee that at least two fall within January in a leap year.",
+                    "Apply the pigeonhole principle to determine the minimum number of marked days required to guarantee that at least two fall within February in a leap year.",
+                    "Apply the pigeonhole principle to determine the minimum number of marked days required to guarantee that at least two fall within the same month in a leap year.",
+                    "Apply the pigeonhole principle to determine the minimum number of marked days required to guarantee that at least three fall within the same month in a leap year.",
+                    "Apply combinatorial reasoning to determine the minimum number of marked days required to guarantee that at least three share the same calendar date in a leap year.",
+                    "Apply combinatorial reasoning to determine the minimum number of marked days required to guarantee at least two consecutive marked days in a leap year.",
+                    "Apply combinatorial reasoning to determine the minimum number of marked days required to guarantee at least three consecutive marked days in a leap year."
+                ],
+                "finalLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of items needed to guarantee a specified distribution across categories.",
+                    "Apply the pigeonhole principle to determine the minimum number of items needed to guarantee multiple items fall within the same category.",
+                    "Apply combinatorial reasoning to determine the minimum number of items needed to guarantee a specific numerical relationship among them."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Graph Theory Basics",
+                    "Social Network Modeling",
+                    "Acquaintance Graphs"
+                ],
+                "initialLO": [
+                    "Construct a proof using the pigeonhole principle to show that in any group of n people where each person knows at least one other, at least two people must have the same number of acquaintances."
+                ],
+                "finalLO": [
+                    "Construct a proof using the pigeonhole principle to demonstrate that in any collection of n elements with constrained relationships, at least two elements must share an identical relationship count."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Define a binary relation R on IR as {(x, y) \u2208 IR x IR : x and y are both positive, both negative, or both 0}. Prove that R is an equivalence relation. What are its equivalence classes?",
-                    "wrapped_question": "Question 1: Define a binary relation [R] on [IR] as [{(x, y) \u2208 IR x IR : x and y are both positive, both negative, or both 0}]. Prove that [R] is an equivalence relation. What are its equivalence classes?"
-                },
-                {
-                    "original_question": "Question 2: Define a binary relation R on IR as {(x, y) \u2208 R x R : sin(x) = sin(y)}. Prove that R is an equivalence relation. What are its equivalence classes?",
-                    "wrapped_question": "Question 2: Define a binary relation [R] on [IR] as [{(x, y) \u2208 R x R : sin(x) = sin(y)}]. Prove that [R] is an equivalence relation. What are its equivalence classes?"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical expressions and relations in square brackets. Variables like R, IR, x, y are kept as is as they are part of the mathematical context."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Define a binary [relation] on [real numbers] as [relation defined by pairs where both elements are positive, both negative, or both zero]. Prove that [relation] is an equivalence relation. What are its equivalence classes?"
-                },
-                {
-                    "processed": "Question 2: Define a binary [relation] on [real numbers] as [relation defined by pairs where sine of first element equals sine of second element]. Prove that [relation] is an equivalence relation. What are its equivalence classes?"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical expressions with descriptive natural language labels. Variables were generalized (e.g., 'R' became 'relation', 'IR' became 'real numbers')."
-                },
-                {
-                    "notes": "Mathematical conditions were translated into natural language descriptions while preserving their logical meaning."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Counting Principles",
+                    "Worst-case Scenario Analysis"
+                ],
+                "initialLO": [
+                    "Apply the pigeonhole principle to calculate the minimum number of all-stars that must be selected from five suburbs to guarantee at least five players come from one suburb."
+                ],
+                "finalLO": [
+                    "Apply the pigeonhole principle to determine the minimum number of selections required from multiple categories to guarantee a specified number of items from one category."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Worst-case Scenario Analysis",
+                    "Combinatorial Selection"
+                ],
+                "initialLO": [
+                    "Determine the minimum number of lollipops that must be drawn from a mixed container to guarantee selection of at least three of one specific type."
+                ],
+                "finalLO": [
+                    "Determine the minimum number of items that must be selected from a mixed set to guarantee obtaining a specified quantity of one particular type."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let A = {a, b, c, d}. For each of the following partitions of A, list all the pairs of elements that form the corresponding equivalence relations:\n(a) {{a, b, c}, {d}}\n(b) {{a}, {b}, {c}, {d}}\n(c) {{a, b, c, d}}",
-                    "wrapped_question": "Question 1: Let [A = {a, b, c, d}]. For each of the following partitions of [A], list all the pairs of elements that form the corresponding equivalence relations:\n(a) [{{a, b, c}, {d}}]\n(b) [{{a}, {b}, {c}, {d}}]\n(c) [{{a, b, c, d}}]"
-                },
-                {
-                    "original_question": "Question 2: Let A = {a, b, c, d}. For each of the following partitions of A, determine the elements of the corresponding equivalence relation:\n(a) P1 = {{a, c}, {b, d}}\n(b) P2 = {{a}, {b, c}, {d}}\n(c) P3 = {{a, b}, {c, d}}\n(d) P4 = {{a, b, c}, {d}}\nDo any of these partitions refine any of the others?",
-                    "wrapped_question": "Question 2: Let [A = {a, b, c, d}]. For each of the following partitions of [A], determine the elements of the corresponding equivalence relation:\n(a) [P1 = {{a, c}, {b, d}}]\n(b) [P2 = {{a}, {b, c}, {d}}]\n(c) [P3 = {{a, b}, {c, d}}]\n(d) [P4 = {{a, b, c}, {d}}]\nDo any of these partitions refine any of the others?"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped set definitions, partitions, and variable assignments in square brackets. Kept enumeration markers (a), (b), etc. as is."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [set definition]. For each of the following partitions of [set], list all the pairs of elements that form the corresponding equivalence relations:\n(enumeration) [partition with three elements in first subset and one in second]\n(enumeration) [partition with all elements in separate subsets]\n(enumeration) [partition with all elements in single subset]"
-                },
-                {
-                    "processed": "Question 2: Let [set definition]. For each of the following partitions of [set], determine the elements of the corresponding equivalence relation:\n(enumeration) [partition with two pairs of elements]\n(enumeration) [partition with one single-element subset and one two-element subset]\n(enumeration) [partition with two two-element subsets]\n(enumeration) [partition with three elements in first subset and one in second]\nDo any of these partitions refine any of the others?"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced set definitions and partitions with descriptive labels. Changed enumeration markers to (enumeration). Generalized variable names (A \u2192 set, P1/P2/etc. \u2192 partition)."
-                },
-                {
-                    "notes": "Partitions were described by their structural properties rather than their specific elements to maintain generality."
-                },
-                {
-                    "notes": "Kept the refinement question unchanged as it's already in natural language form."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Pigeonhole Principle",
+                    "Worst-case Scenario Analysis",
+                    "Combinatorial Counting"
+                ],
+                "initialLO": [
+                    "Calculate the minimum number of socks that must be randomly selected from a mixed set to guarantee a matching pair, given specific quantities of each color.",
+                    "Calculate the minimum number of selections required from a mixed set to guarantee obtaining a pair of a specified color, given the quantities of each color available."
+                ],
+                "finalLO": [
+                    "Calculate the minimum number of items that must be selected from a mixed set to guarantee a matching pair, given the quantities of each type available.",
+                    "Calculate the minimum number of selections required from a mixed set to guarantee obtaining a pair of a specified type, given the quantities of each type available."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Ramsey Theory",
+                    "Subsequence Problems",
+                    "Permutation Construction"
+                ],
+                "initialLO": [
+                    "Construct a specific sequence of integers that avoids containing any monotonic subsequence of a given length."
+                ],
+                "finalLO": [
+                    "Construct a specific sequence of elements that avoids containing any monotonic subsequence of a given length."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let R and S be equivalence relations on a set X. (a) Show that R \u2229 S is an equivalence relation. (b) Show by example that R \u222a S need not be an equivalence relation. (c) Show that (R \u222a S)*, the reflexive and transitive closure of R \u222a S, is the smallest equivalence relation containing both R and S.",
-                    "wrapped_question": "Question 1: Let [R] and [S] be equivalence relations on a set [X]. (a) Show that [R \u2229 S] is an equivalence relation. (b) Show by example that [R \u222a S] need not be an equivalence relation. (c) Show that [(R \u222a S)*], the reflexive and transitive closure of [R \u222a S], is the smallest equivalence relation containing both [R] and [S]."
-                },
-                {
-                    "original_question": "Question 2: For a relation R on a set X, let R* denote the reflexive and transitive closure of R. (a) For any relation R on a set X, define a relation ~ on X as follows: x ~ y if and only if x R* y and y R* x. Prove that ~ is an equivalence relation. (b) Let x1 ~ x2 and y1 ~ y2. Show that x1 R* y1 if and only if x2 R* y2.",
-                    "wrapped_question": "Question 2: For a relation [R] on a set [X], let [R*] denote the reflexive and transitive closure of [R]. (a) For any relation [R] on a set [X], define a relation [~] on [X] as follows: [x ~ y] if and only if [x R* y] and [y R* x]. Prove that [~] is an equivalence relation. (b) Let [x1 ~ x2] and [y1 ~ y2]. Show that [x1 R* y1] if and only if [x2 R* y2]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical relations, operations, and special symbols in square brackets. Maintained original variable names and enumeration markers."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [relation] and [relation] be equivalence relations on a [set]. (enumeration) Show that [intersection of relations] is an equivalence relation. (enumeration) Show by example that [union of relations] need not be an equivalence relation. (enumeration) Show that [reflexive and transitive closure of union], the reflexive and transitive closure of [union of relations], is the smallest equivalence relation containing both [relation] and [relation]."
-                },
-                {
-                    "processed": "Question 2: For a [relation] on a [set], let [reflexive and transitive closure] denote the reflexive and transitive closure of [relation]. (enumeration) For any [relation] on a [set], define a [relation] on [set] as follows: [relation defined by mutual reachability] if and only if [first element reaches second via closure] and [second element reaches first via closure]. Prove that [defined relation] is an equivalence relation. (enumeration) Let [first pair in relation] and [second pair in relation]. Show that [first element reaches first via closure] if and only if [second element reaches second via closure]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced all mathematical expressions with descriptive labels. Generalized variables (R,S \u2192 relation, X \u2192 set). Changed enumeration markers to (enumeration)."
-                },
-                {
-                    "notes": "Translated mathematical operations into natural language descriptions (\u2229 \u2192 intersection, \u222a \u2192 union, * \u2192 reflexive and transitive closure)."
-                },
-                {
-                    "notes": "For Question 2 part (a), described the ~ relation in terms of its defining property (mutual reachability via closure)."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Set Theory",
+                    "Cardinality",
+                    "Subset Relations"
+                ],
+                "initialLO": [
+                    "Demonstrate that for any two sets where one is a subset of the other, the cardinality of the subset cannot exceed the cardinality of the containing set."
+                ],
+                "finalLO": [
+                    "Demonstrate that for any two sets where one is a subset of the other, the cardinality of the subset cannot exceed the cardinality of the containing set."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Cardinality",
+                    "Bijective Functions",
+                    "Infinite Sets"
+                ],
+                "initialLO": [
+                    "Construct proofs showing that given infinite sets defined by specific arithmetic progressions have the same cardinality by establishing bijective correspondences."
+                ],
+                "finalLO": [
+                    "Construct proofs showing that given infinite sets defined by arithmetic patterns have the same cardinality by establishing bijective correspondences."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: (a) Draw the diagram to represent the I (divides) partial order on {1, 2, 3, 4, 5, 6}.\n(b) List all the maximal, maximum, minimal, and minimum elements.",
-                    "wrapped_question": "Question 1: (a) Draw the diagram to represent the [I (divides)] partial order on [{1, 2, 3, 4, 5, 6}].\n(b) List all the maximal, maximum, minimal, and minimum elements."
-                },
-                {
-                    "original_question": "Question 2: (a) Draw a diagram to represent the I (divides) partial order on {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}.\n(b) Identify all minimal, minimum, maximal, and maximum elements in the diagram.",
-                    "wrapped_question": "Question 2: (a) Draw a diagram to represent the [I (divides)] partial order on [{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}].\n(b) Identify all minimal, minimum, maximal, and maximum elements in the diagram."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical relations and set definitions in square brackets. Maintained original enumeration markers (a), (b)."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: (enumeration) Draw the diagram to represent the [divides relation] partial order on [finite set of integers].\n(enumeration) List all the maximal, maximum, minimal, and minimum elements."
-                },
-                {
-                    "processed": "Question 2: (enumeration) Draw a diagram to represent the [divides relation] partial order on [larger finite set of integers].\n(enumeration) Identify all minimal, minimum, maximal, and maximum elements in the diagram."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific sets with generic descriptions ('finite set of integers'). Changed enumeration markers to (enumeration)."
-                },
-                {
-                    "notes": "Standardized the 'divides' relation description across both questions for consistency in clustering."
-                },
-                {
-                    "notes": "Maintained the structural elements (maximal/minimal etc.) as they are key conceptual terms in order theory."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Bijective Functions",
+                    "Countable Sets",
+                    "Grid Path Construction",
+                    "Infinite Sets",
+                    "Enumeration Techniques"
+                ],
+                "initialLO": [
+                    "Construct a bijection between the set of natural numbers and the set of ordered pairs of natural numbers by designing a path that visits each integer coordinate point exactly once in the first quadrant."
+                ],
+                "finalLO": [
+                    "Construct a bijection between an infinite countable set and its Cartesian product by designing an enumeration method that systematically covers all elements."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Countable Sets",
+                    "Rational Numbers",
+                    "Infinite Sets",
+                    "Cardinality",
+                    "Subset Properties"
+                ],
+                "initialLO": [
+                    "Prove that specified subsets of rational numbers are countably infinite by establishing appropriate bijections or enumeration strategies.",
+                    "Analyze given conditions on rational numbers to demonstrate their countability through systematic enumeration methods.",
+                    "Verify the countability of defined subsets of rational numbers by constructing explicit counting arguments."
+                ],
+                "finalLO": [
+                    "Prove that specified infinite subsets of a countable set are countably infinite by establishing appropriate enumeration methods.",
+                    "Analyze given conditions on elements of a countable set to demonstrate their countability through systematic enumeration strategies.",
+                    "Verify the countability of defined subsets of a countable set by constructing explicit counting arguments."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: (a) Draw a diagram to represent the I (divides) partial order on the set {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}.\n(b) Identify all minimal, minimum, maximal, and maximum elements in the diagram.",
-                    "wrapped_question": "Question 1: (a) Draw a diagram to represent the [I (divides)] partial order on the set [{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}].\n(b) Identify all minimal, minimum, maximal, and maximum elements in the diagram."
-                },
-                {
-                    "original_question": "Question 2: Draw a diagram to represent the I (divides) partial order on the following:\n(a) {1, 11}\n(b) {1, 3, 7, 21}\n(c) {1, 2, 3, 4, 6, 9, 12, 18, 36}\n(d) {1, 2, 4, 8, 16, 32, 64}",
-                    "wrapped_question": "Question 2: Draw a diagram to represent the [I (divides)] partial order on the following:\n(a) [{1, 11}]\n(b) [{1, 3, 7, 21}]\n(c) [{1, 2, 3, 4, 6, 9, 12, 18, 36}]\n(d) [{1, 2, 4, 8, 16, 32, 64}]"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical relations and set definitions in square brackets. Maintained original enumeration markers (a), (b), etc."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: (enumeration) Draw a diagram to represent the [divides relation] partial order on the [set of integers].\n(enumeration) Identify all minimal, minimum, maximal, and maximum elements in the diagram."
-                },
-                {
-                    "processed": "Question 2: Draw a diagram to represent the [divides relation] partial order on the following:\n(enumeration) [two-element set of integers]\n(enumeration) [four-element set of integers]\n(enumeration) [nine-element set of integers]\n(enumeration) [seven-element set of powers of two]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific sets with generic descriptions based on their properties. Changed enumeration markers to (enumeration)."
-                },
-                {
-                    "notes": "Standardized the 'divides' relation description across both questions for consistency in clustering."
-                },
-                {
-                    "notes": "Maintained the structural elements (maximal/minimal etc.) as they are key conceptual terms in order theory."
-                },
-                {
-                    "notes": "For Question 2 part (d), noted the special property of the set being powers of two for better clustering differentiation."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Countable Sets",
+                    "Set Operations",
+                    "Cartesian Products",
+                    "Countability Proofs"
+                ],
+                "initialLO": [
+                    "Prove that the union, intersection, difference, and Cartesian product of two countable sets remain countable, considering both finite and countably infinite cases.",
+                    "Determine which set operations preserve countability when applied to countably infinite sets, providing justification for each case."
+                ],
+                "finalLO": [
+                    "Prove that basic set operations preserve countability when applied to countable sets, considering both finite and infinite cases.",
+                    "Determine which set operations preserve countability when applied to infinite countable sets, providing justification for each case."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Countable Sets",
+                    "Subsets of Natural Numbers",
+                    "Enumeration Techniques"
+                ],
+                "initialLO": [
+                    "Prove that any subset of the natural numbers is countable by constructing an appropriate enumeration method."
+                ],
+                "finalLO": [
+                    "Prove that any subset of a countably infinite set is countable by constructing an appropriate enumeration method."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}. For x, y \u2208 X, set x R y if x^2 < y^2 or x = y. Show that R is a partial ordering on X. Draw a diagram of R.",
-                    "wrapped_question": "Question 1: Let [X = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}]. For [x, y \u2208 X], set [x R y] if [x^2 < y^2] or [x = y]. Show that [R] is a partial ordering on [X]. Draw a diagram of [R]."
-                },
-                {
-                    "original_question": "Question 2: (a) Explain why the relation 'is older than or the same age' is a partial order.\n(b) Explain why the relation 'is older than' is not a linear order.",
-                    "wrapped_question": "Question 2: (a) Explain why the relation ['is older than or the same age'] is a partial order.\n(b) Explain why the relation ['is older than'] is not a linear order."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical expressions, relations, and set definitions in square brackets. Maintained original enumeration markers (a), (b)."
-                },
-                {
-                    "notes": "For Question 2, wrapped the natural language relations in square brackets as they represent specific mathematical relations."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [set of integers]. For [elements in set], set [relation] if [square of first element less than square of second] or [elements equal]. Show that [relation] is a partial ordering on [set]. Draw a diagram of [relation]."
-                },
-                {
-                    "processed": "Question 2: (enumeration) Explain why the [reflexive age comparison relation] is a partial order.\n(enumeration) Explain why the [strict age comparison relation] is not a linear order."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical expressions with descriptive labels. Changed enumeration markers to (enumeration)."
-                },
-                {
-                    "notes": "Generalized set descriptions while maintaining mathematical context (X \u2192 set of integers)."
-                },
-                {
-                    "notes": "For Question 2, transformed natural language relations into more formal descriptions for clustering purposes."
-                },
-                {
-                    "notes": "Maintained key order theory concepts (partial order, linear order) as they are fundamental to the questions."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Bijective Functions",
+                    "Function Analysis",
+                    "Real-Valued Functions",
+                    "Interval Mappings"
+                ],
+                "initialLO": [
+                    "Prove that a given real-valued function defined on the open interval from zero to one is bijective by verifying both injectivity and surjectivity."
+                ],
+                "finalLO": [
+                    "Prove that a given function between specified domains is bijective by verifying both injectivity and surjectivity."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Bijective Functions",
+                    "Function Construction",
+                    "Real Number Mappings",
+                    "Special Sets"
+                ],
+                "initialLO": [
+                    "Construct explicit bijective functions between the set of real numbers and various subsets of real numbers including open intervals, closed intervals, and sets with removed points.",
+                    "Construct an explicit bijective function between the set of real numbers and the set of irrational numbers."
+                ],
+                "finalLO": [
+                    "Construct explicit bijective functions between a given infinite set and various modified versions of that set.",
+                    "Construct an explicit bijective function between an uncountable set and its uncountable subset."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: For the set of all people, prove that the relation 'weighs no more than' is not a partial order.",
-                    "wrapped_question": "Question 1: For the set of all people, prove that the relation ['weighs no more than'] is not a partial order."
-                },
-                {
-                    "original_question": "Question 2: For the set of all people, prove that the relation 'weighs less than' is not a linear order.",
-                    "wrapped_question": "Question 2: For the set of all people, prove that the relation ['weighs less than'] is not a linear order."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped the natural language relations in square brackets as they represent specific mathematical relations."
-                },
-                {
-                    "notes": "Maintained the phrase 'set of all people' as it describes a specific domain without mathematical symbols."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: For the [set], prove that the [reflexive weight comparison relation] is not a partial order."
-                },
-                {
-                    "processed": "Question 2: For the [set], prove that the [strict weight comparison relation] is not a linear order."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced natural language relations with more formal descriptions for clustering purposes."
-                },
-                {
-                    "notes": "Generalized 'set of all people' to [set] while maintaining the context of people through the relation descriptions."
-                },
-                {
-                    "notes": "Transformed the weight relations into their formal mathematical equivalents ('no more than' \u2192 reflexive comparison, 'less than' \u2192 strict comparison)."
-                },
-                {
-                    "notes": "Maintained key order theory concepts (partial order, linear order) as they are fundamental to the questions."
-                },
-                {
-                    "notes": "Kept the structure of proving negative properties of relations to maintain the logical flow of the questions."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Cardinality",
+                    "Power Sets",
+                    "Uncountable Sets",
+                    "Cantor's Theorem"
+                ],
+                "initialLO": [
+                    "Prove that the power set of natural numbers has strictly greater cardinality than the set of natural numbers itself using Cantor's diagonal argument."
+                ],
+                "finalLO": [
+                    "Prove that the power set of any infinite set has strictly greater cardinality than the set itself using diagonalization techniques."
+                ]
+            },
+            "2": {
+                "topics": [
+                    "Countable Sets",
+                    "Finite Sequences",
+                    "Enumeration Techniques",
+                    "Diagonal Arguments"
+                ],
+                "initialLO": [
+                    "Demonstrate that the set of all finite sequences from a one-element set is countably infinite by constructing an explicit enumeration.",
+                    "Demonstrate that the set of all finite sequences from a two-element set is countably infinite by constructing an explicit enumeration.",
+                    "Prove that the set of all finite sequences of natural numbers is countably infinite using a diagonal enumeration argument."
+                ],
+                "finalLO": [
+                    "Demonstrate that the set of all finite sequences from a finite set is countably infinite by constructing an explicit enumeration.",
+                    "Prove that the set of all finite sequences from a countably infinite set is countably infinite using enumeration techniques."
+                ]
+            }
         },
         {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Translate each of the following quantified formulas into an English sentence where the universal set is \u211d. Label each as true or false.\n(a) \u2200x(\u2203y(xy = x))\n(b) \u2200y(\u2203x(xy = x))\n(c) \u2200x(\u2203y(xy = 1))\n(d) \u2203y(\u2200x(xy = 1))\n(e) \u2203x(\u2200y(xy = x))\n(f) \u2200x(x \u2192 \u2203y(xy = 1))",
-                    "wrapped_question": "Question 1: Translate each of the following quantified formulas into an English sentence where the universal set is [\u211d]. Label each as true or false.\n(a) [\u2200x(\u2203y(xy = x))]\n(b) [\u2200y(\u2203x(xy = x))]\n(c) [\u2200x(\u2203y(xy = 1))]\n(d) [\u2203y(\u2200x(xy = 1))]\n(e) [\u2203x(\u2200y(xy = x))]\n(f) [\u2200x(x \u2192 \u2203y(xy = 1))]"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical expressions including quantifiers, equations, and the universal set \u211d in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration markers (a)-(f) as they are part of the question structure."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Translate each of the following quantified formulas into an English sentence where the universal set is [real numbers]. Label each as true or false.\n(enumeration) [universal existence statement about multiplicative identity]\n(enumeration) [universal existence statement about multiplicative identity with reversed variables]\n(enumeration) [universal existence statement about multiplicative inverse]\n(enumeration) [existence of universal multiplicative inverse]\n(enumeration) [existence of multiplicative identity element]\n(enumeration) [conditional universal existence statement about multiplicative inverse]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical expressions with descriptive labels that capture their logical structure."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for standardization."
-                },
-                {
-                    "notes": "Translated \u211d to 'real numbers' while maintaining mathematical context."
-                },
-                {
-                    "notes": "Described each quantified formula in terms of its fundamental mathematical property (identity, inverse, etc.)."
-                },
-                {
-                    "notes": "Maintained the instruction about translating to English and labeling true/false as it's part of the question's core task."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Which of the following are functions? If not, why not?\n(a) X is the set of students in the discrete mathematics class. For x \u2208 X, define g(x) to be the youngest cousin of x.\n(b) X is the set of senators serving in 1998. For x \u2208 X, define g(x) to be the number of terms a senator has held.\n(c) For x \u2208 R, define g(x) = |x|/|x|^1.",
-                    "wrapped_question": "Question 1: Which of the following are functions? If not, why not?\n(a) [X] is the set of students in the discrete mathematics class. For [x \u2208 X], define [g(x)] to be the youngest cousin of [x].\n(b) [X] is the set of senators serving in 1998. For [x \u2208 X], define [g(x)] to be the number of terms a senator has held.\n(c) For [x \u2208 R], define [g(x) = |x|/|x|^1]."
-                },
-                {
-                    "original_question": "Question 2: Let X = {0, 1, 2, 3, 4, 5, 6, 7} and Y = {8, 10, 12, ..., 20, 22}. Define F: X \u2192 Y as F(x) = 2x + 8. List the ordered pairs of the relation that define this function.",
-                    "wrapped_question": "Question 2: Let [X = {0, 1, 2, 3, 4, 5, 6, 7}] and [Y = {8, 10, 12, ..., 20, 22}]. Define [F: X \u2192 Y] as [F(x) = 2x + 8]. List the ordered pairs of the relation that define this function."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical expressions including set definitions, function definitions, and variable assignments in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration markers (a)-(c) as they are part of the question structure."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Which of the following are functions? If not, why not?\n(enumeration) [set] is the set of students in the discrete mathematics class. For [element in set], define [function] to be the youngest cousin of [element].\n(enumeration) [set] is the set of senators serving in year. For [element in set], define [function] to be the number of terms a senator has held.\n(enumeration) For [real number], define [absolute value function divided by itself]."
-                },
-                {
-                    "processed": "Question 2: Let [finite set of integers] and [arithmetic sequence set]. Define [function from set to set] as [linear transformation]. List the ordered pairs of the relation that define this function."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical expressions with descriptive labels that capture their mathematical nature."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for standardization."
-                },
-                {
-                    "notes": "Generalized specific sets to their mathematical types (e.g., 'set of integers') while maintaining context."
-                },
-                {
-                    "notes": "Described functions in terms of their general properties rather than specific definitions."
-                },
-                {
-                    "notes": "Maintained the core question structure about determining function properties and listing ordered pairs."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: What are the domain and range of the addition function on the real numbers? On multiplication? Subtraction? Division?",
-                    "wrapped_question": "Question 1: What are the domain and range of the [addition function] on the [real numbers]? On [multiplication]? [Subtraction]? [Division]?"
-                },
-                {
-                    "original_question": "Question 2: Find the first six terms of the sequence with the elements defined as F(0) = 1, F(1) = 3, F(2) = 5, and F(n) = 3F(n - 1) + 2F(n - 2) - 3F(n - 3) for n \u2265 3.",
-                    "wrapped_question": "Question 2: Find the first six terms of the sequence with the elements defined as [F(0) = 1], [F(1) = 3], [F(2) = 5], and [F(n) = 3F(n - 1) + 2F(n - 2) - 3F(n - 3)] for [n \u2265 3]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical operations and function definitions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including the list of operations in Question 1."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: What are the domain and range of the [binary operation] on the [real numbers]? On [binary operation]? [binary operation]? [binary operation]?"
-                },
-                {
-                    "processed": "Question 2: Find the first six terms of the sequence with the elements defined as [initial condition], [initial condition], [initial condition], and [recurrence relation] for [index condition]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific arithmetic operations with the generic '[binary operation]' label for clustering purposes."
-                },
-                {
-                    "notes": "Standardized the description of the sequence definition components in Question 2."
-                },
-                {
-                    "notes": "Maintained the core question structure while generalizing mathematical concepts."
-                },
-                {
-                    "notes": "Used consistent bracketing for similar mathematical concepts across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Find both a function defined by a formula and a recursively defined function for the following sequences:\n(a) 1, 3, 5, 7, 9, 11, 13, ...\n(b) 1, 1, 3, 3, 5, 5, 7, 7, ...\n(c) 0, 2, 4, 6, 8, ...\n(d) 1, 2, 4, 8, 16, ...",
-                    "wrapped_question": "Question 1: Find both a function defined by a formula and a recursively defined function for the following sequences:\n(a) [1, 3, 5, 7, 9, 11, 13, ...]\n(b) [1, 1, 3, 3, 5, 5, 7, 7, ...]\n(c) [0, 2, 4, 6, 8, ...]\n(d) [1, 2, 4, 8, 16, ...]"
-                },
-                {
-                    "original_question": "Question 2: Let X = {a, b}.\n(a) There are nine partial functions F : X \u2192 X. List them.\n(b) There are four functions F : X \u2192 X. List them.\n(c) List all 1-1 functions F : X \u2192 X.\n(d) List all onto functions F : X \u2192 X.",
-                    "wrapped_question": "Question 2: Let [X = {a, b}].\n(a) There are [nine partial functions F : X \u2192 X]. List them.\n(b) There are [four functions F : X \u2192 X]. List them.\n(c) List all [1-1 functions F : X \u2192 X].\n(d) List all [onto functions F : X \u2192 X]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sequences, set definitions, and function specifications in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration markers (a)-(d) as they are part of the question structure."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Find both a function defined by a formula and a recursively defined function for the following sequences:\n(enumeration) [odd number sequence]\n(enumeration) [repeated odd number sequence]\n(enumeration) [even number sequence starting from zero]\n(enumeration) [powers of two sequence]"
-                },
-                {
-                    "processed": "Question 2: Let [two-element set].\n(enumeration) There are [count of partial functions from set to itself]. List them.\n(enumeration) There are [count of total functions from set to itself]. List them.\n(enumeration) List all [injective functions from set to itself].\n(enumeration) List all [surjective functions from set to itself]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced mathematical sequences with descriptive labels that capture their pattern."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for standardization."
-                },
-                {
-                    "notes": "Generalized specific set definitions to their mathematical properties."
-                },
-                {
-                    "notes": "Translated function types into their standard mathematical names (1-1 \u2192 injective, onto \u2192 surjective)."
-                },
-                {
-                    "notes": "Maintained the core question structure about finding and listing different types of functions."
-                },
-                {
-                    "notes": "Used consistent terminology for function counts and types across all parts of Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X = {-1, 0, 1, 2} and Y = {-4, -2, 0, 2}. Define the function F: X \u2192 Y as F(x) = x^2 - x. Prove that F is neither 1-1 nor onto.",
-                    "wrapped_question": "Question 1: Let [X = {-1, 0, 1, 2}] and [Y = {-4, -2, 0, 2}]. Define the function [F: X \u2192 Y] as [F(x) = x^2 - x]. Prove that [F] is neither [1-1] nor [onto]."
-                },
-                {
-                    "original_question": "Question 2: Let A be a set with three elements and B be a set with two elements.\n(a) How many different functions are there with domain A and codomain B?\n(b) How many different functions are there with domain B and codomain A?\n(c) How many different 1-1 functions are there with domain A and codomain B?\n(d) How many different 1-1 functions are there with domain B and codomain A?",
-                    "wrapped_question": "Question 2: Let [A] be a set with [three elements] and [B] be a set with [two elements].\n(a) How many different functions are there with domain [A] and codomain [B]?\n(b) How many different functions are there with domain [B] and codomain [A]?\n(c) How many different [1-1 functions] are there with domain [A] and codomain [B]?\n(d) How many different [1-1 functions] are there with domain [B] and codomain [A]?"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, function definitions, and properties in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration markers (a)-(d) as they are part of the question structure."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [finite set of integers] and [finite set of integers]. Define the [function from set to set] as [quadratic function]. Prove that [function] is neither [injective] nor [surjective]."
-                },
-                {
-                    "processed": "Question 2: Let [set] be a set with [three elements] and [set] be a set with [two elements].\n(enumeration) How many different functions are there with domain [set] and codomain [set]?\n(enumeration) How many different functions are there with domain [set] and codomain [set]?\n(enumeration) How many different [injective functions] are there with domain [set] and codomain [set]?\n(enumeration) How many different [injective functions] are there with domain [set] and codomain [set]?"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific sets with generic descriptions while maintaining mathematical context."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for standardization."
-                },
-                {
-                    "notes": "Translated function properties to standard mathematical terms (1-1 \u2192 injective, onto \u2192 surjective)."
-                },
-                {
-                    "notes": "Generalized the function definition while preserving its quadratic nature."
-                },
-                {
-                    "notes": "Maintained the core question structure about function properties and counting."
-                },
-                {
-                    "notes": "Used consistent terminology for function types across all parts of Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Two months are equivalent if their 13th day must fall on the same day of the week in every (nonleap) year.\n(a) Show that the 13th day of the 12 months occur on seven different days of the week.\n(b) Conclude that there must be at least one Friday the 13th in each year.\n(c) Show that there are at most three Friday the 13th's in any year.\n(d) Show that the result is also true for leap years.\n(Hint: Number the days of the year from 1 (January 1) to 365 (December 31), and then show that the days representing the 13th days of these months occur on seven different days of the week.)",
-                    "wrapped_question": "Question 1: Two months are equivalent if their [13th day] must fall on the same [day of the week] in every [(nonleap) year].\n(a) Show that the [13th day] of the [12 months] occur on [seven different days of the week].\n(b) Conclude that there must be at least one [Friday the 13th] in each [year].\n(c) Show that there are at most [three Friday the 13th's] in any [year].\n(d) Show that the [result] is also true for [leap years].\n(Hint: [Number the days of the year from 1 (January 1) to 365 (December 31)], and then show that the [days representing the 13th days of these months] occur on [seven different days of the week].)"
-                },
-                {
-                    "original_question": "Question 2: Let A = {1, 2, 3, 4} and B = {a, b, c}. Define a function F : A \u2192 B as F(1) = a, F(2) = b, F(3) = c, and F(4) = c. List the ordered pairs of the equivalence relation R defined on A as x R y if and only if F(x) = F(y). List the elements of the partition of A determined by this equivalence relation.",
-                    "wrapped_question": "Question 2: Let [A = {1, 2, 3, 4}] and [B = {a, b, c}]. Define a [function F : A \u2192 B] as [F(1) = a], [F(2) = b], [F(3) = c], and [F(4) = c]. List the [ordered pairs] of the [equivalence relation R] defined on [A] as [x R y] if and only if [F(x) = F(y)]. List the [elements] of the [partition of A] determined by this [equivalence relation]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped mathematical concepts, numerical references, and calendar-related terms in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration markers (a)-(d) as they are part of the question structure."
-                },
-                {
-                    "notes": "Included the hint in the wrapping as it contains mathematical content."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Two months are equivalent if their [specific calendar date] must fall on the same [weekday] in every [non-leap year].\n(enumeration) Show that the [specific calendar date] of the [all months] occur on [all weekdays].\n(enumeration) Conclude that there must be at least one [specific superstitious date] in each [calendar year].\n(enumeration) Show that there are at most [maximum occurrences] in any [calendar year].\n(enumeration) Show that the [conclusion] is also true for [leap years].\n(Hint: [Enumerate days of year from first to last], and then show that the [dates of interest] occur on [all weekdays]."
-                },
-                {
-                    "processed": "Question 2: Let [finite numeric set] and [finite alphabetic set]. Define a [function between sets] as [function mappings]. List the [pairs] of the [equivalence relation] defined on [set] as [relation condition]. List the [components] of the [set partition] determined by this [equivalence relation]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific calendar references with more general terms while maintaining context."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for standardization."
-                },
-                {
-                    "notes": "Generalized mathematical sets and relations while preserving their structural properties."
-                },
-                {
-                    "notes": "Maintained the core logical structure of both questions while abstracting specific values."
-                },
-                {
-                    "notes": "Transformed the hint into a more generic form while keeping its mathematical essence."
-                },
-                {
-                    "notes": "Used consistent terminology for set operations and relations across the questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Find two functions F, G : R \u2192 R where F \u2260 G but F|[0,1) = G|[0,1).",
-                    "wrapped_question": "Question 1: Find two functions [F, G : R \u2192 R] where [F \u2260 G] but [F|[0,1) = G|[0,1)]."
-                },
-                {
-                    "original_question": "Question 2: Let A, B, and C be sets, and let F : A \u2192 C be a function. If B \u2286 A, prove that F|B = F \u2229 (B \u00d7 C).",
-                    "wrapped_question": "Question 2: Let [A, B, and C] be sets, and let [F : A \u2192 C] be a function. If [B \u2286 A], prove that [F|B = F \u2229 (B \u00d7 C)]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical functions, relations, and set operations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure and variables of the questions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Find two [real-valued functions] where [functions are not equal] but [function restrictions on interval are equal]."
-                },
-                {
-                    "processed": "Question 2: Let [three sets], and let [function between first and third sets] be a function. If [second set is subset of first], prove that [restriction equals intersection with product set]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical notations with descriptive labels while preserving meaning."
-                },
-                {
-                    "notes": "Generalized function types and set operations to their conceptual descriptions."
-                },
-                {
-                    "notes": "Maintained the core logical structure of both questions."
-                },
-                {
-                    "notes": "Used consistent terminology for function restrictions and set operations."
-                },
-                {
-                    "notes": "Abstracted specific interval notations to more general descriptions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: (a) Find functions from R to R that are:\n i. strictly decreasing\n ii. decreasing but not strictly decreasing\n iii. neither increasing nor decreasing\n iv. both increasing and decreasing\n\n(b) Show that no F : R \u2192 R is both increasing and strictly decreasing.\n\n(c) Find a subset X \u2286 R and a function F : X \u2192 X where F is both strictly increasing and strictly decreasing.",
-                    "wrapped_question": "Question 1: (a) Find functions from [R] to [R] that are:\n i. [strictly decreasing]\n ii. [decreasing but not strictly decreasing]\n iii. [neither increasing nor decreasing]\n iv. [both increasing and decreasing]\n\n(b) Show that no [F : R \u2192 R] is both [increasing] and [strictly decreasing].\n\n(c) Find a subset [X \u2286 R] and a function [F : X \u2192 X] where [F] is both [strictly increasing] and [strictly decreasing]."
-                },
-                {
-                    "original_question": "Question 2: Construct functions with the following properties:\n(a) F : N \u2192 N such that range(F) = N and, for each n \u2208 N, there exist exactly two solutions for the equation F(x) = n.\n(b) F : N \u2192 N such that, for each n \u2208 N, there are exactly n solutions for the equation F(x) = n.",
-                    "wrapped_question": "Question 2: Construct functions with the following properties:\n(a) [F : N \u2192 N] such that [range(F) = N] and, for each [n \u2208 N], there exist exactly [two solutions] for the equation [F(x) = n].\n(b) [F : N \u2192 N] such that, for each [n \u2208 N], there are exactly [n solutions] for the equation [F(x) = n]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical functions, properties, and equations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration structure (i, ii, etc.) for subparts."
-                },
-                {
-                    "notes": "Preserved the logical structure of function definitions and properties."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: (enumeration) Find functions from [real numbers] to [real numbers] that are:\n(enumeration) [monotonic strictly decreasing]\n(enumeration) [monotonic non-strictly decreasing]\n(enumeration) [non-monotonic]\n(enumeration) [constant function]\n\n(enumeration) Show that no [real-valued function] is both [monotonic non-decreasing] and [monotonic strictly decreasing].\n\n(enumeration) Find a [subset of real numbers] and a [function on subset] where [function] is both [monotonic strictly increasing] and [monotonic strictly decreasing]."
-                },
-                {
-                    "processed": "Question 2: Construct functions with the following properties:\n(enumeration) [function from natural numbers to natural numbers] such that [range equals codomain] and, for each [natural number], there exist exactly [two pre-images].\n(enumeration) [function from natural numbers to natural numbers] such that, for each [natural number], there are exactly [n pre-images]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical notations with conceptual descriptions."
-                },
-                {
-                    "notes": "Standardized function property descriptions using 'monotonic' terminology."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Translated solution counts to 'pre-images' for conceptual clarity."
-                },
-                {
-                    "notes": "Maintained the core problem structure while generalizing mathematical concepts."
-                },
-                {
-                    "notes": "Used consistent terminology for function properties across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Define a function F : N \u2192 N such that F(n) = n - 10 if n > 100 and F(n) = F(F(n + 11)) if n \u2264 100.\n\n(a) Show that F(99) = 91.\n(b) Prove that F(n) = 91 for all n such that 0 < n \u2264 100.",
-                    "wrapped_question": "Question 1: Define a function [F : N \u2192 N] such that [F(n) = n - 10] if [n > 100] and [F(n) = F(F(n + 11))] if [n \u2264 100].\n\n(a) Show that [F(99) = 91].\n(b) Prove that [F(n) = 91] for all [n] such that [0 < n \u2264 100]."
-                },
-                {
-                    "original_question": "Question 2: Let A, B, and C be sets, and let F : A \u2192 C and G : B \u2192 C.\n(a) What condition must F and G satisfy for F \u222a G to be a function from A \u222a B to C?\n(b) Give conditions on A and B such that F \u222a G is a function for every F : A \u2192 C and G : B \u2192 C.",
-                    "wrapped_question": "Question 2: Let [A, B, and C] be sets, and let [F : A \u2192 C] and [G : B \u2192 C].\n(a) What condition must [F] and [G] satisfy for [F \u222a G] to be a function from [A \u222a B] to [C]?\n(b) Give conditions on [A] and [B] such that [F \u222a G] is a function for every [F : A \u2192 C] and [G : B \u2192 C]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical functions, conditions, and set operations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration structure (a, b) for subparts."
-                },
-                {
-                    "notes": "Preserved the recursive function definition and set operations."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Define a [recursive function on natural numbers] such that [base case definition] if [condition] and [recursive case definition] if [condition].\n\n(enumeration) Show that [specific function evaluation].\n(enumeration) Prove that [constant function output] for all [inputs in range]."
-                },
-                {
-                    "processed": "Question 2: Let [three sets], and let [function from first to third set] and [function from second to third set].\n(enumeration) What [compatibility condition] must [functions] satisfy for [function union] to be a function from [set union] to [codomain]?\n(enumeration) Give [set conditions] such that [function union] is a function for every [function from first to third set] and [function from second to third set]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical notations with conceptual descriptions."
-                },
-                {
-                    "notes": "Standardized function descriptions using 'recursive function' terminology."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Generalized set operations to their conceptual descriptions."
-                },
-                {
-                    "notes": "Maintained the core problem structure while abstracting specific values."
-                },
-                {
-                    "notes": "Used consistent terminology for function properties and set operations."
-                },
-                {
-                    "notes": "Highlighted the union operation's functional requirements in Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let F be a function, and let C, D \u2286 domain(F).\n(a) Prove that range(F |(C \u2229 D)) \u2286 range(F |(C)) \u2229 range(F |(D)).\n(b) Show by example that equality need not hold in part (a).",
-                    "wrapped_question": "Question 1: Let [F] be a function, and let [C, D \u2286 domain(F)].\n(a) Prove that [range(F |(C \u2229 D)) \u2286 range(F |(C)) \u2229 range(F |(D))].\n(b) Show by example that [equality] need not hold in part (a)."
-                },
-                {
-                    "original_question": "Question 2: If looked at appropriately, the definition of a function as a set of ordered pairs and the intuitive notion that a function is something given by a rule are equivalent. Develop that equivalence here. Assume that F has a finite domain {0, 1, 2, ..., n - 1} and a finite codomain {0, 1, 2, ..., m - 1}.\n\n(a) Suppose F is a function given as a set of ordered pairs. For an input x\u2081, give a rule for calculating F(x\u2081). Use F (or its graph) in your rule.\n\n(b) Suppose the function F is given by a rule. Express F as a set of ordered pairs.",
-                    "wrapped_question": "Question 2: If looked at appropriately, the definition of a function as a [set of ordered pairs] and the intuitive notion that a function is something given by a [rule] are equivalent. Develop that [equivalence] here. Assume that [F] has a finite [domain {0, 1, 2, ..., n - 1}] and a finite [codomain {0, 1, 2, ..., m - 1}].\n\n(a) Suppose [F] is a function given as a [set of ordered pairs]. For an input [x\u2081], give a [rule] for calculating [F(x\u2081)]. Use [F] (or its [graph]) in your [rule].\n\n(b) Suppose the function [F] is given by a [rule]. Express [F] as a [set of ordered pairs]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical functions, sets, operations, and concepts in square brackets."
-                },
-                {
-                    "notes": "Maintained the original enumeration structure (a, b) for subparts."
-                },
-                {
-                    "notes": "Preserved the function restriction notation and set operations."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [function] be a function, and let [two subsets of domain].\n(enumeration) Prove that [range of restricted function] is [subset] of [intersection of ranges].\n(enumeration) Show by example that [set equality] need not hold in part (enumeration)."
-                },
-                {
-                    "processed": "Question 2: Develop the [equivalence] between [function as ordered pairs] and [function as rule]. Assume [function] has finite [domain] and finite [codomain].\n\n(enumeration) Suppose [function] is given as [ordered pairs]. For [input], give [computation rule] using [function definition].\n\n(enumeration) Suppose [function] is given by [computation rule]. Express [function] as [ordered pairs]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical notations with conceptual descriptions."
-                },
-                {
-                    "notes": "Standardized function descriptions while preserving their essential properties."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Generalized set operations to their conceptual descriptions."
-                },
-                {
-                    "notes": "Maintained the core problem structure while abstracting specific values."
-                },
-                {
-                    "notes": "Used consistent terminology for function representations across both questions."
-                },
-                {
-                    "notes": "Highlighted the key equivalence between different function representations in Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X = {1, 2, 3, 4} and Y = {5, 6, 7, 8, 9}. Let F = {(1, 5), (2, 7), (4, 9), (3, 8)}. Show that F is a function from X to Y. Find F\u207b\u00b9, and list its elements. Is F\u207b\u00b9 a function? Why, or why not?",
-                    "wrapped_question": "Question 1: Let [X = {1, 2, 3, 4}] and [Y = {5, 6, 7, 8, 9}]. Let [F = {(1, 5), (2, 7), (4, 9), (3, 8)}]. Show that [F] is a function from [X] to [Y]. Find [F\u207b\u00b9], and list its elements. Is [F\u207b\u00b9] a function? Why, or why not?"
-                },
-                {
-                    "original_question": "Question 2: Let S = {(0, 8), (1, 10), (2, 12), (3, 14), (4, 16), (5, 18), (6, 20), (7, 22)}. Is S a function? Why, or why not? Find S\u207b\u00b9, and list its elements. Is S\u207b\u00b9 a function? Why, or why not? Identify the domain of S\u207b\u00b9.",
-                    "wrapped_question": "Question 2: Let [S = {(0, 8), (1, 10), (2, 12), (3, 14), (4, 16), (5, 18), (6, 20), (7, 22)}]. Is [S] a function? Why, or why not? Find [S\u207b\u00b9], and list its elements. Is [S\u207b\u00b9] a function? Why, or why not? Identify the domain of [S\u207b\u00b9]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, functions, and inverse function notations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all ordered pairs."
-                },
-                {
-                    "notes": "Preserved the function verification and inverse function concepts."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [finite set] and [finite set]. Let [set of ordered pairs]. Show that [relation] is a function from [domain] to [codomain]. Find [inverse relation], and list its elements. Is [inverse relation] a function? Why, or why not?"
-                },
-                {
-                    "processed": "Question 2: Let [set of ordered pairs]. Is [relation] a function? Why, or why not? Find [inverse relation], and list its elements. Is [inverse relation] a function? Why, or why not? Identify the domain of [inverse relation]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific set definitions with generic '[finite set]' while maintaining context."
-                },
-                {
-                    "notes": "Standardized function/relation descriptions while preserving their properties."
-                },
-                {
-                    "notes": "Generalized ordered pairs to '[set of ordered pairs]' for clustering purposes."
-                },
-                {
-                    "notes": "Used '[relation]' consistently for both function and inverse function concepts."
-                },
-                {
-                    "notes": "Maintained the core verification and inverse operation questions."
-                },
-                {
-                    "notes": "Kept the 'why or why not' structure as it's essential to the questions' intent."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X = {1, 2, 3, 4}. Let F : X \u2192 \u211d be a function defined as the set of ordered pairs {(1, 2), (2, 3), (3, 4), (4, 5)}. Let G : \u211d \u2192 \u211d be the function defined as G(x) = x\u00b2. What is G o F?",
-                    "wrapped_question": "Question 1: Let [X = {1, 2, 3, 4}]. Let [F : X \u2192 \u211d] be a function defined as the set of ordered pairs [{(1, 2), (2, 3), (3, 4), (4, 5)}]. Let [G : \u211d \u2192 \u211d] be the function defined as [G(x) = x\u00b2]. What is [G o F]?"
-                },
-                {
-                    "original_question": "Question 2: Let F : \u211d \u2192 \u211d be defined as F(x) = 2x + 8. Let G : \u211d \u2192 \u211d be defined as G(y) = (y - 8)/2. Prove that F o G = Id\u211d and G o F = Id\u211d.",
-                    "wrapped_question": "Question 2: Let [F : \u211d \u2192 \u211d] be defined as [F(x) = 2x + 8]. Let [G : \u211d \u2192 \u211d] be defined as [G(y) = (y - 8)/2]. Prove that [F o G = Id\u211d] and [G o F = Id\u211d]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, functions, function definitions, and operations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all ordered pairs and function compositions."
-                },
-                {
-                    "notes": "Preserved the identity function notation (Id\u211d) and function composition notation (o)."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [finite set]. Let [function from set to real numbers] defined as [set of ordered pairs]. Let [quadratic function on real numbers]. What is [composition of functions]?"
-                },
-                {
-                    "processed": "Question 2: Let [linear function on real numbers]. Let [inverse linear function on real numbers]. Prove that [composition equals identity function] and [reverse composition equals identity function]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific set definitions with generic '[finite set]' while maintaining context."
-                },
-                {
-                    "notes": "Standardized function descriptions while preserving their mathematical properties."
-                },
-                {
-                    "notes": "Generalized ordered pairs to '[set of ordered pairs]' for clustering purposes."
-                },
-                {
-                    "notes": "Used descriptive labels for function types (quadratic, linear, inverse linear)."
-                },
-                {
-                    "notes": "Maintained the core concepts of function composition and identity functions."
-                },
-                {
-                    "notes": "Kept the proof structure in Question 2 while generalizing the function definitions."
-                },
-                {
-                    "notes": "Used consistent terminology for function operations across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X = {0, 1, 2} \u2286 \u211d. List all eight strictly increasing sequences of elements of X. The ordering is < on \u211d. List all subsequences of the sequence x, y, z.",
-                    "wrapped_question": "Question 1: Let [X = {0, 1, 2} \u2286 \u211d]. List all [eight strictly increasing sequences] of elements of [X]. The ordering is [< on \u211d]. List all [subsequences] of the sequence [x, y, z]."
-                },
-                {
-                    "original_question": "Question 2: Let A = {1, 2, 3, 4}. Let the functions F, G, and H be given with domain and codomain A defined as F(1) = 3, F(2) = 2, F(3) = 2, and F(4) = 4; G(1) = 1, G(2) = 3, G(3) = 4, and G(4) = 2; H(1) = 2, H(2) = 4, H(3) = 1, and H(4) = 3. Find the following: (a) F o G (b) H o F (c) G o H (d) F o G o H",
-                    "wrapped_question": "Question 2: Let [A = {1, 2, 3, 4}]. Let the functions [F], [G], and [H] be given with domain and codomain [A] defined as [F(1) = 3], [F(2) = 2], [F(3) = 2], and [F(4) = 4]; [G(1) = 1], [G(2) = 3], [G(3) = 4], and [G(4) = 2]; [H(1) = 2], [H(2) = 4], [H(3) = 1], and [H(4) = 3]. Find the following: (a) [F o G] (b) [H o F] (c) [G o H] (d) [F o G o H]"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, sequences, orderings, functions, and compositions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all function definitions."
-                },
-                {
-                    "notes": "Preserved the sequence and subsequence concepts in Question 1."
-                },
-                {
-                    "notes": "Kept the function composition notation (o) in Question 2."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [three-element subset of real numbers]. List all [strictly increasing ordered selections] of elements of [set]. The ordering is [standard real number order]. List all [possible subsequences] of the [three-element sequence]."
-                },
-                {
-                    "processed": "Question 2: Let [four-element set]. Let the [three functions] be given with domain and codomain [set] defined as [function mappings]. Find the following: (enumeration) [composition of first and second functions] (enumeration) [composition of third and first functions] (enumeration) [composition of second and third functions] (enumeration) [three-function composition]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific set definitions with generic descriptions while maintaining mathematical context."
-                },
-                {
-                    "notes": "Standardized sequence descriptions while preserving ordering properties."
-                },
-                {
-                    "notes": "Generalized function definitions to '[function mappings]' for clustering purposes."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for function compositions."
-                },
-                {
-                    "notes": "Maintained the core concepts of sequences, ordering, and function composition."
-                },
-                {
-                    "notes": "Used consistent terminology for set operations and function compositions across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let A be a rule for defining a function F : N \u2192 N such that F is 1-1 and onto. Show how to construct a rule for defining F\u207b\u00b9.",
-                    "wrapped_question": "Question 1: Let [A] be a rule for defining a function [F : N \u2192 N] such that [F] is [1-1] and [onto]. Show how to construct a rule for defining [F\u207b\u00b9]."
-                },
-                {
-                    "original_question": "Question 2: For sets X, Y, and Z, let F : X \u2192 Y and G : Y \u2192 Z be 1-1 correspondences. Prove that (G o F)\u207b\u00b9 = F\u207b\u00b9 o G\u207b\u00b9.",
-                    "wrapped_question": "Question 2: For sets [X], [Y], and [Z], let [F : X \u2192 Y] and [G : Y \u2192 Z] be [1-1 correspondences]. Prove that [(G o F)\u207b\u00b9 = F\u207b\u00b9 o G\u207b\u00b9]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical functions, properties, and operations in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including function definitions."
-                },
-                {
-                    "notes": "Preserved the bijective function properties (1-1 and onto) and inverse function notation."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [construction rule] be a rule for defining a [bijective function on natural numbers]. Show how to construct a rule for defining [inverse function]."
-                },
-                {
-                    "processed": "Question 2: For [three sets], let [bijective function between first and second sets] and [bijective function between second and third sets] be [bijections]. Prove that [inverse of composition equals composition of inverses in reverse order]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific function properties with '[bijective function]' while maintaining context."
-                },
-                {
-                    "notes": "Standardized descriptions of inverse functions and compositions."
-                },
-                {
-                    "notes": "Generalized set references to '[three sets]' for clustering purposes."
-                },
-                {
-                    "notes": "Used descriptive labels for function properties and operations."
-                },
-                {
-                    "notes": "Maintained the core concepts of bijections, inverses, and function composition."
-                },
-                {
-                    "notes": "Used consistent terminology for function operations across both questions."
-                },
-                {
-                    "notes": "Emphasized the reverse order property in the composition of inverses."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Find the first six terms of the sequences defined for n > 0 as:\n(a) H(n) = n\u00b2(n + 1)\u00b2/4 \n(b) G(n) = n - 1 \n(c) F(n) = (-1)\u207f 2n - 3fn.",
-                    "wrapped_question": "Question 1: Find the first six terms of the sequences defined for [n > 0] as:\n(a) [H(n) = n\u00b2(n + 1)\u00b2/4]\n(b) [G(n) = n - 1]\n(c) [F(n) = (-1)\u207f 2n - 3fn]."
-                },
-                {
-                    "original_question": "Question 2: Find the first six terms of the sequences defined as:\n(a) H(0) = 0 and H(n) = H(n - 1) + n\u00b3 for n > 1\n(b) G(0) = 0 and G(n) = 2G(n - 1) + 1 for n > 1\n(c) F(0) = 2 and F(n) = 3F(n - 1) - n + 3 for n > 0.",
-                    "wrapped_question": "Question 2: Find the first six terms of the sequences defined as:\n(a) [H(0) = 0] and [H(n) = H(n - 1) + n\u00b3] for [n > 1]\n(b) [G(0) = 0] and [G(n) = 2G(n - 1) + 1] for [n > 1]\n(c) [F(0) = 2] and [F(n) = 3F(n - 1) - n + 3] for [n > 0]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical expressions, inequalities, and sequence definitions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the recursive and explicit sequence definitions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Find the first six terms of the sequences defined for [positive integers] as:\n(enumeration) [quartic sequence formula]\n(enumeration) [linear sequence formula]\n(enumeration) [alternating sequence formula with coefficient]"
-                },
-                {
-                    "processed": "Question 2: Find the first six terms of the sequences defined as:\n(enumeration) [base case] and [recursive cubic sequence] for [index condition]\n(enumeration) [base case] and [recursive doubling sequence] for [index condition]\n(enumeration) [base case] and [recursive linear transformation sequence] for [index condition]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific mathematical expressions with descriptive labels of their nature."
-                },
-                {
-                    "notes": "Standardized sequence descriptions while preserving their mathematical properties."
-                },
-                {
-                    "notes": "Generalized index conditions to '[index condition]' for clustering purposes."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for different types of sequences (quartic, linear, alternating, recursive)."
-                },
-                {
-                    "notes": "Maintained the core concepts of sequence generation and recursion."
-                },
-                {
-                    "notes": "Used consistent terminology for sequence operations across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Find a recursively defined function that gives the terms of the following sequences:\n(a) 2, 5, 8, 11, 14, ...\n(b) 3, 6, 12, 24, 48, ...",
-                    "wrapped_question": "Question 1: Find a [recursively defined function] that gives the terms of the following sequences:\n(a) [2, 5, 8, 11, 14, ...]\n(b) [3, 6, 12, 24, 48, ...]"
-                },
-                {
-                    "original_question": "Question 2: Let A and B be nonempty sets, and let F : A \u2192 B be a function. Prove that the following are equivalent:\n(a) F is onto.\n(b) There is a function G : B \u2192 A such that F o G = IdB.\n(c) For any set C and for functions H1 : B \u2192 C and H2 : B \u2192 C, if H1 o F = H2 o F, then H1 = H2.",
-                    "wrapped_question": "Question 2: Let [A] and [B] be [nonempty sets], and let [F : A \u2192 B] be a function. Prove that the following are equivalent:\n(a) [F] is [onto].\n(b) There is a function [G : B \u2192 A] such that [F o G = IdB].\n(c) For any set [C] and for functions [H1 : B \u2192 C] and [H2 : B \u2192 C], if [H1 o F = H2 o F], then [H1 = H2]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sequences, functions, and logical conditions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the sequence patterns and function composition notation."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Find a [recursive definition] that gives the terms of the following sequences:\n(enumeration) [arithmetic sequence with common difference three]\n(enumeration) [geometric sequence with common ratio two]"
-                },
-                {
-                    "processed": "Question 2: Let [set] and [set] be [non-empty sets], and let [function between sets] be a function. Prove that the following are equivalent:\n(enumeration) [function] is [surjective]\n(enumeration) There exists a [right inverse function] such that [composition equals identity]\n(enumeration) For any [set] and [functions to third set], if [compositions are equal], then [functions are equal]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific sequences with their mathematical classification (arithmetic/geometric)."
-                },
-                {
-                    "notes": "Standardized function properties using formal terminology (onto \u2192 surjective)."
-                },
-                {
-                    "notes": "Generalized set references while maintaining their relationships."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for function properties and compositions."
-                },
-                {
-                    "notes": "Maintained the core concepts of sequence generation and function properties."
-                },
-                {
-                    "notes": "Used consistent terminology for mathematical concepts across both questions."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let A and B be nonempty sets, and let F : A \u2192 B be a function. Prove that the following are equivalent:\n(a) F is 1-1.\n(b) There is a function G : B \u2192 A such that G o F = IdA.\n(c) For any set C and for functions H1 : C \u2192 A and H2 : C \u2192 A, if F o H1 = F o H2, then H1 = H2.",
-                    "wrapped_question": "Question 1: Let [A] and [B] be [nonempty sets], and let [F : A \u2192 B] be a function. Prove that the following are equivalent:\n(a) [F] is [1-1].\n(b) There is a function [G : B \u2192 A] such that [G o F = IdA].\n(c) For any set [C] and for functions [H1 : C \u2192 A] and [H2 : C \u2192 A], if [F o H1 = F o H2], then [H1 = H2]."
-                },
-                {
-                    "original_question": "Question 2: Let A and B be sets with A1, A2 \u2286 A, and let F : A \u2192 B. Let F(A1) denote {F(x) : x \u2208 A1} for i = 1, 2. Show that:\n(a) If A1 \u2286 A2, then F(A1) \u2286 F(A2).\n(b) F(A1 \u222a A2) = F(A1) \u222a F(A2).\n(c) F(A1 \u2229 A2) \u2286 F(A1) \u2229 F(A2).",
-                    "wrapped_question": "Question 2: Let [A] and [B] be sets with [A1, A2 \u2286 A], and let [F : A \u2192 B]. Let [F(A1)] denote [{F(x) : x \u2208 A1}] for [i = 1, 2]. Show that:\n(a) If [A1 \u2286 A2], then [F(A1) \u2286 F(A2)].\n(b) [F(A1 \u222a A2) = F(A1) \u222a F(A2)].\n(c) [F(A1 \u2229 A2) \u2286 F(A1) \u2229 F(A2)]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, functions, operations, and logical conditions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the function composition notation and set operations."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [set] and [set] be [non-empty sets], and let [function between sets] be a function. Prove that the following are equivalent:\n(enumeration) [function] is [injective]\n(enumeration) There exists a [left inverse function] such that [composition equals identity]\n(enumeration) For any [set] and [functions from third set], if [compositions are equal], then [functions are equal]"
-                },
-                {
-                    "processed": "Question 2: Let [set] and [set] be sets with [two subsets], and let [function between sets]. Let [image of subset] denote [set of function values] for [index condition]. Show that:\n(enumeration) If [subset relation], then [image subset relation]\n(enumeration) [image of union equals union of images]\n(enumeration) [image of intersection is subset of intersection of images]"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific function properties with formal terminology (1-1 \u2192 injective)."
-                },
-                {
-                    "notes": "Standardized set operations and relations using descriptive labels."
-                },
-                {
-                    "notes": "Generalized set references while maintaining their relationships."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for function properties and set operations."
-                },
-                {
-                    "notes": "Maintained the core logical structure of both questions."
-                },
-                {
-                    "notes": "Used consistent terminology for mathematical concepts across both questions."
-                },
-                {
-                    "notes": "Highlighted the key properties of function images under set operations in Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let A be any nonempty set, and let FA be the set of all functions from A to R.\n(a) Why is F + G \u2208 FA for all F, G \u2208 FA?\n(b) Prove (F + G) + H = F + (G + H) for all F, G, H \u2208 FA.\n(c) Let Zero \u2208 FA be defined by Zero(a) = 0 for all a \u2208 A. Prove that Zero + F = F for all F \u2208 FA.\n(d) For F \u2208 FA, define P by P(a) = -F(a) for each a \u2208 A. Prove that F + P = Zero for all F \u2208 FA.",
-                    "wrapped_question": "Question 1: Let [A] be any [nonempty set], and let [FA] be the set of all functions from [A] to [R].\n(a) Why is [F + G \u2208 FA] for all [F, G \u2208 FA]?\n(b) Prove [(F + G) + H = F + (G + H)] for all [F, G, H \u2208 FA].\n(c) Let [Zero \u2208 FA] be defined by [Zero(a) = 0] for all [a \u2208 A]. Prove that [Zero + F = F] for all [F \u2208 FA].\n(d) For [F \u2208 FA], define [P] by [P(a) = -F(a)] for each [a \u2208 A]. Prove that [F + P = Zero] for all [F \u2208 FA]."
-                },
-                {
-                    "original_question": "Question 2: (a) Let F : A \u2192 B be a function. Prove that F is onto if and only if F\u207b\u00b9(B\u2081) \u2260 \u2205 for each nonempty subset B\u2081 of B.\n(b) Let F : A \u2192 B be a function. Prove that F is onto if and only if F(F\u207b\u00b9(B\u2081)) = B\u2081 for all B\u2081 \u2286 B.",
-                    "wrapped_question": "Question 2: (a) Let [F : A \u2192 B] be a function. Prove that [F] is [onto] if and only if [F\u207b\u00b9(B\u2081) \u2260 \u2205] for each [nonempty subset B\u2081 of B].\n(b) Let [F : A \u2192 B] be a function. Prove that [F] is [onto] if and only if [F(F\u207b\u00b9(B\u2081)) = B\u2081] for all [B\u2081 \u2286 B]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, functions, operations, and logical conditions in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the function space notation and set operations."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [non-empty set], and let [function space] be the set of all functions from [set] to [real numbers].\n(enumeration) Why is [sum of functions in space] for all [pairs of functions in space]?\n(enumeration) Prove [associativity of function addition] for all [triples of functions in space].\n(enumeration) Let [zero function] be defined by [constant zero mapping]. Prove that [zero function is additive identity] for all [functions in space].\n(enumeration) For [function in space], define [additive inverse] by [pointwise negation]. Prove that [function plus its inverse equals zero] for all [functions in space]."
-                },
-                {
-                    "processed": "Question 2: (enumeration) Let [function between sets]. Prove that [function] is [surjective] if and only if [preimage is non-empty] for each [non-empty subset of codomain].\n(enumeration) Let [function between sets]. Prove that [function] is [surjective] if and only if [image of preimage equals subset] for all [subsets of codomain]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific function properties with formal terminology (onto \u2192 surjective)."
-                },
-                {
-                    "notes": "Standardized algebraic properties using descriptive labels."
-                },
-                {
-                    "notes": "Generalized set references while maintaining their relationships."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for function space properties and operations."
-                },
-                {
-                    "notes": "Maintained the core algebraic structure in Question 1 and logical equivalences in Question 2."
-                },
-                {
-                    "notes": "Used consistent terminology for mathematical concepts across both questions."
-                },
-                {
-                    "notes": "Highlighted the key properties of surjective functions in Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Let X be a set, and let F\u2093 be the set of all 1-1 functions from X onto X. We have two operations on functions in F\u2093: o and -1. Prove the following statements called group axioms. (If the results are already proved in the book, note where to find the proofs.)\n(a) For all F, G \u2208 F\u2093, F o G \u2208 F\u2093.\n(b) For all F, G, H \u2208 F\u2093, (F o G) o H = F o (G o H) (Associative Law).\n(c) For all F \u2208 F\u2093, F o Id\u2093 = Id\u2093 o F = F. (Identity Axiom).\n(d) For all F \u2208 F\u2093, there exists an F\u207b\u00b9 such that F o F\u207b\u00b9 = F\u207b\u00b9 o F = Id\u2093 (Inverse Axiom).",
-                    "wrapped_question": "Question 1: Let [X] be a set, and let [F\u2093] be the set of all [1-1 functions] from [X] onto [X]. We have two operations on functions in [F\u2093]: [o] and [-1]. Prove the following statements called [group axioms]. (If the results are already proved in the book, note where to find the proofs.)\n(a) For all [F, G \u2208 F\u2093], [F o G \u2208 F\u2093].\n(b) For all [F, G, H \u2208 F\u2093], [(F o G) o H = F o (G o H)] ([Associative Law]).\n(c) For all [F \u2208 F\u2093], [F o Id\u2093 = Id\u2093 o F = F]. ([Identity Axiom]).\n(d) For all [F \u2208 F\u2093], there exists an [F\u207b\u00b9] such that [F o F\u207b\u00b9 = F\u207b\u00b9 o F = Id\u2093] ([Inverse Axiom])."
-                },
-                {
-                    "original_question": "Question 2: Let F: A -> B be a function. Define G: P(B) -> P(A) by G(B\u2081) = F\u207b\u00b9(B\u2081). Prove that G is 1-1 if and only if F is onto.",
-                    "wrapped_question": "Question 2: Let [F: A -> B] be a function. Define [G: P(B) -> P(A)] by [G(B\u2081) = F\u207b\u00b9(B\u2081)]. Prove that [G] is [1-1] if and only if [F] is [onto]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, functions, operations, and properties in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of the questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the group theory axioms and function composition notation."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Let [set], and let [set of bijections] be the set of all [bijective functions] from [set] to [set]. We have two operations on functions in [set of bijections]: [composition] and [inverse]. Prove the following statements called [group properties].\n(enumeration) For all [pairs of bijections], [composition is closed].\n(enumeration) For all [triples of bijections], [composition is associative].\n(enumeration) For all [bijections], [identity function is neutral element].\n(enumeration) For all [bijections], [inverse exists]."
-                },
-                {
-                    "processed": "Question 2: Let [function between sets]. Define [induced function on power sets] by [preimage operation]. Prove that [induced function] is [injective] if and only if [original function] is [surjective]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific function properties with formal terminology (1-1 \u2192 bijective/injective, onto \u2192 surjective)."
-                },
-                {
-                    "notes": "Standardized group theory concepts using descriptive labels."
-                },
-                {
-                    "notes": "Generalized set references while maintaining their relationships."
-                },
-                {
-                    "notes": "Changed enumeration markers to (enumeration) for consistency."
-                },
-                {
-                    "notes": "Used descriptive labels for algebraic properties and function operations."
-                },
-                {
-                    "notes": "Maintained the core group theory structure in Question 1 and the function property equivalence in Question 2."
-                },
-                {
-                    "notes": "Used consistent terminology for mathematical concepts across both questions."
-                },
-                {
-                    "notes": "Highlighted the power set and preimage concepts in Question 2."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Prove that in any set of 27 words, at least two must begin with the same letter assuming at most a 26-letter alphabet.",
-                    "wrapped_question": "Question 1: Prove that in any [set of 27 words], at least two must begin with the [same letter] assuming at most a [26-letter alphabet]."
-                },
-                {
-                    "original_question": "Question 2: Prove that in any group of five integers, at least two have the same value under the (mod 4) operation.",
-                    "wrapped_question": "Question 2: Prove that in any [group of five integers], at least two have the [same value] under the [(mod 4)] operation."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all mathematical sets, operations, and quantitative constraints in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of both questions."
-                },
-                {
-                    "notes": "Preserved the pigeonhole principle applications in both questions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Prove that in any [collection exceeding alphabet size], at least two must share [initial character property] under [finite alphabet constraint]."
-                },
-                {
-                    "processed": "Question 2: Prove that in any [collection exceeding residue classes], at least two must share [congruence property] under [modular arithmetic operation]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific numerical constraints with conceptual descriptions."
-                },
-                {
-                    "notes": "Standardized the pigeonhole principle applications using descriptive labels."
-                },
-                {
-                    "notes": "Generalized the mathematical contexts while preserving the core principles."
-                },
-                {
-                    "notes": "Used consistent terminology for collection properties across both questions."
-                },
-                {
-                    "notes": "Highlighted the key constraints (alphabet size, residue classes) in each problem."
-                },
-                {
-                    "notes": "Maintained the logical structure of the pigeonhole principle arguments."
-                },
-                {
-                    "notes": "Abstracted specific operations to their general mathematical categories."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Prove that in any class of more than 101 students, at least two must receive the same grade for an exam with grading scale of 0 to 100.",
-                    "wrapped_question": "Question 1: Prove that in any [class of more than 101 students], at least two must receive the [same grade] for an [exam with grading scale of 0 to 100]."
-                },
-                {
-                    "original_question": "Question 2: Prove that for any 44 people, at least four must be born in the same month.",
-                    "wrapped_question": "Question 2: Prove that for any [44 people], at least [four] must be born in the [same month]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all numerical constraints and categorical properties in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of both questions."
-                },
-                {
-                    "notes": "Preserved the pigeonhole principle applications in both questions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Prove that in any [group exceeding grade scale], at least two must share [identical evaluation] under [finite grading system]."
-                },
-                {
-                    "processed": "Question 2: Prove that for any [group size requiring collision], at least [minimum shared category instances] must share [temporal category]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific numerical constraints with conceptual descriptions of their mathematical significance."
-                },
-                {
-                    "notes": "Standardized the pigeonhole principle applications using descriptive labels."
-                },
-                {
-                    "notes": "Generalized the contexts (grades \u2192 evaluation, months \u2192 temporal category) while preserving the core principles."
-                },
-                {
-                    "notes": "Used consistent terminology for group properties across both questions."
-                },
-                {
-                    "notes": "Highlighted the key constraints (grade scale size, group-to-category ratio) in each problem."
-                },
-                {
-                    "notes": "Maintained the logical structure of the pigeonhole principle arguments."
-                },
-                {
-                    "notes": "Abstracted specific categories to their general mathematical properties."
-                },
-                {
-                    "notes": "Emphasized the 'exceeding capacity' aspect central to pigeonhole problems."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Prove that in any class of 35 students, at least seven receive the same final grade, where the scale is A-B-C-D-F.",
-                    "wrapped_question": "Question 1: Prove that in any [class of 35 students], at least [seven] receive the [same final grade], where the [scale is A-B-C-D-F]."
-                },
-                {
-                    "original_question": "Question 2: Area codes are used to distinguish phone numbers for which the last seven digits are the same. If you have 35,000,000 phone numbers in a state and an area code can distinguish approximately 900,000 phone numbers, how many area codes are needed to distinguish the phone numbers of this state?",
-                    "wrapped_question": "Question 2: [Area codes] are used to distinguish [phone numbers] for which the [last seven digits are the same]. If you have [35,000,000 phone numbers] in a state and an [area code] can distinguish approximately [900,000 phone numbers], how many [area codes] are needed to distinguish the [phone numbers] of this state?"
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all numerical values, categorical properties, and technical terms in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of both questions."
-                },
-                {
-                    "notes": "Preserved the pigeonhole principle application in Question 1 and the division principle in Question 2."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Prove that in any [group size requiring grade collision], at least [minimum shared instances] receive [identical categorical evaluation] under [finite grading categories]."
-                },
-                {
-                    "processed": "Question 2: [Distinct identifiers] are used to distinguish [items] with [shared suffix properties]. Given [total items] and [identifier capacity], how many [identifiers] are needed to distinguish all [items] in [collection]?"
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific numerical constraints with conceptual descriptions of their mathematical significance."
-                },
-                {
-                    "notes": "Standardized the pigeonhole principle application in Question 1 using descriptive labels."
-                },
-                {
-                    "notes": "Generalized the phone number problem to abstract identifier/distinction concepts in Question 2."
-                },
-                {
-                    "notes": "Used consistent terminology for grouping properties across both questions."
-                },
-                {
-                    "notes": "Highlighted the key constraints (grade categories, identifier capacity) in each problem."
-                },
-                {
-                    "notes": "Maintained the logical structure of both counting principle applications."
-                },
-                {
-                    "notes": "Abstracted specific scenarios to their general mathematical properties."
-                },
-                {
-                    "notes": "Emphasized the 'capacity versus requirement' aspect central to both problems."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: There are 35,000 students at State University. Each student takes four different courses each term. State University offers 999 courses each term. The largest classroom on",
-                    "wrapped_question": "Question 1: There are [35,000 students] at [State University]. Each student takes [four different courses] each term. [State University] offers [999 courses] each term. The [largest classroom] on"
-                },
-                {
-                    "original_question": "Question 2: At Bridgetown University, there are 45 time periods during the week for scheduling classes. Use the Generalized Pigeon-Hole Principle to determine how many rooms (at least) are needed if 780 different classes are to be scheduled in the 45 time slots.",
-                    "wrapped_question": "Question 2: At [Bridgetown University], there are [45 time periods] during the week for [scheduling classes]. Use the [Generalized Pigeon-Hole Principle] to determine how many [rooms] (at least) are needed if [780 different classes] are to be scheduled in the [45 time slots]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all numerical values, institutional names, and technical terms in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of both questions."
-                },
-                {
-                    "notes": "Preserved the scheduling problem setup in both questions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: There are [large student population] at [institution]. Each student takes [multiple courses] each term. [Institution] offers [numerous courses] each term. The [capacity constraint] on"
-                },
-                {
-                    "processed": "Question 2: At [institution], there are [fixed time periods] for [resource allocation]. Use the [distribution principle] to determine the minimum [resources] needed when [many items] must be allocated to [limited slots]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific numerical values with conceptual descriptions of their scale."
-                },
-                {
-                    "notes": "Standardized the institutional references to generic terms."
-                },
-                {
-                    "notes": "Generalized the scheduling problems to abstract resource allocation concepts."
-                },
-                {
-                    "notes": "Used consistent terminology for allocation problems across both questions."
-                },
-                {
-                    "notes": "Highlighted the key constraints (population size, time slots) in each problem."
-                },
-                {
-                    "notes": "Maintained the logical structure of both resource allocation problems."
-                },
-                {
-                    "notes": "Abstracted specific scenarios to their general mathematical properties."
-                },
-                {
-                    "notes": "Emphasized the 'demand versus capacity' aspect central to both problems."
-                }
-            ]
-        },
-        {
-            "WRAPPING_STEP": [
-                {
-                    "original_question": "Question 1: Suppose someone (say, Aesop) is marking days in some leap year (say, 2948). You do not know which days he marks, only how many. Use this to answer the following questions. (Warning: Some, but not all, of these questions use the Pigeon-Hole Principle.)\n (a) How many days would Aesop have to mark before you can conclude that he marked two days in January?\n (b) How many days would Aesop have to mark before you can conclude that he\n marked two days in February?\n (c) How many days would Aesop have to mark before you can conclude that he\n marked two days in the same month?\n (d) How many days would Aesop have to mark before you can conclude that he\n marked three days in the same month?\n (e) How many days would Aesop have to mark before you can conclude that he\n marked three days with the same date (for example, the third of three different\n months, or the 31st of three different months)?\n (f) How many days would Aesop have to mark before you can conclude that he\n marked two consecutive days (for example, January 31 and February 1)?\n (g) How many days would Aesop have to mark before you can conclude that he\n marked three consecutive days?",
-                    "wrapped_question": "Question 1: Suppose someone (say, [Aesop]) is marking days in some [leap year] (say, [2948]). You do not know which days he marks, only how many. Use this to answer the following questions. (Warning: Some, but not all, of these questions use the [Pigeon-Hole Principle].)\n (a) How many days would [Aesop] have to mark before you can conclude that he marked [two days in January]?\n (b) How many days would [Aesop] have to mark before you can conclude that he\n marked [two days in February]?\n (c) How many days would [Aesop] have to mark before you can conclude that he\n marked [two days in the same month]?\n (d) How many days would [Aesop] have to mark before you can conclude that he\n marked [three days in the same month]?\n (e) How many days would [Aesop] have to mark before you can conclude that he\n marked [three days with the same date] (for example, the [third of three different\n months], or the [31st of three different months])?\n (f) How many days would [Aesop] have to mark before you can conclude that he\n marked [two consecutive days] (for example, [January 31 and February 1])?\n (g) How many days would [Aesop] have to mark before you can conclude that he\n marked [three consecutive days]?"
-                },
-                {
-                    "original_question": "Question 2: Prove that for any collection of n people, two persons have the exact same number of acquaintances in the group provided that each person has at least one acquaintance.",
-                    "wrapped_question": "Question 2: Prove that for any [collection of n people], [two persons] have the [exact same number of acquaintances] in the [group] provided that each [person] has at least [one acquaintance]."
-                }
-            ],
-            "WRAPPING_NOTES": [
-                {
-                    "notes": "Wrapped all numerical values, temporal references, and technical terms in square brackets."
-                },
-                {
-                    "notes": "Maintained the original structure of both questions including all subparts."
-                },
-                {
-                    "notes": "Preserved the pigeonhole principle applications in both questions."
-                }
-            ],
-            "PREPROCESSED_TEXT": [
-                {
-                    "processed": "Question 1: Suppose [agent] is marking days in [leap year context]. Answer the following about [minimum marking requirements] for various temporal patterns:\n(enumeration) [Month-specific duplication threshold] for [specific month]\n(enumeration) [Month-specific duplication threshold] for [different specific month]\n(enumeration) [General month duplication threshold]\n(enumeration) [Month triplication threshold]\n(enumeration) [Date recurrence threshold across months]\n(enumeration) [Consecutive day pair threshold]\n(enumeration) [Consecutive day triplet threshold]"
-                },
-                {
-                    "processed": "Question 2: Prove that for any [social network of size n], [pair of individuals] must share [identical connection count] under [minimum connectivity constraint]."
-                }
-            ],
-            "PROCESSING_NOTES": [
-                {
-                    "notes": "Replaced specific temporal references with conceptual descriptions of their mathematical significance."
-                },
-                {
-                    "notes": "Standardized the pigeonhole principle applications using descriptive threshold labels."
-                },
-                {
-                    "notes": "Generalized the social network problem to abstract connection properties."
-                },
-                {
-                    "notes": "Used consistent terminology for pattern recognition across both questions."
-                },
-                {
-                    "notes": "Highlighted the key constraints (month days, connection counts) in each problem."
-                },
-                {
-                    "notes": "Maintained the logical structure of both combinatorial problems."
-                },
-                {
-                    "notes": "Abstracted specific scenarios to their general mathematical properties."
-                },
-                {
-                    "notes": "Emphasized the pattern recognition aspect central to both problems."
-                }
-            ]
+            "1": {
+                "topics": [
+                    "Infinite Sequences",
+                    "Cardinality",
+                    "Power Sets",
+                    "Cantor's Diagonal Argument"
+                ],
+                "initialLO": [
+                    "Demonstrate that the set of all infinite sequences from a one-element set is finite by analyzing possible sequence variations.",
+                    "Prove that the set of all infinite binary sequences has the same cardinality as the power set of natural numbers by constructing a bijection.",
+                    "Prove that the set of all infinite sequences of natural numbers has the same cardinality as the power set of natural numbers using cardinality arguments."
+                ],
+                "finalLO": [
+                    "Analyze the cardinality of infinite sequence sets based on their alphabet size, demonstrating when they are finite or uncountable.",
+                    "Prove that infinite sequence sets with alphabet size greater than one have the same cardinality as the power set of natural numbers by establishing appropriate bijections.",
+                    "Compare cardinalities of different infinite sequence sets, identifying when they match the cardinality of power sets of countable sets."
+                ]
+            }
         }
     ]
 }

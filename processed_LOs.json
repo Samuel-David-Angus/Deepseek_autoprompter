@@ -1,0 +1,866 @@
+{
+    "Sets, Proofs, and Induction": [
+        [
+            "Given a description of multiple sets and their properties, construct the correct set-theoretic notation to represent the specified subset of elements, ensuring accuracy in the use of set operations such as union, intersection, and complement.",
+            "Given a scenario involving multiple sets, translate verbal descriptions into precise set-theoretic expressions, demonstrating understanding of set membership and operations.",
+            "Given a collection of sets with defined properties, apply set operations to formulate expressions that combine multiple conditions, ensuring logical correctness and completeness."
+        ],
+        [
+            "Given a finite set of numbers, identify and articulate at least three distinct patterns or properties that describe the elements of the set, demonstrating clarity and logical consistency.",
+            "Given a specific set, generate multiple verbal descriptions that accurately characterize the elements, ensuring each description is unique and mathematically valid.",
+            "Given a set with an underlying pattern, recognize and express the rule governing the sequence, ensuring the description aligns with the given elements."
+        ],
+        [
+            "Given a set with various elements, including nested sets, determine the exact number of distinct elements in the set, ensuring accurate counting by distinguishing between elements and subsets.",
+            "Given a description of a set, identify whether it is the empty set or contains nested structures, and correctly compute its cardinality without omission or duplication.",
+            "Given a set with complex nesting, analyze its structure to count elements at each level, ensuring precision in distinguishing between individual elements and subsets."
+        ],
+        [
+            "Given two sets, determine whether they are equal by comparing their elements, and if unequal, identify a specific element that distinguishes them, ensuring thoroughness in analysis.",
+            "Given pairs of sets with nested structures, evaluate their equality by examining membership at all levels, and justify differences with explicit counterexamples when applicable.",
+            "Given a set and the empty set, verify their equality or inequality by applying the definition of set membership, ensuring logical consistency in reasoning."
+        ],
+        [
+            "Given a collection of sets with varying elements, identify all subset relationships between them by systematically comparing elements, ensuring no valid subset is overlooked.",
+            "Given the empty set within a group of sets, determine which sets it is a subset of by applying the definition of subset inclusion, demonstrating understanding of its universal subset property.",
+            "Given a set containing other sets as elements, distinguish between element membership and subset relationships, accurately identifying all subsets while avoiding confusion between containment levels."
+        ],
+        [
+            "Given sets defined by arithmetic conditions in set-builder notation, verify whether specific elements belong to them by checking the defining properties, ensuring correct application of the membership criteria.",
+            "Given multiple sets with mathematical definitions, construct formal proofs of subset relationships by showing universal implications between their defining properties, maintaining logical rigor throughout.",
+            "Given two sets defined differently, prove or disprove their equality by demonstrating mutual subset inclusion or finding counterexamples, ensuring complete coverage of both containment directions.",
+            "Given a proper subset relationship between mathematically defined sets, prove the inclusion while demonstrating the existence of elements in the superset not contained in the subset, showing understanding of strict containment."
+        ],
+        [
+            "Given the empty set and a set containing the empty set, articulate the precise distinction between them by describing their membership properties, ensuring clarity in differentiating between containment and elementhood.",
+            "Given examples of the empty set and singleton sets containing the empty set, construct accurate verbal descriptions that highlight their structural differences, demonstrating understanding of hierarchical set construction."
+        ],
+        [
+            "Given multiple subset relationships between three sets, construct a formal proof of transitivity for proper inclusion by demonstrating both containment and existence of additional elements, ensuring logical validity at each step.",
+            "Given a scenario combining subset and proper subset relationships, derive new inclusion relationships through deductive reasoning, maintaining precision in distinguishing between \u2286 and \u2282 throughout the proof.",
+            "Given a non-inclusion condition among sets, use contrapositive reasoning to infer other non-inclusion relationships, constructing valid arguments that demonstrate understanding of logical implications in set containment."
+        ],
+        [
+            "Given multiple sets with specified elements, compute their union by combining all distinct elements from each set, ensuring no duplicates are present in the final result.",
+            "Given two sets, determine their intersection by identifying all elements common to both sets, verifying each element's presence in both sets.",
+            "Given two sets, calculate their set difference by identifying elements present in the first set but not in the second, checking each element systematically.",
+            "Given a universal set and a subset, compute the complement by listing all elements in the universal set not contained in the subset, ensuring completeness and accuracy."
+        ],
+        [
+            "Given a set, generate its power set by listing all possible subsets, ensuring the collection includes all combinations of elements and maintains proper subset relationships.",
+            "Given multiple sets, analyze relationships between their power sets by comparing generated subsets, verifying properties of power set operations through systematic examination.",
+            "Given set operations involving power sets, evaluate claims about their equality by constructing examples or counterexamples, demonstrating understanding of power set properties.",
+            "Given a power set operation, explain why certain operations like complement don't apply by analyzing the structure of power sets and their elements, articulating the conceptual limitations clearly."
+        ],
+        [
+            "Given two finite sets, construct their Cartesian product by systematically pairing each element of the first set with every element of the second set, ensuring all possible ordered pairs are included without duplication.",
+            "Given three finite sets, compute the Cartesian product by forming ordered triples where each component comes from the respective set, verifying the correct order and completeness of all combinations.",
+            "Given multiple sets, determine the cardinality of their Cartesian product by applying the product rule of counting, demonstrating understanding of how set sizes affect the number of ordered tuples."
+        ],
+        [
+            "Given three finite sets, generate all possible ordered triples in their Cartesian product by systematically combining elements while maintaining the specified order of sets, ensuring no valid combination is omitted.",
+            "Given multiple sets with varying cardinalities, compute the Cartesian product in different orders and compare the results, demonstrating understanding of how order affects tuple formation in set products.",
+            "Given a sequence of set products, verify the non-commutative property of Cartesian products by constructing examples where changing the order of operations yields different resulting sets, showing precise attention to tuple ordering."
+        ],
+        [
+            "Given the union of two sets, construct a third set that is contained in the union but not contained in either original set individually, demonstrating understanding of non-trivial subset relationships.",
+            "Given a subset condition involving union, create specific examples that satisfy the given condition while violating stronger containment conditions, showing ability to build precise counterexamples.",
+            "Given multiple sets, analyze their containment relationships to verify whether a subset is properly contained in their union but not in any individual set, ensuring logical consistency in the evaluation."
+        ],
+        [
+            "Given a set with nested elements, determine the exact number of elements at each level of the hierarchy, including its power set and power set of power set, applying the formula for power set cardinality correctly.",
+            "Given a complex set structure, evaluate membership claims at different levels (elements, subsets, power sets) by carefully tracing containment relationships through the hierarchy, ensuring accurate classification.",
+            "Given statements about membership in power sets and their power sets, verify their validity by systematically checking each level of set containment, demonstrating thorough understanding of nested set structures.",
+            "Given the empty set, determine its presence in various power set levels by applying the universal subset property, showing consistent understanding of the empty set's role in power set constructions."
+        ],
+        [
+            "Given a conditional statement in natural language, systematically construct its converse by reversing the hypothesis and conclusion while maintaining logical structure.",
+            "Given an implication, formulate its inverse by negating both the hypothesis and conclusion, ensuring proper negation of each component.",
+            "Given a logical implication, derive its contrapositive by both reversing and negating the hypothesis and conclusion, verifying the logical equivalence to the original statement.",
+            "Given a set of conditional statements, analyze the relationships between implications and their derived forms (converse, inverse, contrapositive), demonstrating understanding of their distinct logical meanings."
+        ],
+        [
+            "Given statements about disjoint set relationships, verify their validity by constructing formal proofs for correct statements and finding specific counterexamples for incorrect ones, demonstrating rigorous logical analysis.",
+            "Given claims about set operations and disjointness, analyze the symmetry of disjointness conditions by examining whether order of sets affects the relationship, showing attention to subtle logical details.",
+            "Given compound set operations involving unions and intersections, evaluate their disjointness properties with other sets by breaking down the operations into component relationships, ensuring comprehensive analysis.",
+            "Given statements involving set complements and disjointness, verify their validity within a universal set by applying De Morgan's laws and other set identities, showing understanding of complement properties.",
+            "Given complex logical statements about set relationships, distinguish between necessary and sufficient conditions by constructing appropriate examples and counterexamples, demonstrating precise logical reasoning."
+        ],
+        [
+            "Given a statement about symmetric difference, construct a formal proof by showing set equality through mutual subset inclusion, demonstrating each step of the proof clearly.",
+            "Given a proposed set identity involving symmetric difference, verify its validity by either proving it correct or constructing a specific counterexample showing its falsehood.",
+            "Given complex set operations involving symmetric differences, analyze subset relationships by examining element membership in all component sets systematically."
+        ],
+        [
+            "Given a set of integers with specific divisibility constraints, determine possible last digits of their products by analyzing modular arithmetic properties systematically.",
+            "Given a problem about consecutive products, develop a proof strategy by identifying and exhaustively examining all possible cases of product combinations.",
+            "Given numerical constraints on integers, construct a logical argument showing the existence of a product with specified final digit by methodically eliminating other possibilities."
+        ],
+        [
+            "Given the definition of a prime number, construct a proof by contradiction for the primality of a specific number by assuming it is composite and deriving a logical inconsistency.",
+            "Given a number to test for primality, systematically examine all possible divisors and demonstrate that none satisfy the conditions for being a proper divisor, thereby confirming its prime status."
+        ],
+        [
+            "Given the definition of rational numbers, construct a proof by contradiction for the irrationality of a specific square root by assuming it is rational and deriving a contradiction about the nature of its numerator and denominator.",
+            "Given a square root to analyze, apply the method of infinite descent or other number-theoretic techniques to demonstrate that it cannot be expressed as a ratio of integers in lowest terms."
+        ],
+        [
+            "Given a power set with standard set operations, verify the lattice properties by demonstrating that both meet and join operations satisfy the required algebraic laws.",
+            "Given a power set lattice, prove the distributive property holds for both standard and dual operations by showing the equality of expressions under all possible subset combinations.",
+            "Given a lattice structure, analyze the effect of interchanging meet and join operations by constructing parallel proofs for both configurations while maintaining logical consistency."
+        ],
+        [
+            "Given a power set with dual operations, demonstrate the complemented lattice structure by identifying and verifying the existence of complements for every element in the lattice.",
+            "Given a lattice with interchanged operations, prove the complementation property holds by showing each element has a corresponding complement that satisfies the required equations.",
+            "Given a power set algebraic structure, verify all complemented lattice axioms by systematically checking each condition for arbitrary elements while maintaining precise logical reasoning."
+        ],
+        [
+            "Given a statement about boolean algebra identities, construct a bidirectional proof by demonstrating logical equivalence between complex boolean expressions through systematic application of algebraic properties.",
+            "Given multiple boolean algebra equations, analyze their interrelationships by proving that the validity of one set of identities necessarily implies the validity of another set through logical deduction.",
+            "Given a complex boolean algebra problem, verify the consistency of algebraic laws by simultaneously proving both distributive properties for meet and join operations while maintaining logical rigor."
+        ],
+        [
+            "Given the statement of DeMorgan's Laws in boolean algebra, construct a formal proof by demonstrating the equality of both sides through systematic application of complementation and duality principles.",
+            "Given boolean expressions with meets and joins, verify DeMorgan's Laws by showing how negation distributes over these operations while properly inverting the operation type through logical transformation.",
+            "Given the dual nature of boolean algebra operations, prove both forms of DeMorgan's Laws by establishing the consistency between the negation of joins and meets through complementary reasoning."
+        ],
+        [
+            "Given a universal set and subsets represented as bit strings, perform union operations by applying bitwise OR to the corresponding bit representations while maintaining proper alignment of elements.",
+            "Given multiple bit-represented subsets, compute their intersection by applying bitwise AND operations systematically across all given sets to identify common elements.",
+            "Given complex set expressions involving multiple operations, construct the correct bit representation by applying operations in proper sequence according to standard operator precedence rules.",
+            "Given nested set operations, evaluate the expression step-by-step using appropriate bitwise operations (AND, OR, NOT) for each component operation while preserving intermediate results."
+        ],
+        [
+            "Given a divisibility statement, construct a complete proof by mathematical induction by first verifying the base case and then demonstrating the inductive step through algebraic manipulation of the expression.",
+            "Given an algebraic expression involving natural numbers, analyze its divisibility properties by expanding and restructuring the expression to reveal factors that satisfy the divisibility condition.",
+            "Given an induction proof requirement, properly structure the proof by clearly separating and labeling the base case verification and inductive hypothesis components while maintaining logical flow.",
+            "Given a polynomial expression, manipulate its form to expose divisible factors by applying algebraic identities and properties of exponents during the inductive step of the proof."
+        ],
+        [
+            "Given a polynomial expression, construct a proof by mathematical induction to demonstrate its divisibility by a specified integer by first verifying the base case and then establishing the inductive step through algebraic manipulation.",
+            "Given a cubic polynomial, analyze its divisibility properties by factoring the expression and applying inductive reasoning to show it holds for all natural numbers.",
+            "Given multiple divisibility statements, systematically prove each one by induction while maintaining proper structure and logical flow in each proof."
+        ],
+        [
+            "Given a higher-degree polynomial expression, develop an inductive proof of its divisibility by analyzing the polynomial's behavior under modular arithmetic and applying factorization techniques.",
+            "Given a statement about divisibility by a prime number, construct a proof by induction that may incorporate concepts from number theory while strictly following inductive proof structure.",
+            "Given a complex divisibility condition involving multiple factors, verify the statement by demonstrating divisibility by each component factor through separate logical arguments within the inductive framework."
+        ],
+        [
+            "Given a statement about the sum of cubes of consecutive numbers, construct a complete inductive proof by first verifying the base case and then demonstrating the inductive step through algebraic expansion and simplification.",
+            "Given a divisibility condition involving consecutive integers, analyze the problem by expressing the numbers in terms of a variable and applying modular arithmetic to verify the divisibility property.",
+            "Given a polynomial expression derived from consecutive numbers, manipulate the expression to factor out the divisor and prove the divisibility claim through systematic algebraic reasoning."
+        ],
+        [
+            "Given a number composed of repeating digits, verify its divisibility by analyzing its numerical representation and applying known divisibility rules for powers of three.",
+            "Given a general statement about numbers with identical digits, construct an inductive proof by first establishing the base case and then showing how the property extends to numbers with more digits through mathematical reasoning.",
+            "Given a pattern involving exponentiation in digit repetition, demonstrate the divisibility property by expressing the number as a mathematical series and proving the claim through induction on the exponent."
+        ]
+    ],
+    "Formal Logic": [
+        [
+            "Translate natural language statements into propositional logic expressions using given proposition letters, ensuring correct use of logical connectives such as implication, conjunction, disjunction, and negation.",
+            "Construct compound logical expressions from natural language statements by accurately applying the rules of propositional logic under given conditions.",
+            "Verify the correctness of translated propositional logic expressions by comparing them with the original natural language statements for logical equivalence."
+        ],
+        [
+            "Convert propositional logic expressions into natural language sentences using provided proposition letters, ensuring clarity and accuracy in translation.",
+            "Interpret complex logical expressions involving conjunctions, disjunctions, implications, and negations by breaking them down into understandable natural language statements.",
+            "Evaluate the correctness of translated natural language statements by reconstructing the original logical expressions and checking for consistency."
+        ],
+        [
+            "Interpret the meaning of logical negation in propositional statements by accurately translating symbolic expressions into natural language under given proposition definitions.",
+            "Construct clear natural language interpretations of logical conjunctions and disjunctions from symbolic propositional logic expressions using specified propositions.",
+            "Translate logical implications and biconditionals into natural language statements while preserving their logical relationships, ensuring clarity and correctness."
+        ],
+        [
+            "Demonstrate understanding of logical negation by converting symbolic propositional expressions into precise natural language statements based on given proposition definitions.",
+            "Formulate accurate natural language interpretations of compound logical expressions involving conjunctions and disjunctions, ensuring logical relationships are maintained.",
+            "Explain the meaning of logical implications and biconditionals in natural language, verifying that translations align with the original symbolic expressions."
+        ],
+        [
+            "Determine the truth value of logical disjunctions by evaluating given truth assignments to component propositions with complete accuracy.",
+            "Compute the truth value of logical conjunctions by applying the correct truth table rules to given propositional values without error.",
+            "Evaluate the truth value of compound propositions involving negations and implications using specified truth assignments, ensuring correct application of logical operators."
+        ],
+        [
+            "Analyze complex logical expressions with multiple operators by systematically applying truth values to component propositions and correctly following operator precedence rules.",
+            "Calculate the truth value of nested implications and biconditionals by accurately propagating given truth assignments through all levels of the expression.",
+            "Verify the correctness of truth value determinations for compound propositions by reconstructing the evaluation process step-by-step and checking for consistency."
+        ],
+        [
+            "Evaluate the truth value of compound logical expressions containing conjunctions and disjunctions by systematically applying given truth assignments to component propositions with complete accuracy.",
+            "Determine the truth value of nested implications by correctly interpreting the logical relationships between propositions based on their given truth values.",
+            "Analyze complex logical expressions with multiple operators by applying proper operator precedence rules and verifying each step of the evaluation process."
+        ],
+        [
+            "Construct accurate expression trees for propositional formulas by correctly identifying and hierarchically organizing all logical operators and their operands.",
+            "Analyze the syntactic structure of complex logical formulas by breaking them down into their constituent subexpressions and representing them as tree structures.",
+            "Verify the correctness of expression trees by reconstructing the original logical formulas from the tree representation while maintaining proper operator precedence."
+        ],
+        [
+            "Construct an expression tree for a propositional formula containing implications and negations by correctly identifying and organizing all logical operators and their operands in proper hierarchical order.",
+            "Analyze the structure of nested implications in propositional logic by decomposing the formula into its constituent subexpressions and representing them as a tree structure.",
+            "Verify the accuracy of the constructed expression tree by ensuring it correctly reflects the operator precedence and logical relationships present in the original formula."
+        ],
+        [
+            "Decompose complex propositional formulas with multiple nested operators into expression trees by systematically identifying and organizing all logical components while maintaining proper operator precedence.",
+            "Construct accurate tree representations for formulas containing biconditionals and multiple levels of nesting by carefully analyzing the syntactic structure of each subexpression.",
+            "Validate the correctness of complex expression trees by reconstructing the original formula from the tree representation and verifying logical equivalence at each level of decomposition."
+        ],
+        [
+            "Construct an expression tree for highly nested propositional formulas by systematically identifying and organizing all logical operators and their operands while maintaining proper hierarchical structure.",
+            "Analyze complex logical expressions containing multiple levels of negations and biconditionals by decomposing them into their fundamental components and representing them as a structured tree.",
+            "Verify the accuracy of constructed expression trees for complex formulas by ensuring all logical relationships and operator precedences are correctly preserved in the tree representation."
+        ],
+        [
+            "Evaluate an expression tree by applying given truth values to propositional variables and systematically computing the truth value of each node through proper tree traversal techniques.",
+            "Determine the final truth value of a propositional formula represented as an expression tree by correctly applying the rules of logical operators to the given truth assignments.",
+            "Validate the evaluation process of expression trees by reconstructing each step of the computation and verifying the correctness of intermediate truth value determinations."
+        ],
+        [
+            "Construct an expression tree for propositional formulas containing implications and disjunctions by correctly identifying and organizing all logical operators and their operands in proper hierarchical order.",
+            "Evaluate the truth value of a constructed expression tree by systematically applying given truth assignments to propositional variables and computing the result of each logical operation.",
+            "Verify the correctness of both the expression tree construction and truth evaluation by demonstrating how each step preserves the logical relationships in the original formula."
+        ],
+        [
+            "Deconstruct complex nested propositional formulas into expression trees by accurately representing all logical operators and their relationships while maintaining proper operator precedence.",
+            "Compute the truth value of deeply nested logical expressions by correctly propagating given truth assignments through all levels of the expression tree.",
+            "Validate the evaluation of complex expression trees by tracing each computation step and confirming the final result matches the expected logical outcome."
+        ],
+        [
+            "Construct expression trees for complex logical formulas containing multiple nested operators by correctly identifying and organizing all components according to standard operator precedence rules.",
+            "Evaluate the truth value of complex expression trees by systematically applying given truth assignments and computing the result of each logical operation in proper sequence.",
+            "Verify the correctness of both tree construction and evaluation by demonstrating how each operation preserves the logical relationships in the original formula."
+        ],
+        [
+            "Analyze logical equivalences by constructing expression trees and evaluating them for all possible truth value combinations to verify tautological status.",
+            "Apply De Morgan's laws to transform and simplify logical expressions while preserving their truth-functional relationships.",
+            "Demonstrate understanding of tautologies by systematically evaluating all possible truth value combinations and confirming the expression's validity in every case."
+        ],
+        [
+            "Construct complete truth tables for complex logical formulas by systematically evaluating all possible truth value combinations of propositional variables.",
+            "Analyze truth tables to determine if a given formula is a tautology by verifying if the final column contains only true values for all possible inputs.",
+            "Compare the logical relationships between different formulas by examining their truth table outputs and identifying patterns in their truth values."
+        ],
+        [
+            "Construct a truth table for a given logical expression containing implications and conjunctions by evaluating all possible truth value assignments.",
+            "Simplify complex logical expressions to equivalent forms using only basic logical operators (conjunction, disjunction, and negation) while preserving the original meaning.",
+            "Verify the correctness of simplified expressions by comparing their truth tables with the original expression to ensure logical equivalence."
+        ],
+        [
+            "Evaluate complex propositional formulas under given interpretations by systematically applying truth tables for logical connectives to determine the formula's truth value.",
+            "Compute the truth value of nested logical expressions by correctly processing each connective in the proper order of operations for various truth assignments.",
+            "Verify the correctness of propositional formula evaluations by reconstructing the step-by-step computation using standard logical operator definitions."
+        ],
+        [
+            "Analyze complex biconditional statements by evaluating their truth values under different interpretations through systematic application of logical connective rules.",
+            "Determine the truth value of multi-level nested propositional formulas by correctly interpreting each logical operator in sequence for given variable assignments.",
+            "Validate the evaluation of intricate logical expressions by demonstrating how each intermediate computation follows from the standard definitions of logical connectives."
+        ],
+        [
+            "Evaluate biconditional propositional formulas under given interpretations by systematically applying truth tables for all logical connectives involved.",
+            "Analyze the relationship between negated conjunctions and disjunctions by computing truth values for both sides of a biconditional statement.",
+            "Verify the correctness of logical equivalence evaluations by demonstrating step-by-step computation using standard definitions of all logical operators."
+        ],
+        [
+            "Simplify complex boolean expressions by systematically applying boolean algebra rules and identifying redundant or contradictory terms.",
+            "Transform disjunctive normal form expressions into their simplest equivalent forms using logical equivalence laws and simplification techniques.",
+            "Verify the correctness of simplified boolean expressions by constructing truth tables for both original and simplified forms to confirm logical equivalence."
+        ],
+        [
+            "Transform logical formulas into equivalent forms with negations pushed inward to proposition letters by systematically applying De Morgan's laws and other logical equivalences.",
+            "Simplify formulas containing boolean constants by evaluating their effects on logical operations and eliminating unnecessary components.",
+            "Convert implications and biconditionals into equivalent forms using only conjunctions, disjunctions, and negations while preserving logical meaning."
+        ],
+        [
+            "Convert complex logical formulas into disjunctive normal form by systematically applying logical equivalences and distribution laws.",
+            "Transform implications and biconditionals into equivalent DNF representations through step-by-step application of logical equivalence rules.",
+            "Verify the correctness of DNF conversions by constructing truth tables for both original and transformed formulas to confirm logical equivalence."
+        ],
+        [
+            "Determine the satisfiability of DNF formulas by analyzing each disjunct for internal contradictions and identifying at least one consistent truth assignment.",
+            "Construct satisfying interpretations for DNF formulas when possible by selecting truth values that make at least one disjunct true while avoiding contradictory assignments.",
+            "Identify unsatisfiable DNF formulas by demonstrating that all possible disjuncts contain inherent logical contradictions under any interpretation."
+        ],
+        [
+            "Convert complex logical formulas into equivalent DNF representations by systematically applying logical equivalences and distributive laws while preserving meaning.",
+            "Generate multiple satisfying interpretations for DNF formulas by identifying different combinations of truth assignments that validate distinct disjuncts.",
+            "Verify the correctness of DNF conversions by demonstrating that both original and transformed formulas yield identical truth values under test interpretations."
+        ],
+        [
+            "Transform complex logical formulas into equivalent CNF representations by systematically applying logical equivalences and distributive laws while preserving meaning.",
+            "Convert implications and biconditionals into CNF through step-by-step application of transformation rules involving disjunctions and conjunctions.",
+            "Verify the correctness of CNF conversions by constructing truth tables for both original and transformed formulas to confirm logical equivalence."
+        ],
+        [
+            "Convert logical formulas into both CNF and DNF forms while maintaining logical equivalence through proper application of transformation rules.",
+            "Design combinational logic networks that accurately represent both original formulas and their CNF equivalents using appropriate logic gates.",
+            "Demonstrate the equivalence between original and transformed formulas by comparing their corresponding circuit implementations and truth table outputs."
+        ],
+        [
+            "Analyze CNF formulas to determine if they are tautologies by examining each clause for complementary literals that would make the clause always true.",
+            "Evaluate CNF formulas for tautological status by verifying that every possible truth assignment satisfies at least one literal in each clause.",
+            "Identify non-tautological CNF formulas by constructing specific truth assignments that would falsify at least one clause in the formula."
+        ],
+        [
+            "Transform complex logical formulas into CNF while preserving logical equivalence through systematic application of conversion rules and distributive laws.",
+            "Prove that a given CNF formula is a tautology by demonstrating that all possible truth assignments satisfy at least one literal in every clause.",
+            "Construct formal proofs of tautologies by showing that the CNF form of a formula cannot be falsified under any truth assignment."
+        ],
+        [
+            "Analyze a given CNF formula to determine if it is unsatisfiable by evaluating all possible truth assignments without constructing the full truth table.",
+            "Construct a generalized argument for the unsatisfiability of a specific class of CNF formulas with an arbitrary number of propositional variables using mathematical induction.",
+            "Compare different methods of proving unsatisfiability to identify the most efficient approach for a given CNF formula."
+        ],
+        [
+            "Translate a universally quantified statement over a finite domain into an equivalent conjunction of statements without using quantifiers.",
+            "Apply quantifier elimination techniques to rewrite logical expressions involving universal quantifiers for a specified finite set."
+        ],
+        [
+            "Convert an existentially quantified statement over a finite domain into an equivalent disjunction of statements without using quantifiers, ensuring correctness for all elements in the domain.",
+            "Apply quantifier elimination techniques to rewrite logical expressions involving existential quantifiers for a specified finite set, demonstrating accuracy in transformation."
+        ],
+        [
+            "Transform the negation of a universally quantified statement over a finite domain into an equivalent conjunction of negated statements without using quantifiers, following logical equivalence rules.",
+            "Utilize De Morgan's Laws to rewrite negated quantified expressions into quantifier-free forms, ensuring precise application for given finite sets."
+        ],
+        [
+            "Transform the negation of an existentially quantified statement over a finite domain into an equivalent conjunction of negated statements without using quantifiers, following logical equivalence rules.",
+            "Apply De Morgan's Laws to rewrite negated quantified expressions into quantifier-free forms, ensuring precise application for given finite sets."
+        ],
+        [
+            "Interpret complex quantified statements over the real numbers by translating them into natural language sentences, capturing the logical relationships accurately.",
+            "Evaluate the truth value of quantified predicates over the real numbers by either providing a proof or constructing a valid counterexample when false.",
+            "Analyze nested quantifiers in mathematical statements to determine their meaning and verify their validity within the context of real numbers.",
+            "Construct examples or counterexamples to demonstrate the truth or falsity of statements involving universal and existential quantifiers over infinite domains."
+        ],
+        [
+            "Translate mathematical statements into formal quantified expressions using universal and existential quantifiers without errors.",
+            "Convert negated quantified formulas into equivalent negation normal form by systematically applying logical equivalences.",
+            "Interpret the meaning of negated quantified statements in natural language, accurately conveying the logical negation.",
+            "Analyze mathematical properties (commutativity, existence, inequalities) and express them using proper quantifier structures."
+        ],
+        [
+            "Construct specific universes and predicate definitions that make a given quantified formula either true or false, demonstrating understanding of quantifier semantics.",
+            "Evaluate the truth value of complex quantified formulas by analyzing different interpretations of predicates and domains.",
+            "Formulate counterexamples to show the falsity of universally quantified statements when appropriate.",
+            "Analyze implications between quantified statements and determine their validity under different interpretations."
+        ],
+        [
+            "Translate statements about extremal elements in the real numbers into precise quantified formulas using existential and universal quantifiers without error.",
+            "Formulate mathematical statements about existence of roots using multiplication rather than root symbols, demonstrating understanding of inverse operations.",
+            "Construct quantified expressions that capture the positivity condition for mathematical objects while maintaining logical correctness."
+        ],
+        [
+            "Convert statements about the non-existence of extremal elements into quantified formulas by properly negating existential claims.",
+            "Express density properties of real numbers through quantified statements that capture the betweenness condition precisely.",
+            "Formulate statements about unboundedness and density in the real number system using appropriate combinations of quantifiers."
+        ],
+        [
+            "Convert quantified predicate logic statements into natural language sentences while preserving their precise logical meaning in a given domain.",
+            "Analyze complex logical formulas involving multiple predicates and quantifiers to accurately determine their semantic meaning.",
+            "Interpret implications between predicates in quantified statements to derive correct English translations.",
+            "Translate negated quantified statements into natural language while maintaining proper scope and meaning of the negation."
+        ],
+        [
+            "Construct accurate quantified logical formulas that represent given English statements about a specified domain using appropriate predicates.",
+            "Formulate conditional relationships between predicates using universal and existential quantifiers without logical errors.",
+            "Differentiate between similar-sounding English statements by creating distinct logical formulas that capture their precise meanings.",
+            "Model complex real-world scenarios using predicate logic, including handling exceptions and special cases through proper quantifier use."
+        ],
+        [
+            "Analyze universally quantified statements over infinite domains to determine their truth value by considering all possible cases.",
+            "Construct counterexamples to demonstrate when a universally quantified implication fails by identifying elements that satisfy the premise but not the conclusion.",
+            "Differentiate between the truth of individual universal statements and the truth of their implications in predicate logic."
+        ],
+        [
+            "Design specific domains and predicates that satisfy given logical conditions while demonstrating understanding of quantifier interactions.",
+            "Create examples where universal statements about individual predicates hold true but their implication fails, showing mastery of logical independence.",
+            "Formulate appropriate universal sets and predicates to illustrate subtle differences in quantified logical statements."
+        ],
+        [
+            "Convert quantified mathematical statements about real numbers into precise English sentences while maintaining their logical structure.",
+            "Evaluate the truth value of statements involving existence and universality of multiplicative identities and inverses in the real number system.",
+            "Analyze nested quantifier patterns to determine their meaning and verify their validity within the context of real number arithmetic."
+        ],
+        [
+            "Transform negated quantified statements into equivalent negation normal form by systematically applying quantifier negation rules.",
+            "Apply De Morgan's Laws to complex quantified predicates to derive logically equivalent forms without nested negations.",
+            "Construct step-by-step transformations of logical formulas while preserving meaning during conversion to negation normal form."
+        ],
+        [
+            "Transform negated quantified statements into equivalent negation normal form by systematically applying logical equivalences and quantifier negation rules.",
+            "Convert implications within quantified statements into disjunctive forms while preserving logical meaning during negation.",
+            "Apply De Morgan's Laws to complex nested quantifiers and predicates to derive equivalent negation normal forms without errors.",
+            "Analyze the structure of quantified implications and transform their negations into equivalent forms with proper scope of negations."
+        ],
+        [
+            "Construct specific domains and predicate interpretations that demonstrate the falsity of given quantified implications.",
+            "Design counterexamples by carefully selecting universal sets and predicate definitions that invalidate logical implications between quantified statements.",
+            "Analyze the truth conditions of complex quantified formulas to determine when implications between them fail to hold.",
+            "Differentiate between similar-looking quantified statements by creating interpretations where one version is false while others might be true."
+        ]
+    ],
+    "Relations": [
+        [
+            "Construct a relation based on a given divisibility condition by identifying all valid ordered pairs that satisfy the relation's definition.",
+            "Analyze a finite set to determine all element pairs connected through a specified multiplicative relationship.",
+            "Verify the correctness of constructed relations by checking each potential pair against the defined condition."
+        ],
+        [
+            "Determine all ordered pairs in real number relations defined by specific inequality conditions through systematic analysis.",
+            "Construct ternary relations involving algebraic equations by identifying all valid triples that satisfy the given equation.",
+            "Evaluate complex relation definitions involving disjunctive conditions to identify all qualifying element pairs."
+        ],
+        [
+            "Construct all ordered pairs in subset relations by systematically comparing every possible combination of subsets in a given universal set.",
+            "Differentiate between subset and proper subset relations by identifying and listing only those pairs that satisfy the strict containment condition.",
+            "Generate all valid ordered triples in a ternary relation defined by set intersection properties through exhaustive verification of possible combinations."
+        ],
+        [
+            "Analyze the composition of standard order relations to determine and describe the resulting composite relation in natural language.",
+            "Construct inverse relations for given order relations and articulate their precise mathematical meaning without symbolic notation.",
+            "Evaluate complex relation operations including multiple compositions to derive and describe their combined effects on ordering properties."
+        ],
+        [
+            "Prove fundamental properties of identity relations using precise logical reasoning and set-theoretic arguments.",
+            "Construct specific examples of non-identity relations that are equal to their own inverses, demonstrating understanding of symmetric relation properties.",
+            "Analyze the behavior of relation composition to derive necessary conditions for a relation to function as an identity element in composition operations.",
+            "Apply general proof techniques to establish universal properties of relations under composition operations."
+        ],
+        [
+            "Compute the composition of two given finite relations by systematically identifying all valid connected pairs through intermediate elements.",
+            "Apply the definition of relation composition to concrete examples, ensuring complete and accurate pair identification.",
+            "Differentiate between the composition orders by comparing the results of R composed with S versus S composed with R.",
+            "Verify computation results by checking each potential connection against the composition definition for completeness."
+        ],
+        [
+            "Evaluate complex logical expressions by systematically applying truth values to propositions and computing the results of logical connectives.",
+            "Analyze conditional and biconditional statements to determine their truth values based on given propositional truth assignments.",
+            "Verify the truth values of nested logical expressions by step-by-step evaluation of each component connective.",
+            "Compare different logical forms to identify equivalent expressions based on their truth-functional behavior."
+        ],
+        [
+            "Prove fundamental properties of relation inverses by constructing logical arguments that establish subset relationships between inverted relations.",
+            "Demonstrate how relation containment is preserved under composition by developing formal proofs for both left and right composition cases.",
+            "Analyze the necessity of conditions for relation containment by constructing counterexamples or proofs for converse statements.",
+            "Apply general proof strategies to establish properties of relations under inversion and composition operations."
+        ],
+        [
+            "Generate all possible binary relations on a given set by systematically constructing the power set of the Cartesian product.",
+            "Identify pairs of inverse relations within a set of binary relations by verifying the inverse condition for each possible pair.",
+            "Determine the inverse of a relation defined on relations by analyzing the original relation's structure and properties.",
+            "Compute the composition of a relation with itself by applying the composition operation to all relevant relation pairs."
+        ],
+        [
+            "Identify whether a given relation is reflexive, symmetric, antisymmetric, or transitive under the condition that the relation is defined on a specific set, with at least 80% accuracy.",
+            "Construct a proof to justify assertions about the reflexivity, symmetry, antisymmetry, or transitivity of a given relation when provided with a specific relation on a set, achieving a correctness rate of at least 90%."
+        ],
+        [
+            "Determine whether a given relation is reflexive, symmetric, antisymmetric, or transitive under the condition that the relation is defined on a specific set, with at least 80% accuracy.",
+            "Explain the reasoning behind assertions about the reflexivity, symmetry, antisymmetry, or transitivity of a given relation when provided with a specific relation on a set, achieving a clarity and correctness rate of at least 90%."
+        ],
+        [
+            "Determine whether a given relation is reflexive, irreflexive, symmetric, antisymmetric, or transitive under the condition that the relation is defined on a specified set, with at least 80% accuracy.",
+            "Justify the classification of a relation as reflexive, irreflexive, symmetric, antisymmetric, or transitive when provided with a specific relation on a set, achieving a correctness rate of at least 90%."
+        ],
+        [
+            "Compute the composition of two given relations under the condition that the relations are defined on the same set, with at least 80% accuracy.",
+            "Construct the square of a given relation through composition under the condition that the relation is defined on a specified set, achieving a correctness rate of at least 90%."
+        ],
+        [
+            "Compute successive powers of a given relation under the condition that the relation is defined on a finite set, with at least 80% accuracy.",
+            "Verify that successive powers of a relation are distinct under the condition that the relation is defined on a finite set, achieving a correctness rate of at least 90%."
+        ],
+        [
+            "Construct a relation on a finite set that produces distinct powers up to the cardinality of the set under the condition that the set has exactly n elements, with at least 80% accuracy.",
+            "Demonstrate that the constructed relation produces distinct powers under the condition that the set has exactly n elements, achieving a correctness rate of at least 90%."
+        ],
+        [
+            "Construct the reflexive closure of a given relation under the condition that the relation is defined on a set, with at least 90% accuracy.",
+            "Construct the symmetric closure of a given relation under the condition that the relation is defined on a set, with at least 90% accuracy.",
+            "Construct the transitive closure of a given relation under the condition that the relation is defined on a set, with at least 80% accuracy.",
+            "Construct the reflexive-transitive closure of a given relation under the condition that the relation is defined on a set, with at least 80% accuracy."
+        ],
+        [
+            "Compute the reflexive closure of a given relation under the condition that the relation is defined on a finite set, with 100% accuracy.",
+            "Compute the symmetric closure of a given relation under the condition that the relation is defined on a finite set, with 100% accuracy.",
+            "Compute the transitive closure of a given relation under the condition that the relation is defined on a finite set using algorithmic methods, with at least 90% accuracy.",
+            "Compute the reflexive-transitive closure of a given relation under the condition that the relation is defined on a finite set, with at least 90% accuracy."
+        ],
+        [
+            "Construct the reflexive closure of any relation when given a specific relation on a finite set, achieving 100% accuracy in identifying all required pairs.",
+            "Generate the symmetric closure of any relation when provided with a non-symmetric relation on a finite set, correctly identifying all necessary symmetric pairs with 100% accuracy.",
+            "Compute the transitive closure of any relation when given a non-transitive relation on a finite set, demonstrating the process with at least 90% accuracy.",
+            "Determine the reflexive-transitive closure of any relation by combining both operations when working with a relation on a finite set, achieving at least 90% accuracy."
+        ],
+        [
+            "Calculate the transitive closure of any given relation when working with a finite set and defined relation pairs, completing all necessary path compositions with 100% accuracy.",
+            "Apply the concept of path completion to determine missing transitive pairs when provided with any non-transitive relation on a finite set, achieving at least 90% accuracy in identifying all required connections."
+        ],
+        [
+            "Analyze any given relation on a finite set to identify its component cycles and disconnected parts with 100% accuracy.",
+            "Represent any given relation as a directed graph when provided with the relation pairs, correctly drawing all connections between elements."
+        ],
+        [
+            "Determine the smallest integers where relation powers become equal when given any relation on a finite set, achieving 100% accuracy in identifying m and n.",
+            "Compute all required closures (transitive, reflexive, symmetric) for any given relation on a finite set, demonstrating each closure operation with at least 90% accuracy.",
+            "Identify when relation powers stabilize when working with any finite relation, correctly determining the point of stabilization."
+        ],
+        [
+            "Determine the smallest positive integers m and n where the m-th and n-th powers of any cyclic relation become equal when working with finite sets, achieving 100% accuracy in identifying the correct pair.",
+            "Analyze the behavior of relation powers for any cyclic relation defined on finite sets to identify the point of stabilization, demonstrating the process with complete accuracy."
+        ],
+        [
+            "Construct the reflexive closure for various relations defined on different mathematical domains, achieving 100% accuracy in identifying all required elements.",
+            "Generate the symmetric closure for different types of mathematical relations, correctly identifying all necessary symmetric pairs with complete accuracy.",
+            "Compute the transitive closure for relations defined on various mathematical domains, demonstrating the process with at least 90% accuracy.",
+            "Analyze and compare closure properties between relations defined on different mathematical domains, identifying key differences with complete accuracy."
+        ],
+        [
+            "Prove that the transitive closure of any relation equals the intersection of all transitive superset relations when given a relation on a set, constructing a complete and valid proof with no logical errors.",
+            "Demonstrate the minimality property of transitive closures by showing containment within all transitive superset relations when working with relations on arbitrary sets, achieving complete accuracy in the argument."
+        ],
+        [
+            "Evaluate the possibility of defining closure operations for various relation properties beyond the standard closures, formulating justified arguments with complete logical consistency.",
+            "Compare and contrast the behavior of different relation types when attempting closure operations, identifying key structural differences with complete accuracy."
+        ],
+        [
+            "Identify all equivalence classes for modular arithmetic relations when given any modulus value, correctly partitioning the integer set with 100% accuracy.",
+            "Demonstrate understanding of congruence relations by showing how different modulus values affect the equivalence class structure, explaining the differences with complete clarity."
+        ],
+        [
+            "Verify the three properties of equivalence relations (reflexivity, symmetry, transitivity) when given any relations on a set, correctly classifying each relation with 100% accuracy.",
+            "Analyze various relations to determine which satisfy all equivalence relation criteria, providing complete justifications for each decision.",
+            "Construct counterexamples for relations failing to be equivalence relations when examining given relations, identifying specific violations with complete accuracy."
+        ],
+        [
+            "Verify reflexivity of any given relation when analyzing relations on sets, correctly identifying reflexive properties with 100% accuracy.",
+            "Construct examples of reflexive relations based on various real-world scenarios when working with different sets, demonstrating understanding through accurate examples."
+        ],
+        [
+            "Prove that a given relation on any set is an equivalence relation when verifying reflexivity, symmetry, and transitivity, completing all three proofs with complete accuracy.",
+            "Identify and describe all equivalence classes for any equivalence relation on a set, correctly partitioning the set into appropriate classes with 100% accuracy.",
+            "Demonstrate the concept of equivalence classes by showing how different relations partition sets, explaining the partitions with complete clarity."
+        ],
+        [
+            "Prove that a given function-based relation on any set is an equivalence relation by verifying reflexivity, symmetry, and transitivity, completing all three proofs with complete accuracy.",
+            "Identify and describe all equivalence classes for any function-defined equivalence relation, correctly characterizing the class structure with 100% accuracy.",
+            "Demonstrate how function properties determine equivalence classes by showing the partitioning of the domain, explaining the pattern with complete clarity."
+        ],
+        [
+            "Construct the corresponding equivalence relation when given any partition of a finite set, correctly listing all ordered pairs with 100% accuracy.",
+            "Demonstrate the bijection between partitions and equivalence relations by converting between representations for finite sets, showing complete understanding through accurate conversions.",
+            "Analyze different partition granularities (from finest to coarsest) on finite sets and construct their corresponding equivalence relations, correctly identifying all pairs in each case."
+        ],
+        [
+            "Construct the equivalence relation corresponding to any given partition of a finite set, correctly identifying all ordered pairs with 100% accuracy.",
+            "Determine whether one partition refines another when comparing multiple partitions of the same finite set, correctly identifying refinement relationships in all cases.",
+            "Translate between partition representations and equivalence relation representations for finite sets, demonstrating complete understanding through accurate conversions."
+        ],
+        [
+            "Prove that the intersection of any two equivalence relations on the same set remains an equivalence relation, constructing a complete proof with no logical gaps.",
+            "Construct counterexamples showing the union of equivalence relations may not preserve equivalence properties, correctly identifying which properties fail with 100% accuracy.",
+            "Demonstrate how to construct the smallest equivalence relation containing any two given equivalence relations using reflexive-transitive closure, showing all steps with complete accuracy."
+        ],
+        [
+            "Define the reflexive and transitive closure of a relation on a set.",
+            "Prove that a given relation is an equivalence relation using the properties of reflexive, symmetric, and transitive.",
+            "Demonstrate that a relation derived from the reflexive and transitive closure preserves equivalence under specific conditions."
+        ],
+        [
+            "Construct a Hasse diagram to represent a given partial order on a finite set.",
+            "Identify all maximal, maximum, minimal, and minimum elements in a given partial order.",
+            "Compare and contrast the properties of maximal and maximum elements as well as minimal and minimum elements in a partial order."
+        ],
+        [
+            "Construct a Hasse diagram to represent a given partial order on a finite set.",
+            "Identify all minimal and maximal elements in a given Hasse diagram representing a partial order.",
+            "Determine the existence and identity of minimum and maximum elements in a given Hasse diagram representing a partial order."
+        ],
+        [
+            "Construct a Hasse diagram to represent a given partial order on a finite set.",
+            "Identify all minimal and maximal elements in a given Hasse diagram representing a partial order.",
+            "Determine the existence and identity of minimum and maximum elements in a given Hasse diagram representing a partial order."
+        ],
+        [
+            "Construct Hasse diagrams to represent partial orders on various given finite sets with complete accuracy.",
+            "Compare and contrast the structural differences between Hasse diagrams for different partially ordered sets.",
+            "Analyze how the size and composition of a set affects the complexity of its corresponding partial order diagram."
+        ],
+        [
+            "Verify whether a given relation satisfies all properties required for a partial order by examining reflexivity, antisymmetry, and transitivity with logical precision.",
+            "Construct a Hasse diagram for an abstract partial order relation while maintaining all order relationships correctly.",
+            "Demonstrate the process of proving a relation is a partial order by clearly presenting each required property with appropriate justification."
+        ],
+        [
+            "Analyze a given relation to determine if it satisfies all properties of a partial order (reflexivity, antisymmetry, and transitivity) with complete accuracy.",
+            "Differentiate between partial orders and linear orders by identifying whether every pair of elements in a given relation is comparable.",
+            "Construct clear explanations for why specific relations do or do not satisfy particular order properties using precise mathematical reasoning."
+        ],
+        [
+            "Demonstrate that a given relation fails to be a partial order by identifying which required properties it violates and providing concrete counterexamples.",
+            "Evaluate the validity of a proposed order relation by systematically checking each partial order property (reflexivity, antisymmetry, and transitivity) with logical precision.",
+            "Formulate clear arguments explaining why certain relations cannot be considered partial orders, supported by specific examples and counterexamples."
+        ],
+        [
+            "Analyze a given relation to determine if it satisfies all properties of a linear order (antisymmetry, transitivity, and totality) with complete accuracy.",
+            "Construct a proof demonstrating why a specific relation fails to be a linear order by identifying which required properties it violates.",
+            "Evaluate relations to determine their suitability as order relations by systematically checking each required property."
+        ],
+        [
+            "Translate quantified mathematical statements between formal logic notation and natural language while preserving their precise meaning.",
+            "Determine the truth value of quantified statements over specified domains by analyzing their logical structure and mathematical properties.",
+            "Compare and contrast the meaning of different quantifier arrangements in mathematical statements and explain how they affect the statement's truth conditions."
+        ]
+    ],
+    "Functions": [
+        [
+            "Evaluate whether a given relation qualifies as a function by verifying that each input has exactly one output under specified conditions.",
+            "Identify and explain why certain relations fail to be functions by providing concrete counterexamples when given various mappings.",
+            "Analyze the definition of a function to determine its validity by examining edge cases and special conditions in different contexts."
+        ],
+        [
+            "Construct the complete set of ordered pairs that represent a given function when provided with its domain, codomain, and definition.",
+            "Translate between different representations of functions while maintaining accuracy in the mapping relationship.",
+            "Verify that a given set of ordered pairs satisfies the definition of a function by checking for uniqueness of outputs for each input within specified domains."
+        ],
+        [
+            "Define the domain and range of a given arithmetic function on real numbers under the condition of being provided with the function definition, with complete accuracy."
+        ],
+        [
+            "Compute the terms of a sequence defined by a recurrence relation under the condition of being given initial terms and the recurrence formula, with no errors.",
+            "Apply a given recurrence relation to generate subsequent terms of a sequence under the condition of being provided with initial terms, with complete accuracy."
+        ],
+        [
+            "Construct a closed-form formula for a given sequence under the condition of being provided with the sequence terms, with complete accuracy.",
+            "Construct a recursive definition for a given sequence under the condition of being provided with the sequence terms, with complete accuracy."
+        ],
+        [
+            "Enumerate all partial functions from a given finite set to itself under the condition of being provided with the set, with no omissions or errors.",
+            "Enumerate all total functions from a given finite set to itself under the condition of being provided with the set, with no omissions or errors.",
+            "Identify all injective functions from a given finite set to itself under the condition of being provided with the set, with no omissions or errors.",
+            "Identify all surjective functions from a given finite set to itself under the condition of being provided with the set, with no omissions or errors."
+        ],
+        [
+            "Prove whether a given function is injective or not under the condition of being provided with the function definition and domain/codomain, with logical correctness and complete justification.",
+            "Prove whether a given function is surjective or not under the condition of being provided with the function definition and domain/codomain, with logical correctness and complete justification."
+        ],
+        [
+            "Count the number of possible functions between two given finite sets under the condition of being provided with the cardinalities of the domain and codomain, with complete accuracy.",
+            "Count the number of possible injective functions between two given finite sets under the condition of being provided with the cardinalities of the domain and codomain, with complete accuracy."
+        ],
+        [
+            "Analyze day-of-week distributions for specific dates across months under the condition of given calendar constraints, with complete logical justification.",
+            "Apply combinatorial principles to determine bounds on recurring date-day patterns under the condition of given temporal constraints, with complete accuracy.",
+            "Modify day-counting proofs to accommodate leap year variations under the condition of considering February's length change, with complete logical consistency."
+        ],
+        [
+            "Construct the ordered pairs of an equivalence relation induced by any given function under the condition of being provided with the function definition, with complete accuracy.",
+            "Determine the partition of a set induced by any function-defined equivalence relation under the condition of being provided with the function mapping, with complete accuracy."
+        ],
+        [
+            "Construct multiple distinct functions that coincide on a specified subset of their domain under the condition of being given the subset parameters, with complete accuracy.",
+            "Verify function equality on restrictions while demonstrating their global inequality under the condition of working with unrestricted domains, with complete logical justification."
+        ],
+        [
+            "Prove statements about function restrictions using set-theoretic representations under the condition of being given the relevant sets and functions, with complete logical rigor.",
+            "Demonstrate the relationship between function restrictions and Cartesian products under the condition of working with defined domains and codomains, with complete accuracy."
+        ],
+        [
+            "Construct examples of functions demonstrating specified monotonicity properties under the condition of given property requirements, with complete accuracy.",
+            "Prove statements about the compatibility of different monotonicity properties under the condition of using basic function definitions, with complete logical rigor.",
+            "Identify special cases where functions can exhibit seemingly contradictory properties under the condition of working with constrained domains, with complete accuracy."
+        ],
+        [
+            "Construct functions with specified preimage cardinality conditions under the condition of given domain and range requirements, with complete accuracy.",
+            "Design functions meeting exact solution count specifications for given equations under the condition of working with discrete domains, with complete accuracy."
+        ],
+        [
+            "Compute outputs of recursive piecewise-defined functions under the condition of given recursive definitions, with complete accuracy.",
+            "Prove properties of recursive functions over specified input ranges under the condition of using appropriate proof techniques, with complete logical rigor."
+        ],
+        [
+            "Determine conditions under which function unions remain functions under the condition of given domain and codomain specifications, with complete accuracy.",
+            "Identify domain conditions that ensure function compatibility under the condition of working with specified codomains, with complete logical justification."
+        ],
+        [
+            "Analyze relationships between ranges of function restrictions under the condition of various domain subsets, with complete logical rigor.",
+            "Demonstrate when equality fails in set relationships through constructed examples under the condition of specified constraints, with complete validity."
+        ],
+        [
+            "Convert between different representations of functions under the condition of given domain specifications, with complete accuracy.",
+            "Develop calculation methods from function representations under the condition of provided structural information, with complete precision.",
+            "Construct formal representations from intuitive function descriptions under the condition of specified constraints, with complete accuracy."
+        ],
+        [
+            "Verify function properties of given relations under the condition of examining ordered pairs, with complete accuracy.",
+            "Construct inverse relations from given functions under the condition of having original mappings, with complete precision.",
+            "Analyze function properties of inverse relations under the condition of original function characteristics, with complete justification."
+        ],
+        [
+            "Verify function properties in given relations under the condition of ordered pair examination, with complete accuracy.",
+            "Construct and evaluate inverse relations under the condition of original relation mappings, with complete precision.",
+            "Determine domains of inverse relations under the condition of original relation characteristics, with complete accuracy."
+        ],
+        [
+            "Compute compositions of given functions under the condition of explicit definitions, with complete accuracy.",
+            "Evaluate composed functions at specified points under the condition of given mappings, with complete precision."
+        ],
+        [
+            "Prove inverse relationships between functions under the condition of given definitions, with complete logical rigor.",
+            "Verify identity properties in function compositions under the condition of specified function pairs, with complete accuracy."
+        ],
+        [
+            "Enumerate ordered sequences with specified properties from given finite sets under the condition of using defined order relations, with complete accuracy.",
+            "Generate all possible subsequences of given finite sequences under the condition of considering all combinations, with no omissions."
+        ],
+        [
+            "Compute compositions of given functions on finite sets under the condition of complete function definitions, with complete accuracy.",
+            "Evaluate multiple function compositions in sequence under the condition of given mappings, with no errors."
+        ],
+        [
+            "Construct inverse functions for given bijective functions under the condition of having a defined rule, with complete accuracy.",
+            "Verify bijective properties of constructed inverse functions under the condition of the original function being one-to-one and onto, with complete logical justification."
+        ],
+        [
+            "Prove properties of inverse function compositions under the condition of given bijective functions between sets, with complete logical rigor.",
+            "Demonstrate inverse relationships in function compositions under the condition of one-to-one correspondences, with complete accuracy."
+        ],
+        [
+            "Compute initial terms of explicitly defined sequences under the condition of being given closed-form formulas, with complete accuracy.",
+            "Evaluate different types of sequences (polynomial, arithmetic, alternating) under the condition of being given their defining rules, with complete accuracy."
+        ],
+        [
+            "Compute initial terms of recursively defined sequences under the condition of being given recurrence relations and base cases, with complete accuracy.",
+            "Evaluate different types of recurrence relations (linear, non-homogeneous) under the condition of being given their recursive definitions, with complete accuracy."
+        ],
+        [
+            "Construct recursive definitions for given sequences under the condition of identifying the underlying pattern, with complete accuracy.",
+            "Model different types of sequences (arithmetic, geometric) using recursive definitions under the condition of recognizing their characteristic properties, with complete accuracy."
+        ],
+        [
+            "Prove equivalent characterizations of fundamental function properties under the condition of working with arbitrary sets, with complete logical rigor.",
+            "Construct related functions to demonstrate properties of given functions under the condition of specified constraints, with complete accuracy.",
+            "Demonstrate cancellation properties in function composition under the condition of given function characteristics, with complete logical justification."
+        ],
+        [
+            "Prove equivalent characterizations of fundamental function properties under the condition of working with arbitrary sets, with complete logical rigor.",
+            "Construct related functions to demonstrate properties of given functions under the condition of specified constraints, with complete accuracy.",
+            "Demonstrate cancellation properties in function composition under the condition of given function characteristics, with complete logical justification."
+        ],
+        [
+            "Prove properties of function images under set operations under the condition of given domain subsets, with complete logical rigor.",
+            "Demonstrate preservation properties of functions under set operations under the condition of arbitrary subsets, with complete accuracy.",
+            "Establish relationships between function images of combined sets under the condition of given domain subsets, with complete logical justification."
+        ],
+        [
+            "Verify algebraic properties in abstract function spaces under the condition of specified operations, with complete accuracy.",
+            "Prove fundamental algebraic properties in structured spaces under the condition of given operations and elements, with complete logical rigor.",
+            "Demonstrate identity and inverse properties in algebraic structures under the condition of defined operations, with complete accuracy."
+        ],
+        [
+            "Prove equivalent characterizations of function properties using preimage conditions under the condition of arbitrary subsets, with complete logical rigor.",
+            "Establish fundamental relationships between function images and preimages under the condition of specified function properties, with complete accuracy."
+        ],
+        [
+            "Verify group axioms for algebraic structures under the condition of specified operations and elements, with complete accuracy.",
+            "Prove fundamental algebraic properties in structured sets under the condition of given operations, with complete logical rigor.",
+            "Demonstrate identity and inverse properties in algebraic systems under the condition of defined operations, with complete accuracy."
+        ],
+        [
+            "Prove equivalences between properties of functions and their induced mappings under the condition of set-valued operations, with complete logical rigor.",
+            "Establish fundamental relationships between function properties and their derived functions under the condition of working with power sets, with complete accuracy."
+        ],
+        [
+            "Apply counting principles to prove guaranteed repetitions under the condition of exceeding distinct category limits, with complete logical rigor.",
+            "Construct combinatorial proofs of duplication under the condition of constrained classification systems, with complete accuracy."
+        ],
+        [
+            "Apply modular arithmetic principles to prove guaranteed congruence matches under the condition of exceeding distinct residue classes, with complete logical rigor.",
+            "Demonstrate inevitable repetition in discrete structures under the condition of constrained classification systems, with complete accuracy."
+        ],
+        [
+            "Apply counting principles to prove guaranteed duplicates under the condition of exceeding distinct category limits, with complete logical rigor.",
+            "Construct combinatorial proofs of repetition under the condition of constrained classification systems, with complete accuracy."
+        ],
+        [
+            "Apply generalized counting principles to prove guaranteed category repetitions under the condition of exceeding proportional distribution limits, with complete logical rigor.",
+            "Demonstrate inevitable clustering in discrete distributions under the condition of constrained classification systems, with complete accuracy."
+        ],
+        [
+            "Apply the pigeonhole principle to determine the minimum number of items sharing a property in a finite set, given a fixed number of categories."
+        ],
+        [
+            "Calculate the number of containers required to partition a large set of items, given constraints on container capacity, using the pigeonhole principle."
+        ],
+        [
+            "Apply the pigeonhole principle to determine the minimum number of items that must share a resource, given constraints on resource availability and item distribution."
+        ],
+        [
+            "Use the generalized pigeonhole principle to calculate the minimum number of containers required to distribute a set of items, given constraints on container availability and item allocation."
+        ],
+        [
+            "Apply the pigeonhole principle to determine the minimum number of items needed to guarantee a specified distribution across categories.",
+            "Apply the pigeonhole principle to determine the minimum number of items needed to guarantee multiple items fall within the same category.",
+            "Apply combinatorial reasoning to determine the minimum number of items needed to guarantee a specific numerical relationship among them."
+        ],
+        [
+            "Construct a proof using the pigeonhole principle to demonstrate that in any collection of n elements with constrained relationships, at least two elements must share an identical relationship count."
+        ],
+        [
+            "Apply the pigeonhole principle to determine the minimum number of selections required from multiple categories to guarantee a specified number of items from one category."
+        ],
+        [
+            "Determine the minimum number of items that must be selected from a mixed set to guarantee obtaining a specified quantity of one particular type."
+        ],
+        [
+            "Calculate the minimum number of items that must be selected from a mixed set to guarantee a matching pair, given the quantities of each type available.",
+            "Calculate the minimum number of selections required from a mixed set to guarantee obtaining a pair of a specified type, given the quantities of each type available."
+        ],
+        [
+            "Construct a specific sequence of elements that avoids containing any monotonic subsequence of a given length."
+        ],
+        [
+            "Demonstrate that for any two sets where one is a subset of the other, the cardinality of the subset cannot exceed the cardinality of the containing set."
+        ],
+        [
+            "Construct proofs showing that given infinite sets defined by arithmetic patterns have the same cardinality by establishing bijective correspondences."
+        ],
+        [
+            "Construct a bijection between an infinite countable set and its Cartesian product by designing an enumeration method that systematically covers all elements."
+        ],
+        [
+            "Prove that specified infinite subsets of a countable set are countably infinite by establishing appropriate enumeration methods.",
+            "Analyze given conditions on elements of a countable set to demonstrate their countability through systematic enumeration strategies.",
+            "Verify the countability of defined subsets of a countable set by constructing explicit counting arguments."
+        ],
+        [
+            "Prove that basic set operations preserve countability when applied to countable sets, considering both finite and infinite cases.",
+            "Determine which set operations preserve countability when applied to infinite countable sets, providing justification for each case."
+        ],
+        [
+            "Prove that any subset of a countably infinite set is countable by constructing an appropriate enumeration method."
+        ],
+        [
+            "Prove that a given function between specified domains is bijective by verifying both injectivity and surjectivity."
+        ],
+        [
+            "Construct explicit bijective functions between a given infinite set and various modified versions of that set.",
+            "Construct an explicit bijective function between an uncountable set and its uncountable subset."
+        ],
+        [
+            "Prove that the power set of any infinite set has strictly greater cardinality than the set itself using diagonalization techniques."
+        ],
+        [
+            "Demonstrate that the set of all finite sequences from a finite set is countably infinite by constructing an explicit enumeration.",
+            "Prove that the set of all finite sequences from a countably infinite set is countably infinite using enumeration techniques."
+        ],
+        [
+            "Analyze the cardinality of infinite sequence sets based on their alphabet size, demonstrating when they are finite or uncountable.",
+            "Prove that infinite sequence sets with alphabet size greater than one have the same cardinality as the power set of natural numbers by establishing appropriate bijections.",
+            "Compare cardinalities of different infinite sequence sets, identifying when they match the cardinality of power sets of countable sets."
+        ]
+    ]
+}

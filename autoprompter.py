@@ -9,7 +9,7 @@ import pyperclip
 import platform
 
 
-def start_auto_prompter(category_and_prompts):
+def start_auto_prompter(category_and_prompts, result):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.debugger_address = "127.0.0.1:9222"
 
@@ -21,7 +21,6 @@ def start_auto_prompter(category_and_prompts):
 
     answerCount = 0;
     answerDivs = []
-    result = {}
 
     paste_key = Keys.COMMAND if platform.system() == "Darwin" else Keys.CONTROL
 
@@ -43,5 +42,3 @@ def start_auto_prompter(category_and_prompts):
             json_text = answerDivs[-1].find_element(By.TAG_NAME, "pre").text
             converted_text = json.loads(json_text)
             result[category].append(converted_text)
-
-    return result

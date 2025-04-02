@@ -55,4 +55,5 @@ def run_chrome():
     else:
         subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, close_fds=True)
 
-
+if __name__ == "__main__":
+    run_chrome()

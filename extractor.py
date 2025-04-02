@@ -22,6 +22,6 @@ def extract_chat():
     with open("raw_partial.json", "w") as file:
             json.dump(extracted, file, indent=4)
 
-if __name__ == "main":
+if __name__ == "__main__":
      extract_chat()
      print("finished extracting into raw_partial.json pls copy paste accordingly into raw.json")

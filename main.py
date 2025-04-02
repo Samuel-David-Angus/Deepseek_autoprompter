@@ -23,9 +23,10 @@ Here is the discrete math question/s (each question is denoted as Question: ques
 
 {enumerated_questions}
 
-If the question/s was presented in a textbook for a discrete mathematics course, what domain-specific low-level detailed topics would the page cover? Note that the question is for a college audience with existing prior knowledge in discrete mathematics. 
-Based on these topics, reword them to begin with action words from Bloom’s Revised Taxonomy, while keeping them domain-specific, low-level, and detailed as well as containing the 3 parts explained above. If the learning outcome already exists in the list above then take it from there or from another question but if not then generate it. Make sure the learning outcome contains only natural language and no math symbols, expressions, equations etc.
-Answer in json where the question number itself is the key and as a value, an object with the topics as key containing a string array of the textbook topics the question will be associated with and another key called LO for the learning outcomes that is also a string array
+If the question/s was presented in a textbook for a discrete mathematics course, what domain-specific low-level detailed topics would the page cover? Note that the question is for a college audience with existing prior knowledge in discrete mathematics.
+Based on these topics, reword them to begin with action words from Bloom’s Revised Taxonomy, while keeping them domain-specific, low-level, and detailed as well as containing the 3 parts explained above. Make sure the learning outcome contains only natural language and no math symbols, expressions, equations etc.
+Take the initial learning outcomes and check if it can be generalized to other contexts outside of this question. If it can be generalized then do so. If it is already generalized then leave it alone and just copy as is.
+Answer in json where the question number itself is the key and as a value, an object with the topics as key containing a string array of the textbook topics the question will be associated with and another key called initialLO for the initial learning outcomes and finalLO which contains the generalized question, all of these are string arrays. Don't put any explanation afterwards.
 """
     return context_prompt
 
@@ -57,16 +58,15 @@ if __name__ == "__main__":
                 prompts.append(add_questions_to_context_prompt(pair))
             category_and_prompts[category] = prompts
 
-
-        category_and_answers = start_auto_prompter(category_and_prompts=category_and_prompts.items())
-
-        with open("raw_partial.json", "w") as file:
-            json.dump(category_and_answers, file, indent=4)
+        category_and_answers = {}
+        start_auto_prompter(category_and_prompts=category_and_prompts.items(), result=category_and_answers)
 
         print("Finished. pls append the results in raw_partial.json to raw.json then run finalizer.py to see the final output in processed.json")
         
     except Exception as e:
+        print(f"Error: {e}")
+    finally:
+        print("\nAborting")
         with open("raw_partial.json", "w") as file:
             json.dump(category_and_answers, file, indent=4)
-        print(f"Error: {e}")
-        print("dumped incomplete results into raw_partial.json pls transfer these manually into raw.json then remove the questions in questions_partial.json that have already been answered prior to the error interrupt before rerunning the program again.")
+        print("partial results dumped in raw_partial. pls review and append to raw.json and remove the answered questions in questions_partial.json before rerunning the program to continue.")
